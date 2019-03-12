@@ -1,0 +1,251 @@
+\hypertarget{classgui_1_1CreateEventGUI}{}\section{Referencia de la Clase gui.\+Create\+Event\+G\+UI}
+\label{classgui_1_1CreateEventGUI}\index{gui.CreateEventGUI@{gui.CreateEventGUI}}
+Diagrama de herencias de gui.\+Create\+Event\+G\+UI\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgui_1_1CreateEventGUI}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgui_1_1CreateEventGUI_afd301ba60a1dd47e03527110c3017274}{Create\+Event\+G\+UI}} ()
+\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classgui_1_1CreateEventGUI_aa70a7c4a8c690ea080c4f1bc041e9a09}{j\+Button2\+\_\+action\+Performed}} (Action\+Event e)
+\item 
+void \mbox{\hyperlink{classgui_1_1CreateEventGUI_acc6eefcb43c6834a78767aac5f721ffd}{initialize}} ()
+\item 
+Date \mbox{\hyperlink{classgui_1_1CreateEventGUI_a2a70eddae15216e91c11a7c909e3217a}{trim}} (Date date)
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+J\+Text\+Field \mbox{\hyperlink{classgui_1_1CreateEventGUI_a7500da1a45bd490e612ff33bfb91592b}{text\+Field\+Event\+Desc}}
+\item 
+\mbox{\hyperlink{classdataAccess_1_1DataAccess}{Data\+Access}} \mbox{\hyperlink{classgui_1_1CreateEventGUI_ac17ddd8a0373665374aa7f174b3ccd48}{bussines\+Logic}}
+\item 
+J\+Calendar \mbox{\hyperlink{classgui_1_1CreateEventGUI_a27bb4d6170bc03fe771e186664b860aa}{calendar}}
+\item 
+J\+Label \mbox{\hyperlink{classgui_1_1CreateEventGUI_a45ab76afdfd93dac6437dc24b99abf34}{lbl\+Evento\+Creado}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+Definición en la línea 23 del archivo Create\+Event\+G\+U\+I.\+java.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classgui_1_1CreateEventGUI_afd301ba60a1dd47e03527110c3017274}\label{classgui_1_1CreateEventGUI_afd301ba60a1dd47e03527110c3017274}} 
+\index{gui.CreateEventGUI@{gui.CreateEventGUI}!CreateEventGUI@{CreateEventGUI}}
+\index{CreateEventGUI@{CreateEventGUI}!gui.CreateEventGUI@{gui.CreateEventGUI}}
+\subsubsection{\texorpdfstring{CreateEventGUI()}{CreateEventGUI()}}
+{\footnotesize\ttfamily gui.\+Create\+Event\+G\+U\+I.\+Create\+Event\+G\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Create the application. 
+
+Definición en la línea 32 del archivo Create\+Event\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32                             \{}
+\DoxyCodeLine{33         super();}
+\DoxyCodeLine{34         setTitle(\textcolor{stringliteral}{"Crear Evento"});}
+\DoxyCodeLine{35         getContentPane().setLayout(\textcolor{keyword}{null});}
+\DoxyCodeLine{36         }
+\DoxyCodeLine{37         \mbox{\hyperlink{classgui_1_1CreateEventGUI_a27bb4d6170bc03fe771e186664b860aa}{calendar}} = \textcolor{keyword}{new} JCalendar();}
+\DoxyCodeLine{38         \mbox{\hyperlink{classgui_1_1CreateEventGUI_a27bb4d6170bc03fe771e186664b860aa}{calendar}}.setBounds(\textcolor{keyword}{new} Rectangle(25, 11, 424, 113));}
+\DoxyCodeLine{39         getContentPane().add(\mbox{\hyperlink{classgui_1_1CreateEventGUI_a27bb4d6170bc03fe771e186664b860aa}{calendar}});}
+\DoxyCodeLine{40         }
+\DoxyCodeLine{41         }
+\DoxyCodeLine{42         \mbox{\hyperlink{classgui_1_1CreateEventGUI_a45ab76afdfd93dac6437dc24b99abf34}{lblEventoCreado}} = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"Evento Creado"});}
+\DoxyCodeLine{43         \mbox{\hyperlink{classgui_1_1CreateEventGUI_a45ab76afdfd93dac6437dc24b99abf34}{lblEventoCreado}}.setForeground(Color.RED);}
+\DoxyCodeLine{44         \mbox{\hyperlink{classgui_1_1CreateEventGUI_a45ab76afdfd93dac6437dc24b99abf34}{lblEventoCreado}}.setBounds(179, 135, 107, 20);}
+\DoxyCodeLine{45         getContentPane().add(\mbox{\hyperlink{classgui_1_1CreateEventGUI_a45ab76afdfd93dac6437dc24b99abf34}{lblEventoCreado}});}
+\DoxyCodeLine{46         \mbox{\hyperlink{classgui_1_1CreateEventGUI_a45ab76afdfd93dac6437dc24b99abf34}{lblEventoCreado}}.setVisible(\textcolor{keyword}{false});}
+\DoxyCodeLine{47         }
+\DoxyCodeLine{48         }
+\DoxyCodeLine{49         JLabel lblNewLabel = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"Descripcion evento:"});}
+\DoxyCodeLine{50         lblNewLabel.setBounds(25, 159, 152, 20);}
+\DoxyCodeLine{51         getContentPane().add(lblNewLabel);}
+\DoxyCodeLine{52         }
+\DoxyCodeLine{53         \mbox{\hyperlink{classgui_1_1CreateEventGUI_a7500da1a45bd490e612ff33bfb91592b}{textFieldEventDesc}} = \textcolor{keyword}{new} JTextField();}
+\DoxyCodeLine{54         \mbox{\hyperlink{classgui_1_1CreateEventGUI_a7500da1a45bd490e612ff33bfb91592b}{textFieldEventDesc}}.setText(\textcolor{stringliteral}{""});}
+\DoxyCodeLine{55         \mbox{\hyperlink{classgui_1_1CreateEventGUI_a7500da1a45bd490e612ff33bfb91592b}{textFieldEventDesc}}.setBounds(196, 159, 243, 20);}
+\DoxyCodeLine{56         getContentPane().add(\mbox{\hyperlink{classgui_1_1CreateEventGUI_a7500da1a45bd490e612ff33bfb91592b}{textFieldEventDesc}});}
+\DoxyCodeLine{57         \mbox{\hyperlink{classgui_1_1CreateEventGUI_a7500da1a45bd490e612ff33bfb91592b}{textFieldEventDesc}}.setColumns(10);}
+\DoxyCodeLine{58         }
+\DoxyCodeLine{59         JButton btnNewButton = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"Crear evento"});}
+\DoxyCodeLine{60         btnNewButton.addActionListener(\textcolor{keyword}{new} ActionListener() \{}
+\DoxyCodeLine{61             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{}
+\DoxyCodeLine{62                 BLFacade facade=MainGUI.getBusinessLogic();}
+\DoxyCodeLine{63                 String des = \mbox{\hyperlink{classgui_1_1CreateEventGUI_a7500da1a45bd490e612ff33bfb91592b}{textFieldEventDesc}}.getText();}
+\DoxyCodeLine{64                 Date d = \mbox{\hyperlink{classgui_1_1CreateEventGUI_a2a70eddae15216e91c11a7c909e3217a}{trim}}(\mbox{\hyperlink{classgui_1_1CreateEventGUI_a27bb4d6170bc03fe771e186664b860aa}{calendar}}.getDate());              }
+\DoxyCodeLine{65                 facade.createEvent(des, d);             }
+\DoxyCodeLine{66                 \mbox{\hyperlink{classgui_1_1CreateEventGUI_a45ab76afdfd93dac6437dc24b99abf34}{lblEventoCreado}}.setVisible(\textcolor{keyword}{true});}
+\DoxyCodeLine{67             \}}
+\DoxyCodeLine{68         \});}
+\DoxyCodeLine{69         btnNewButton.setBounds(92, 201, 174, 28);}
+\DoxyCodeLine{70         getContentPane().add(btnNewButton);}
+\DoxyCodeLine{71         }
+\DoxyCodeLine{72         JButton btnNewButton\_1 = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"Close"});}
+\DoxyCodeLine{73         btnNewButton\_1.addActionListener(\textcolor{keyword}{new} ActionListener() \{}
+\DoxyCodeLine{74             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{}
+\DoxyCodeLine{75                 \mbox{\hyperlink{classgui_1_1CreateEventGUI_aa70a7c4a8c690ea080c4f1bc041e9a09}{jButton2\_actionPerformed}}(arg0);}
+\DoxyCodeLine{76             \}}
+\DoxyCodeLine{77             }
+\DoxyCodeLine{78         \});}
+\DoxyCodeLine{79         btnNewButton\_1.setBounds(293, 201, 152, 27);}
+\DoxyCodeLine{80         getContentPane().add(btnNewButton\_1);}
+\DoxyCodeLine{81         }
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83         \mbox{\hyperlink{classgui_1_1CreateEventGUI_acc6eefcb43c6834a78767aac5f721ffd}{initialize}}();}
+\DoxyCodeLine{84     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a gui.\+Create\+Event\+G\+U\+I.\+calendar, business\+Logic.\+B\+L\+Facade.\+create\+Event(), gui.\+Main\+G\+U\+I.\+get\+Business\+Logic(), gui.\+Create\+Event\+G\+U\+I.\+initialize(), gui.\+Create\+Event\+G\+U\+I.\+j\+Button2\+\_\+action\+Performed(), gui.\+Create\+Event\+G\+U\+I.\+lbl\+Evento\+Creado, gui.\+Create\+Event\+G\+U\+I.\+text\+Field\+Event\+Desc y gui.\+Create\+Event\+G\+U\+I.\+trim().
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classgui_1_1CreateEventGUI_acc6eefcb43c6834a78767aac5f721ffd}\label{classgui_1_1CreateEventGUI_acc6eefcb43c6834a78767aac5f721ffd}} 
+\index{gui.CreateEventGUI@{gui.CreateEventGUI}!initialize@{initialize}}
+\index{initialize@{initialize}!gui.CreateEventGUI@{gui.CreateEventGUI}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void gui.\+Create\+Event\+G\+U\+I.\+initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Initialize the contents of the frame. 
+
+Definición en la línea 93 del archivo Create\+Event\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{93                               \{     }
+\DoxyCodeLine{94         this.setSize(495, 290);}
+\DoxyCodeLine{95     \}}
+
+\end{DoxyCode}
+
+
+Referenciado por gui.\+Create\+Event\+G\+U\+I.\+Create\+Event\+G\+U\+I().
+
+\mbox{\Hypertarget{classgui_1_1CreateEventGUI_aa70a7c4a8c690ea080c4f1bc041e9a09}\label{classgui_1_1CreateEventGUI_aa70a7c4a8c690ea080c4f1bc041e9a09}} 
+\index{gui.CreateEventGUI@{gui.CreateEventGUI}!jButton2\_actionPerformed@{jButton2\_actionPerformed}}
+\index{jButton2\_actionPerformed@{jButton2\_actionPerformed}!gui.CreateEventGUI@{gui.CreateEventGUI}}
+\subsubsection{\texorpdfstring{jButton2\_actionPerformed()}{jButton2\_actionPerformed()}}
+{\footnotesize\ttfamily void gui.\+Create\+Event\+G\+U\+I.\+j\+Button2\+\_\+action\+Performed (\begin{DoxyParamCaption}\item[{Action\+Event}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 86 del archivo Create\+Event\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{86                                                          \{}
+\DoxyCodeLine{87         this.setVisible(\textcolor{keyword}{false});}
+\DoxyCodeLine{88     \}}
+
+\end{DoxyCode}
+
+
+Referenciado por gui.\+Create\+Event\+G\+U\+I.\+Create\+Event\+G\+U\+I().
+
+\mbox{\Hypertarget{classgui_1_1CreateEventGUI_a2a70eddae15216e91c11a7c909e3217a}\label{classgui_1_1CreateEventGUI_a2a70eddae15216e91c11a7c909e3217a}} 
+\index{gui.CreateEventGUI@{gui.CreateEventGUI}!trim@{trim}}
+\index{trim@{trim}!gui.CreateEventGUI@{gui.CreateEventGUI}}
+\subsubsection{\texorpdfstring{trim()}{trim()}}
+{\footnotesize\ttfamily Date gui.\+Create\+Event\+G\+U\+I.\+trim (\begin{DoxyParamCaption}\item[{Date}]{date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 98 del archivo Create\+Event\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{98                                    \{}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100           Calendar \mbox{\hyperlink{classgui_1_1CreateEventGUI_a27bb4d6170bc03fe771e186664b860aa}{calendar}} = Calendar.getInstance();}
+\DoxyCodeLine{101           \mbox{\hyperlink{classgui_1_1CreateEventGUI_a27bb4d6170bc03fe771e186664b860aa}{calendar}}.setTime(date);}
+\DoxyCodeLine{102           \mbox{\hyperlink{classgui_1_1CreateEventGUI_a27bb4d6170bc03fe771e186664b860aa}{calendar}}.set(Calendar.MILLISECOND, 0);}
+\DoxyCodeLine{103           \mbox{\hyperlink{classgui_1_1CreateEventGUI_a27bb4d6170bc03fe771e186664b860aa}{calendar}}.set(Calendar.SECOND, 0);}
+\DoxyCodeLine{104           \mbox{\hyperlink{classgui_1_1CreateEventGUI_a27bb4d6170bc03fe771e186664b860aa}{calendar}}.set(Calendar.MINUTE, 0);}
+\DoxyCodeLine{105           \mbox{\hyperlink{classgui_1_1CreateEventGUI_a27bb4d6170bc03fe771e186664b860aa}{calendar}}.set(Calendar.HOUR\_OF\_DAY, 0);}
+\DoxyCodeLine{106           \textcolor{keywordflow}{return} \mbox{\hyperlink{classgui_1_1CreateEventGUI_a27bb4d6170bc03fe771e186664b860aa}{calendar}}.getTime();}
+\DoxyCodeLine{107       \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a gui.\+Create\+Event\+G\+U\+I.\+calendar.
+
+
+
+Referenciado por gui.\+Create\+Event\+G\+U\+I.\+Create\+Event\+G\+U\+I().
+
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classgui_1_1CreateEventGUI_ac17ddd8a0373665374aa7f174b3ccd48}\label{classgui_1_1CreateEventGUI_ac17ddd8a0373665374aa7f174b3ccd48}} 
+\index{gui.CreateEventGUI@{gui.CreateEventGUI}!bussinesLogic@{bussinesLogic}}
+\index{bussinesLogic@{bussinesLogic}!gui.CreateEventGUI@{gui.CreateEventGUI}}
+\subsubsection{\texorpdfstring{bussinesLogic}{bussinesLogic}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classdataAccess_1_1DataAccess}{Data\+Access}} gui.\+Create\+Event\+G\+U\+I.\+bussines\+Logic\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 25 del archivo Create\+Event\+G\+U\+I.\+java.
+
+\mbox{\Hypertarget{classgui_1_1CreateEventGUI_a27bb4d6170bc03fe771e186664b860aa}\label{classgui_1_1CreateEventGUI_a27bb4d6170bc03fe771e186664b860aa}} 
+\index{gui.CreateEventGUI@{gui.CreateEventGUI}!calendar@{calendar}}
+\index{calendar@{calendar}!gui.CreateEventGUI@{gui.CreateEventGUI}}
+\subsubsection{\texorpdfstring{calendar}{calendar}}
+{\footnotesize\ttfamily J\+Calendar gui.\+Create\+Event\+G\+U\+I.\+calendar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 26 del archivo Create\+Event\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Create\+Event\+G\+U\+I.\+Create\+Event\+G\+U\+I() y gui.\+Create\+Event\+G\+U\+I.\+trim().
+
+\mbox{\Hypertarget{classgui_1_1CreateEventGUI_a45ab76afdfd93dac6437dc24b99abf34}\label{classgui_1_1CreateEventGUI_a45ab76afdfd93dac6437dc24b99abf34}} 
+\index{gui.CreateEventGUI@{gui.CreateEventGUI}!lblEventoCreado@{lblEventoCreado}}
+\index{lblEventoCreado@{lblEventoCreado}!gui.CreateEventGUI@{gui.CreateEventGUI}}
+\subsubsection{\texorpdfstring{lblEventoCreado}{lblEventoCreado}}
+{\footnotesize\ttfamily J\+Label gui.\+Create\+Event\+G\+U\+I.\+lbl\+Evento\+Creado\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 27 del archivo Create\+Event\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Create\+Event\+G\+U\+I.\+Create\+Event\+G\+U\+I().
+
+\mbox{\Hypertarget{classgui_1_1CreateEventGUI_a7500da1a45bd490e612ff33bfb91592b}\label{classgui_1_1CreateEventGUI_a7500da1a45bd490e612ff33bfb91592b}} 
+\index{gui.CreateEventGUI@{gui.CreateEventGUI}!textFieldEventDesc@{textFieldEventDesc}}
+\index{textFieldEventDesc@{textFieldEventDesc}!gui.CreateEventGUI@{gui.CreateEventGUI}}
+\subsubsection{\texorpdfstring{textFieldEventDesc}{textFieldEventDesc}}
+{\footnotesize\ttfamily J\+Text\+Field gui.\+Create\+Event\+G\+U\+I.\+text\+Field\+Event\+Desc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 24 del archivo Create\+Event\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Create\+Event\+G\+U\+I.\+Create\+Event\+G\+U\+I().
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+src/gui/\mbox{\hyperlink{CreateEventGUI_8java}{Create\+Event\+G\+U\+I.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,27 @@
+var classdomain_1_1Question =
+[
+    [ "Question", "classdomain_1_1Question.html#ad025aa3764e207e64c6f5b5e09976af3", null ],
+    [ "Question", "classdomain_1_1Question.html#ac026fc0206761497b2b1827a1b4ff1ce", null ],
+    [ "Question", "classdomain_1_1Question.html#a724bb2ee772f7f1050ddbed1a4b6bd74", null ],
+    [ "Question", "classdomain_1_1Question.html#a3e1f15538bc3f7b204e0e80cf9079d6d", null ],
+    [ "Question", "classdomain_1_1Question.html#a92286f88946d50c5dfb61ce54c155462", null ],
+    [ "getBetMinimum", "classdomain_1_1Question.html#af19b6e4550cb22d52e44b3fe9fe4e62a", null ],
+    [ "getCuota", "classdomain_1_1Question.html#ac4679028e21545e9d342c6dfbb4e7273", null ],
+    [ "getEvent", "classdomain_1_1Question.html#a79d1d7cbea1d099aef2e77f4d338c17f", null ],
+    [ "getQuestion", "classdomain_1_1Question.html#a59bf69a5982ce79e89599ffe17c89790", null ],
+    [ "getQuestionNumber", "classdomain_1_1Question.html#a5d70fcb8f2e33df7bf9f64114ec18d50", null ],
+    [ "getResult", "classdomain_1_1Question.html#a608b5afe5363593b9e1c2e2db929346d", null ],
+    [ "setBetMinimum", "classdomain_1_1Question.html#a66ef61fd241c1ee6dbb8ea9ce14ae9ce", null ],
+    [ "setCuota", "classdomain_1_1Question.html#a2025d578b6bfb29a5cc5f511eedaad3e", null ],
+    [ "setEvent", "classdomain_1_1Question.html#aeef540c71cd56151c4bd3b9d1aab5dd4", null ],
+    [ "setQuestion", "classdomain_1_1Question.html#a612ee55b9eac9032980063ddb1119eee", null ],
+    [ "setQuestionNumber", "classdomain_1_1Question.html#a15eb1f8e8b06528ef1b27fcca4712ef8", null ],
+    [ "setResult", "classdomain_1_1Question.html#a22d08940b4ce10963bb93d7c3017d458", null ],
+    [ "toString", "classdomain_1_1Question.html#a3a94b2446ffde13851ce20b42199454e", null ],
+    [ "betMinimum", "classdomain_1_1Question.html#a24ff305bdbaca1ac5ea5263f8f9be7d2", null ],
+    [ "cuota", "classdomain_1_1Question.html#a532249286ab9f5f211a030892bcd6756", null ],
+    [ "event", "classdomain_1_1Question.html#a375d8735a06d8a8b12fe643bb31f4c14", null ],
+    [ "question", "classdomain_1_1Question.html#a3f1c6038e83e09658df60eed71e5deb4", null ],
+    [ "questionNumber", "classdomain_1_1Question.html#a0570239b13202e004eef891b49db538e", null ],
+    [ "result", "classdomain_1_1Question.html#a74d098c940c1c91c8f37fd9288ebd3d3", null ]
+];

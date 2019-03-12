@@ -1,0 +1,233 @@
+\hypertarget{classbusinessLogic_1_1BusinessLogicServer}{}\section{Referencia de la Clase business\+Logic.\+Business\+Logic\+Server}
+\label{classbusinessLogic_1_1BusinessLogicServer}\index{businessLogic.BusinessLogicServer@{businessLogic.BusinessLogicServer}}
+Diagrama de herencias de business\+Logic.\+Business\+Logic\+Server\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classbusinessLogic_1_1BusinessLogicServer}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServer_a45e022d6b8b68567423caab4157e2784}{Business\+Logic\+Server}} ()
+\end{DoxyCompactItemize}
+\subsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServer_a978c1596ce77baed488f137fc96a4fe8}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+\subsection*{Atributos del \textquotesingle{}package\textquotesingle{}}
+\begin{DoxyCompactItemize}
+\item 
+J\+Text\+Area \mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServer_aec137250843e53f480cd28952ca4afd7}{text\+Area}}
+\item 
+\mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade}{B\+L\+Facade}} \mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServer_a4bc852beb0c0d3ba3f9115173594bd9e}{server}}
+\item 
+String \mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServer_a474037df64d451baf01fcb6f582cde2a}{service}}
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+final J\+Panel \mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServer_a0893f28ccaea8b86f7fe942c6ea3e126}{content\+Panel}} = new J\+Panel()
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+It runs the business logic server as a separate process. 
+
+Definición en la línea 29 del archivo Business\+Logic\+Server.\+java.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classbusinessLogic_1_1BusinessLogicServer_a45e022d6b8b68567423caab4157e2784}\label{classbusinessLogic_1_1BusinessLogicServer_a45e022d6b8b68567423caab4157e2784}} 
+\index{businessLogic.BusinessLogicServer@{businessLogic.BusinessLogicServer}!BusinessLogicServer@{BusinessLogicServer}}
+\index{BusinessLogicServer@{BusinessLogicServer}!businessLogic.BusinessLogicServer@{businessLogic.BusinessLogicServer}}
+\subsubsection{\texorpdfstring{BusinessLogicServer()}{BusinessLogicServer()}}
+{\footnotesize\ttfamily business\+Logic.\+Business\+Logic\+Server.\+Business\+Logic\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 47 del archivo Business\+Logic\+Server.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47                                  \{}
+\DoxyCodeLine{48         addWindowListener(\textcolor{keyword}{new} WindowAdapter() \{}
+\DoxyCodeLine{49             @Override}
+\DoxyCodeLine{50             \textcolor{keyword}{public} \textcolor{keywordtype}{void} windowClosed(WindowEvent arg0) \{}
+\DoxyCodeLine{51                 System.exit(1);}
+\DoxyCodeLine{52             \}}
+\DoxyCodeLine{53         \});}
+\DoxyCodeLine{54         setTitle(\textcolor{stringliteral}{"BusinessLogicServer: running the business logic"});}
+\DoxyCodeLine{55         setBounds(100, 100, 486, 209);}
+\DoxyCodeLine{56         getContentPane().setLayout(\textcolor{keyword}{new} BorderLayout());}
+\DoxyCodeLine{57         \mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServer_a0893f28ccaea8b86f7fe942c6ea3e126}{contentPanel}}.setBorder(\textcolor{keyword}{new} EmptyBorder(5, 5, 5, 5));}
+\DoxyCodeLine{58         getContentPane().add(\mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServer_a0893f28ccaea8b86f7fe942c6ea3e126}{contentPanel}}, BorderLayout.CENTER);}
+\DoxyCodeLine{59         \mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServer_a0893f28ccaea8b86f7fe942c6ea3e126}{contentPanel}}.setLayout(\textcolor{keyword}{new} BorderLayout(0, 0));}
+\DoxyCodeLine{60         \{}
+\DoxyCodeLine{61             \mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServer_aec137250843e53f480cd28952ca4afd7}{textArea}} = \textcolor{keyword}{new} JTextArea();}
+\DoxyCodeLine{62             \mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServer_a0893f28ccaea8b86f7fe942c6ea3e126}{contentPanel}}.add(\mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServer_aec137250843e53f480cd28952ca4afd7}{textArea}});}
+\DoxyCodeLine{63         \}}
+\DoxyCodeLine{64         \{}
+\DoxyCodeLine{65             JPanel buttonPane = \textcolor{keyword}{new} JPanel();}
+\DoxyCodeLine{66             buttonPane.setLayout(\textcolor{keyword}{new} FlowLayout(FlowLayout.RIGHT));}
+\DoxyCodeLine{67             getContentPane().add(buttonPane, BorderLayout.SOUTH);}
+\DoxyCodeLine{68             \{}
+\DoxyCodeLine{69                 JButton okButton = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"OK"});}
+\DoxyCodeLine{70                 okButton.addActionListener(\textcolor{keyword}{new} ActionListener() \{}
+\DoxyCodeLine{71                     \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{}
+\DoxyCodeLine{72                         \mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServer_aec137250843e53f480cd28952ca4afd7}{textArea}}.append(\textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)n\(\backslash\)nClosing the server... "});}
+\DoxyCodeLine{73                         }
+\DoxyCodeLine{74                             \textcolor{comment}{//server.close();}}
+\DoxyCodeLine{75                         }
+\DoxyCodeLine{76                         System.exit(1);}
+\DoxyCodeLine{77                     \}}
+\DoxyCodeLine{78                 \});}
+\DoxyCodeLine{79                 okButton.setActionCommand(\textcolor{stringliteral}{"OK"});}
+\DoxyCodeLine{80                 buttonPane.add(okButton);}
+\DoxyCodeLine{81                 getRootPane().setDefaultButton(okButton);}
+\DoxyCodeLine{82             \}}
+\DoxyCodeLine{83             \{}
+\DoxyCodeLine{84                 JButton cancelButton = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"Cancel"});}
+\DoxyCodeLine{85                 cancelButton.setActionCommand(\textcolor{stringliteral}{"Cancel"});}
+\DoxyCodeLine{86                 buttonPane.add(cancelButton);}
+\DoxyCodeLine{87             \}}
+\DoxyCodeLine{88         \}}
+\DoxyCodeLine{89         }
+\DoxyCodeLine{90         ConfigXML c=ConfigXML.getInstance();}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92         \textcolor{keywordflow}{if} (c.isBusinessLogicLocal()) \{}
+\DoxyCodeLine{93             \mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServer_aec137250843e53f480cd28952ca4afd7}{textArea}}.append(\textcolor{stringliteral}{"\(\backslash\)nERROR, the business logic is configured as local"});}
+\DoxyCodeLine{94         \}}
+\DoxyCodeLine{95         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{96         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98             \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{99                 }
+\DoxyCodeLine{100                 \textcolor{keywordflow}{if} (!c.isDatabaseLocal()) \{}
+\DoxyCodeLine{101                     System.out.println(\textcolor{stringliteral}{"\(\backslash\)nWARNING: Please be sure ObjectdbManagerServer is launched\(\backslash\)n           in machine: "}+c.getDatabaseNode()+\textcolor{stringliteral}{" port: "}+c.getDatabasePort()+\textcolor{stringliteral}{"\(\backslash\)n"});  }
+\DoxyCodeLine{102                 \}}
+\DoxyCodeLine{103                 }
+\DoxyCodeLine{104                 \mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServer_a474037df64d451baf01fcb6f582cde2a}{service}}= \textcolor{stringliteral}{"http://"}+c.getBusinessLogicNode() +\textcolor{stringliteral}{":"}+ c.getBusinessLogicPort()+\textcolor{stringliteral}{"/ws/"}+c.getBusinessLogicName();}
+\DoxyCodeLine{105                 }
+\DoxyCodeLine{106                 Endpoint.publish(\mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServer_a474037df64d451baf01fcb6f582cde2a}{service}}, \textcolor{keyword}{new} BLFacadeImplementation());}
+\DoxyCodeLine{107                 }
+\DoxyCodeLine{108                 }
+\DoxyCodeLine{109             \}}
+\DoxyCodeLine{110             \textcolor{keywordflow}{catch} (Exception e) \{}
+\DoxyCodeLine{111                 System.out.println(\textcolor{stringliteral}{"Error in BusinessLogicServer: "}+e.toString());}
+\DoxyCodeLine{112                 \mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServer_aec137250843e53f480cd28952ca4afd7}{textArea}}.append(\textcolor{stringliteral}{"\(\backslash\)nYou should have not launched DBManagerServer...\(\backslash\)n"});}
+\DoxyCodeLine{113                 \mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServer_aec137250843e53f480cd28952ca4afd7}{textArea}}.append(\textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)nOr maybe there is a BusinessLogicServer already launched...\(\backslash\)n"});}
+\DoxyCodeLine{114                 \textcolor{keywordflow}{throw} e;}
+\DoxyCodeLine{115             \}}
+\DoxyCodeLine{116             }
+\DoxyCodeLine{117             \mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServer_aec137250843e53f480cd28952ca4afd7}{textArea}}.append(\textcolor{stringliteral}{"Running service at:\(\backslash\)n\(\backslash\)t"} + \mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServer_a474037df64d451baf01fcb6f582cde2a}{service}});}
+\DoxyCodeLine{118             \mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServer_aec137250843e53f480cd28952ca4afd7}{textArea}}.append(\textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)n\(\backslash\)nPress button to exit this server... "});}
+\DoxyCodeLine{119             }
+\DoxyCodeLine{120           \} \textcolor{keywordflow}{catch} (Exception e) \{}
+\DoxyCodeLine{121             \mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServer_aec137250843e53f480cd28952ca4afd7}{textArea}}.append(e.toString());}
+\DoxyCodeLine{122           \}}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124       \}}
+\DoxyCodeLine{125     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a business\+Logic.\+Business\+Logic\+Server.\+content\+Panel, configuration.\+Config\+X\+M\+L.\+get\+Business\+Logic\+Name(), configuration.\+Config\+X\+M\+L.\+get\+Business\+Logic\+Node(), configuration.\+Config\+X\+M\+L.\+get\+Business\+Logic\+Port(), configuration.\+Config\+X\+M\+L.\+get\+Database\+Node(), configuration.\+Config\+X\+M\+L.\+get\+Database\+Port(), configuration.\+Config\+X\+M\+L.\+get\+Instance(), configuration.\+Config\+X\+M\+L.\+is\+Business\+Logic\+Local(), configuration.\+Config\+X\+M\+L.\+is\+Database\+Local(), business\+Logic.\+Business\+Logic\+Server.\+service y business\+Logic.\+Business\+Logic\+Server.\+text\+Area.
+
+
+
+Referenciado por business\+Logic.\+Business\+Logic\+Server.\+main().
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classbusinessLogic_1_1BusinessLogicServer_a978c1596ce77baed488f137fc96a4fe8}\label{classbusinessLogic_1_1BusinessLogicServer_a978c1596ce77baed488f137fc96a4fe8}} 
+\index{businessLogic.BusinessLogicServer@{businessLogic.BusinessLogicServer}!main@{main}}
+\index{main@{main}!businessLogic.BusinessLogicServer@{businessLogic.BusinessLogicServer}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void business\+Logic.\+Business\+Logic\+Server.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definición en la línea 36 del archivo Business\+Logic\+Server.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{36                                            \{}
+\DoxyCodeLine{37         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{38             \mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServer_a45e022d6b8b68567423caab4157e2784}{BusinessLogicServer}} dialog = \textcolor{keyword}{new} \mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServer_a45e022d6b8b68567423caab4157e2784}{BusinessLogicServer}}();}
+\DoxyCodeLine{39             dialog.setDefaultCloseOperation(JDialog.DISPOSE\_ON\_CLOSE);}
+\DoxyCodeLine{40             dialog.setVisible(\textcolor{keyword}{true});}
+\DoxyCodeLine{41         \} \textcolor{keywordflow}{catch} (Exception e) \{}
+\DoxyCodeLine{42             e.printStackTrace();}
+\DoxyCodeLine{43         \}}
+\DoxyCodeLine{44     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a business\+Logic.\+Business\+Logic\+Server.\+Business\+Logic\+Server().
+
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classbusinessLogic_1_1BusinessLogicServer_a0893f28ccaea8b86f7fe942c6ea3e126}\label{classbusinessLogic_1_1BusinessLogicServer_a0893f28ccaea8b86f7fe942c6ea3e126}} 
+\index{businessLogic.BusinessLogicServer@{businessLogic.BusinessLogicServer}!contentPanel@{contentPanel}}
+\index{contentPanel@{contentPanel}!businessLogic.BusinessLogicServer@{businessLogic.BusinessLogicServer}}
+\subsubsection{\texorpdfstring{contentPanel}{contentPanel}}
+{\footnotesize\ttfamily final J\+Panel business\+Logic.\+Business\+Logic\+Server.\+content\+Panel = new J\+Panel()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 31 del archivo Business\+Logic\+Server.\+java.
+
+
+
+Referenciado por business\+Logic.\+Business\+Logic\+Server.\+Business\+Logic\+Server().
+
+\mbox{\Hypertarget{classbusinessLogic_1_1BusinessLogicServer_a4bc852beb0c0d3ba3f9115173594bd9e}\label{classbusinessLogic_1_1BusinessLogicServer_a4bc852beb0c0d3ba3f9115173594bd9e}} 
+\index{businessLogic.BusinessLogicServer@{businessLogic.BusinessLogicServer}!server@{server}}
+\index{server@{server}!businessLogic.BusinessLogicServer@{businessLogic.BusinessLogicServer}}
+\subsubsection{\texorpdfstring{server}{server}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade}{B\+L\+Facade}} business\+Logic.\+Business\+Logic\+Server.\+server\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+Definición en la línea 33 del archivo Business\+Logic\+Server.\+java.
+
+\mbox{\Hypertarget{classbusinessLogic_1_1BusinessLogicServer_a474037df64d451baf01fcb6f582cde2a}\label{classbusinessLogic_1_1BusinessLogicServer_a474037df64d451baf01fcb6f582cde2a}} 
+\index{businessLogic.BusinessLogicServer@{businessLogic.BusinessLogicServer}!service@{service}}
+\index{service@{service}!businessLogic.BusinessLogicServer@{businessLogic.BusinessLogicServer}}
+\subsubsection{\texorpdfstring{service}{service}}
+{\footnotesize\ttfamily String business\+Logic.\+Business\+Logic\+Server.\+service\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+Definición en la línea 34 del archivo Business\+Logic\+Server.\+java.
+
+
+
+Referenciado por business\+Logic.\+Business\+Logic\+Server.\+Business\+Logic\+Server().
+
+\mbox{\Hypertarget{classbusinessLogic_1_1BusinessLogicServer_aec137250843e53f480cd28952ca4afd7}\label{classbusinessLogic_1_1BusinessLogicServer_aec137250843e53f480cd28952ca4afd7}} 
+\index{businessLogic.BusinessLogicServer@{businessLogic.BusinessLogicServer}!textArea@{textArea}}
+\index{textArea@{textArea}!businessLogic.BusinessLogicServer@{businessLogic.BusinessLogicServer}}
+\subsubsection{\texorpdfstring{textArea}{textArea}}
+{\footnotesize\ttfamily J\+Text\+Area business\+Logic.\+Business\+Logic\+Server.\+text\+Area\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+Definición en la línea 32 del archivo Business\+Logic\+Server.\+java.
+
+
+
+Referenciado por business\+Logic.\+Business\+Logic\+Server.\+Business\+Logic\+Server().
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+src/business\+Logic/\mbox{\hyperlink{BusinessLogicServer_8java}{Business\+Logic\+Server.\+java}}\end{DoxyCompactItemize}

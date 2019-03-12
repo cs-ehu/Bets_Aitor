@@ -1,0 +1,392 @@
+\hypertarget{classgui_1_1MainGUI}{}\section{Referencia de la Clase gui.\+Main\+G\+UI}
+\label{classgui_1_1MainGUI}\index{gui.MainGUI@{gui.MainGUI}}
+Diagrama de herencias de gui.\+Main\+G\+UI\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgui_1_1MainGUI}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgui_1_1MainGUI_a6968ef45452fe10bd544a46d6e099c32}{Main\+G\+UI}} ()
+\end{DoxyCompactItemize}
+\subsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade}{B\+L\+Facade}} \mbox{\hyperlink{classgui_1_1MainGUI_a6bf91459a9057be4e59d27595cc65c79}{get\+Business\+Logic}} ()
+\item 
+static void \mbox{\hyperlink{classgui_1_1MainGUI_af7625125ee61bf5c18af79c7f356a346}{set\+Bussiness\+Logic}} (\mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade}{B\+L\+Facade}} afi)
+\end{DoxyCompactItemize}
+\subsection*{Atributos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+J\+Label \mbox{\hyperlink{classgui_1_1MainGUI_a8e1428e62a631616aefdafe08773cb96}{j\+Label\+Iniciar\+Sesion}}
+\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classgui_1_1MainGUI_a2659b4cdf4e94d6ffc332f16afc46462}{initialize}} ()
+\item 
+J\+Panel \mbox{\hyperlink{classgui_1_1MainGUI_ae3ce89a59dcf27273ec658ee42cd61b8}{get\+J\+Content\+Pane}} ()
+\item 
+J\+Label \mbox{\hyperlink{classgui_1_1MainGUI_a77a13e7a135020c180cec4b1d73a9cd9}{get\+Lbl\+New\+Label}} ()
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+J\+Panel \mbox{\hyperlink{classgui_1_1MainGUI_a06836509371b16181fdff6732938b7d3}{j\+Content\+Pane}} = null
+\item 
+J\+Text\+Field \mbox{\hyperlink{classgui_1_1MainGUI_a55b77c52b8af8b275ac73bb0965ed2f1}{text\+Field\+Usuario}}
+\item 
+J\+Password\+Field \mbox{\hyperlink{classgui_1_1MainGUI_a61d033008de636b7bec5658cdebe8fd3}{password\+Field}}
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static final long \mbox{\hyperlink{classgui_1_1MainGUI_a75dfef8d845a0c8de7a6476c7f7d35e1}{serial\+Version\+U\+ID}} = 1L
+\item 
+static \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade}{B\+L\+Facade}} \mbox{\hyperlink{classgui_1_1MainGUI_ab98521baef1c320483057345b5546d8d}{app\+Facade\+Interface}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+Definición en la línea 28 del archivo Main\+G\+U\+I.\+java.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classgui_1_1MainGUI_a6968ef45452fe10bd544a46d6e099c32}\label{classgui_1_1MainGUI_a6968ef45452fe10bd544a46d6e099c32}} 
+\index{gui.MainGUI@{gui.MainGUI}!MainGUI@{MainGUI}}
+\index{MainGUI@{MainGUI}!gui.MainGUI@{gui.MainGUI}}
+\subsubsection{\texorpdfstring{MainGUI()}{MainGUI()}}
+{\footnotesize\ttfamily gui.\+Main\+G\+U\+I.\+Main\+G\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This is the default constructor 
+
+Definición en la línea 50 del archivo Main\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50                      \{}
+\DoxyCodeLine{51         super();}
+\DoxyCodeLine{52         }
+\DoxyCodeLine{53         addWindowListener(\textcolor{keyword}{new} WindowAdapter() \{}
+\DoxyCodeLine{54             @Override}
+\DoxyCodeLine{55             \textcolor{keyword}{public} \textcolor{keywordtype}{void} windowClosing(WindowEvent e) \{}
+\DoxyCodeLine{56                 \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{57                     \textcolor{comment}{//if (ConfigXML.getInstance().isBusinessLogicLocal()) facade.close();}}
+\DoxyCodeLine{58                 \} \textcolor{keywordflow}{catch} (Exception e1) \{}
+\DoxyCodeLine{59                     \textcolor{comment}{// TODO Auto-generated catch block}}
+\DoxyCodeLine{60                     System.out.println(\textcolor{stringliteral}{"Error: "}+e1.toString()+\textcolor{stringliteral}{" , probably problems with Business Logic or Database"});}
+\DoxyCodeLine{61                 \}}
+\DoxyCodeLine{62                 System.exit(1);}
+\DoxyCodeLine{63             \}}
+\DoxyCodeLine{64         \});}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66         \mbox{\hyperlink{classgui_1_1MainGUI_a2659b4cdf4e94d6ffc332f16afc46462}{initialize}}();}
+\DoxyCodeLine{67         \textcolor{comment}{//this.setDefaultCloseOperation(JFrame.EXIT\_ON\_CLOSE);}}
+\DoxyCodeLine{68     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a gui.\+Main\+G\+U\+I.\+initialize().
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classgui_1_1MainGUI_a6bf91459a9057be4e59d27595cc65c79}\label{classgui_1_1MainGUI_a6bf91459a9057be4e59d27595cc65c79}} 
+\index{gui.MainGUI@{gui.MainGUI}!getBusinessLogic@{getBusinessLogic}}
+\index{getBusinessLogic@{getBusinessLogic}!gui.MainGUI@{gui.MainGUI}}
+\subsubsection{\texorpdfstring{getBusinessLogic()}{getBusinessLogic()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade}{B\+L\+Facade}} gui.\+Main\+G\+U\+I.\+get\+Business\+Logic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definición en la línea 36 del archivo Main\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{36                                              \{}
+\DoxyCodeLine{37         \textcolor{keywordflow}{return} \mbox{\hyperlink{classgui_1_1MainGUI_ab98521baef1c320483057345b5546d8d}{appFacadeInterface}};}
+\DoxyCodeLine{38     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a gui.\+Main\+G\+U\+I.\+app\+Facade\+Interface.
+
+
+
+Referenciado por gui.\+Admin\+Main\+Page\+G\+U\+I.\+Admin\+Main\+Page\+G\+U\+I(), gui.\+Balance\+G\+U\+I.\+Balance\+G\+U\+I(), gui.\+Create\+Event\+G\+U\+I.\+Create\+Event\+G\+U\+I(), gui.\+Create\+User\+G\+U\+I.\+Create\+User\+G\+U\+I(), gui.\+Main\+G\+U\+I.\+get\+J\+Content\+Pane(), gui.\+Historial\+De\+Apuestas\+G\+U\+I2.\+Historial\+De\+Apuestas\+G\+U\+I2(), gui.\+Find\+Questions\+G\+U\+I.\+jb\+Init(), gui.\+Apuesta\+G\+U\+I.\+jb\+Init(), gui.\+Create\+Question\+G\+U\+I.\+jb\+Init(), gui.\+Create\+Question\+G\+U\+I.\+j\+Button\+Create\+\_\+action\+Performed(), gui.\+Meter\+Resultados\+G\+U\+I.\+Meter\+Resultados\+G\+U\+I(), gui.\+Mis\+Apuestas\+G\+U\+I.\+Mis\+Apuestas\+G\+U\+I(), gui.\+Create\+Question\+G\+U\+I.\+paint\+Days\+With\+Events() y gui.\+User\+Main\+Page\+G\+U\+I.\+User\+Main\+Page\+G\+U\+I().
+
+\mbox{\Hypertarget{classgui_1_1MainGUI_ae3ce89a59dcf27273ec658ee42cd61b8}\label{classgui_1_1MainGUI_ae3ce89a59dcf27273ec658ee42cd61b8}} 
+\index{gui.MainGUI@{gui.MainGUI}!getJContentPane@{getJContentPane}}
+\index{getJContentPane@{getJContentPane}!gui.MainGUI@{gui.MainGUI}}
+\subsubsection{\texorpdfstring{getJContentPane()}{getJContentPane()}}
+{\footnotesize\ttfamily J\+Panel gui.\+Main\+G\+U\+I.\+get\+J\+Content\+Pane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+This method initializes j\+Content\+Pane
+
+\begin{DoxyReturn}{Devuelve}
+javax.\+swing.\+J\+Panel 
+\end{DoxyReturn}
+
+
+Definición en la línea 89 del archivo Main\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{89                                      \{}
+\DoxyCodeLine{90         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classgui_1_1MainGUI_a06836509371b16181fdff6732938b7d3}{jContentPane}} == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{91             \mbox{\hyperlink{classgui_1_1MainGUI_a06836509371b16181fdff6732938b7d3}{jContentPane}} = \textcolor{keyword}{new} JPanel();}
+\DoxyCodeLine{92             \mbox{\hyperlink{classgui_1_1MainGUI_a06836509371b16181fdff6732938b7d3}{jContentPane}}.setLayout(\textcolor{keyword}{null});}
+\DoxyCodeLine{93             \mbox{\hyperlink{classgui_1_1MainGUI_a06836509371b16181fdff6732938b7d3}{jContentPane}}.add(\mbox{\hyperlink{classgui_1_1MainGUI_a77a13e7a135020c180cec4b1d73a9cd9}{getLblNewLabel}}());}
+\DoxyCodeLine{94             }
+\DoxyCodeLine{95             \mbox{\hyperlink{classgui_1_1MainGUI_a55b77c52b8af8b275ac73bb0965ed2f1}{textFieldUsuario}} = \textcolor{keyword}{new} JTextField();}
+\DoxyCodeLine{96             \mbox{\hyperlink{classgui_1_1MainGUI_a55b77c52b8af8b275ac73bb0965ed2f1}{textFieldUsuario}}.setBounds(154, 71, 202, 27);}
+\DoxyCodeLine{97             \mbox{\hyperlink{classgui_1_1MainGUI_a06836509371b16181fdff6732938b7d3}{jContentPane}}.add(\mbox{\hyperlink{classgui_1_1MainGUI_a55b77c52b8af8b275ac73bb0965ed2f1}{textFieldUsuario}});}
+\DoxyCodeLine{98             \mbox{\hyperlink{classgui_1_1MainGUI_a55b77c52b8af8b275ac73bb0965ed2f1}{textFieldUsuario}}.setColumns(10);}
+\DoxyCodeLine{99             }
+\DoxyCodeLine{100             JLabel lblUsuario = \textcolor{keyword}{new} JLabel(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"lblUsuario"})); \textcolor{comment}{//\$NON-NLS-1\$ //\$NON-NLS-2\$}}
+\DoxyCodeLine{101             lblUsuario.setBounds(52, 74, 92, 21);}
+\DoxyCodeLine{102             \mbox{\hyperlink{classgui_1_1MainGUI_a06836509371b16181fdff6732938b7d3}{jContentPane}}.add(lblUsuario);}
+\DoxyCodeLine{103             }
+\DoxyCodeLine{104             JLabel lblContrasea = \textcolor{keyword}{new} JLabel(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"lblContrasea"})); \textcolor{comment}{//\$NON-NLS-1\$ //\$NON-NLS-2\$}}
+\DoxyCodeLine{105             lblContrasea.setBounds(52, 125, 92, 21);}
+\DoxyCodeLine{106             \mbox{\hyperlink{classgui_1_1MainGUI_a06836509371b16181fdff6732938b7d3}{jContentPane}}.add(lblContrasea);}
+\DoxyCodeLine{107             }
+\DoxyCodeLine{108             JButton btnIniciarSesin = \textcolor{keyword}{new} JButton(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"btnIniciarSesin"})); \textcolor{comment}{//\$NON-NLS-1\$ //\$NON-NLS-2\$}}
+\DoxyCodeLine{109             btnIniciarSesin.addActionListener(\textcolor{keyword}{new} ActionListener() \{}
+\DoxyCodeLine{110                 \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{}
+\DoxyCodeLine{111                     BLFacade facade=\mbox{\hyperlink{classgui_1_1MainGUI_a6968ef45452fe10bd544a46d6e099c32}{MainGUI}}.getBusinessLogic();}
+\DoxyCodeLine{112                     String name = \mbox{\hyperlink{classgui_1_1MainGUI_a55b77c52b8af8b275ac73bb0965ed2f1}{textFieldUsuario}}.getText();}
+\DoxyCodeLine{113                     String contra = String.valueOf(\mbox{\hyperlink{classgui_1_1MainGUI_a61d033008de636b7bec5658cdebe8fd3}{passwordField}}.getPassword());}
+\DoxyCodeLine{114                     \textcolor{keywordflow}{if} (name.length()==0 || contra.length()==0) \{}
+\DoxyCodeLine{115                         System.out.println(\textcolor{stringliteral}{"Falta usuario o contraseña"});}
+\DoxyCodeLine{116                     \}\textcolor{keywordflow}{else} \{                     }
+\DoxyCodeLine{117                         \textcolor{keywordflow}{if} (facade.Login(name, contra)) \{}
+\DoxyCodeLine{118                             \textcolor{keywordflow}{if} (facade.EsAdmin(name, contra)) \{}
+\DoxyCodeLine{119                                 AdminMainPageGUI a = \textcolor{keyword}{new} AdminMainPageGUI();}
+\DoxyCodeLine{120                                 a.setVisible(\textcolor{keyword}{true});}
+\DoxyCodeLine{121                             \}\textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{122                                 UserMainPageGUI a = \textcolor{keyword}{new} UserMainPageGUI(name);}
+\DoxyCodeLine{123                                 a.setVisible(\textcolor{keyword}{true});}
+\DoxyCodeLine{124                             \}}
+\DoxyCodeLine{125                         \}\textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{126                             System.out.println(\textcolor{stringliteral}{"usuario o contraseña mal"});}
+\DoxyCodeLine{127                         \}}
+\DoxyCodeLine{128                     \}}
+\DoxyCodeLine{129                 \}}
+\DoxyCodeLine{130             \});}
+\DoxyCodeLine{131             btnIniciarSesin.setBounds(55, 183, 166, 27);}
+\DoxyCodeLine{132             \mbox{\hyperlink{classgui_1_1MainGUI_a06836509371b16181fdff6732938b7d3}{jContentPane}}.add(btnIniciarSesin);}
+\DoxyCodeLine{133             }
+\DoxyCodeLine{134             JButton btnRegistrarse = \textcolor{keyword}{new} JButton(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"btnRegistrarse"})); \textcolor{comment}{//\$NON-NLS-1\$ //\$NON-NLS-2\$}}
+\DoxyCodeLine{135             btnRegistrarse.addActionListener(\textcolor{keyword}{new} ActionListener() \{}
+\DoxyCodeLine{136                 \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{}
+\DoxyCodeLine{137                     CreateUserGUI a = \textcolor{keyword}{new} CreateUserGUI();}
+\DoxyCodeLine{138                     a.setVisible(\textcolor{keyword}{true});}
+\DoxyCodeLine{139                 \}}
+\DoxyCodeLine{140             \});}
+\DoxyCodeLine{141             btnRegistrarse.setBounds(254, 183, 166, 27);}
+\DoxyCodeLine{142             \mbox{\hyperlink{classgui_1_1MainGUI_a06836509371b16181fdff6732938b7d3}{jContentPane}}.add(btnRegistrarse);}
+\DoxyCodeLine{143             }
+\DoxyCodeLine{144             \mbox{\hyperlink{classgui_1_1MainGUI_a61d033008de636b7bec5658cdebe8fd3}{passwordField}} = \textcolor{keyword}{new} JPasswordField();}
+\DoxyCodeLine{145             \textcolor{comment}{//passwordField.setText(ResourceBundle.getBundle("Etiquetas").getString("MainGUI.passwordField.text")); //\$NON-NLS-1\$ //\$NON-NLS-2\$}}
+\DoxyCodeLine{146             \mbox{\hyperlink{classgui_1_1MainGUI_a61d033008de636b7bec5658cdebe8fd3}{passwordField}}.setBounds(154, 125, 202, 27);}
+\DoxyCodeLine{147             \mbox{\hyperlink{classgui_1_1MainGUI_a06836509371b16181fdff6732938b7d3}{jContentPane}}.add(\mbox{\hyperlink{classgui_1_1MainGUI_a61d033008de636b7bec5658cdebe8fd3}{passwordField}});}
+\DoxyCodeLine{148         \}}
+\DoxyCodeLine{149         \textcolor{keywordflow}{return} \mbox{\hyperlink{classgui_1_1MainGUI_a06836509371b16181fdff6732938b7d3}{jContentPane}};}
+\DoxyCodeLine{150     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a business\+Logic.\+B\+L\+Facade.\+Es\+Admin(), gui.\+Main\+G\+U\+I.\+get\+Business\+Logic(), gui.\+Main\+G\+U\+I.\+get\+Lbl\+New\+Label(), gui.\+Main\+G\+U\+I.\+j\+Content\+Pane, business\+Logic.\+B\+L\+Facade.\+Login(), gui.\+Main\+G\+U\+I.\+password\+Field y gui.\+Main\+G\+U\+I.\+text\+Field\+Usuario.
+
+
+
+Referenciado por gui.\+Main\+G\+U\+I.\+initialize().
+
+\mbox{\Hypertarget{classgui_1_1MainGUI_a77a13e7a135020c180cec4b1d73a9cd9}\label{classgui_1_1MainGUI_a77a13e7a135020c180cec4b1d73a9cd9}} 
+\index{gui.MainGUI@{gui.MainGUI}!getLblNewLabel@{getLblNewLabel}}
+\index{getLblNewLabel@{getLblNewLabel}!gui.MainGUI@{gui.MainGUI}}
+\subsubsection{\texorpdfstring{getLblNewLabel()}{getLblNewLabel()}}
+{\footnotesize\ttfamily J\+Label gui.\+Main\+G\+U\+I.\+get\+Lbl\+New\+Label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 153 del archivo Main\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{153                                     \{}
+\DoxyCodeLine{154         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classgui_1_1MainGUI_a8e1428e62a631616aefdafe08773cb96}{jLabelIniciarSesion}} == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{155             \mbox{\hyperlink{classgui_1_1MainGUI_a8e1428e62a631616aefdafe08773cb96}{jLabelIniciarSesion}} = \textcolor{keyword}{new} JLabel(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"SelectOption"}));}
+\DoxyCodeLine{156             \mbox{\hyperlink{classgui_1_1MainGUI_a8e1428e62a631616aefdafe08773cb96}{jLabelIniciarSesion}}.setBounds(0, 1, 479, 62);}
+\DoxyCodeLine{157             \mbox{\hyperlink{classgui_1_1MainGUI_a8e1428e62a631616aefdafe08773cb96}{jLabelIniciarSesion}}.setFont(\textcolor{keyword}{new} Font(\textcolor{stringliteral}{"Tahoma"}, Font.BOLD, 13));}
+\DoxyCodeLine{158             \mbox{\hyperlink{classgui_1_1MainGUI_a8e1428e62a631616aefdafe08773cb96}{jLabelIniciarSesion}}.setForeground(Color.BLACK);}
+\DoxyCodeLine{159             \mbox{\hyperlink{classgui_1_1MainGUI_a8e1428e62a631616aefdafe08773cb96}{jLabelIniciarSesion}}.setHorizontalAlignment(SwingConstants.CENTER);}
+\DoxyCodeLine{160         \}}
+\DoxyCodeLine{161         \textcolor{keywordflow}{return} \mbox{\hyperlink{classgui_1_1MainGUI_a8e1428e62a631616aefdafe08773cb96}{jLabelIniciarSesion}};}
+\DoxyCodeLine{162     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a gui.\+Main\+G\+U\+I.\+j\+Label\+Iniciar\+Sesion.
+
+
+
+Referenciado por gui.\+Main\+G\+U\+I.\+get\+J\+Content\+Pane().
+
+\mbox{\Hypertarget{classgui_1_1MainGUI_a2659b4cdf4e94d6ffc332f16afc46462}\label{classgui_1_1MainGUI_a2659b4cdf4e94d6ffc332f16afc46462}} 
+\index{gui.MainGUI@{gui.MainGUI}!initialize@{initialize}}
+\index{initialize@{initialize}!gui.MainGUI@{gui.MainGUI}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void gui.\+Main\+G\+U\+I.\+initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+This method initializes this
+
+\begin{DoxyReturn}{Devuelve}
+void 
+\end{DoxyReturn}
+
+
+Definición en la línea 77 del archivo Main\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77                               \{}
+\DoxyCodeLine{78         \textcolor{comment}{// this.setSize(271, 295);}}
+\DoxyCodeLine{79         this.setSize(495, 290);}
+\DoxyCodeLine{80         this.setContentPane(\mbox{\hyperlink{classgui_1_1MainGUI_ae3ce89a59dcf27273ec658ee42cd61b8}{getJContentPane}}());}
+\DoxyCodeLine{81         this.setTitle(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"MainTitle"}));}
+\DoxyCodeLine{82     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a gui.\+Main\+G\+U\+I.\+get\+J\+Content\+Pane().
+
+
+
+Referenciado por gui.\+Main\+G\+U\+I.\+Main\+G\+U\+I().
+
+\mbox{\Hypertarget{classgui_1_1MainGUI_af7625125ee61bf5c18af79c7f356a346}\label{classgui_1_1MainGUI_af7625125ee61bf5c18af79c7f356a346}} 
+\index{gui.MainGUI@{gui.MainGUI}!setBussinessLogic@{setBussinessLogic}}
+\index{setBussinessLogic@{setBussinessLogic}!gui.MainGUI@{gui.MainGUI}}
+\subsubsection{\texorpdfstring{setBussinessLogic()}{setBussinessLogic()}}
+{\footnotesize\ttfamily static void gui.\+Main\+G\+U\+I.\+set\+Bussiness\+Logic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade}{B\+L\+Facade}}}]{afi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definición en la línea 40 del archivo Main\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40                                                        \{}
+\DoxyCodeLine{41         \mbox{\hyperlink{classgui_1_1MainGUI_ab98521baef1c320483057345b5546d8d}{appFacadeInterface}}=afi;}
+\DoxyCodeLine{42     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a gui.\+Main\+G\+U\+I.\+app\+Facade\+Interface.
+
+
+
+Referenciado por gui.\+Application\+Launcher.\+main().
+
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classgui_1_1MainGUI_ab98521baef1c320483057345b5546d8d}\label{classgui_1_1MainGUI_ab98521baef1c320483057345b5546d8d}} 
+\index{gui.MainGUI@{gui.MainGUI}!appFacadeInterface@{appFacadeInterface}}
+\index{appFacadeInterface@{appFacadeInterface}!gui.MainGUI@{gui.MainGUI}}
+\subsubsection{\texorpdfstring{appFacadeInterface}{appFacadeInterface}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade}{B\+L\+Facade}} gui.\+Main\+G\+U\+I.\+app\+Facade\+Interface\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 34 del archivo Main\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Main\+G\+U\+I.\+get\+Business\+Logic() y gui.\+Main\+G\+U\+I.\+set\+Bussiness\+Logic().
+
+\mbox{\Hypertarget{classgui_1_1MainGUI_a06836509371b16181fdff6732938b7d3}\label{classgui_1_1MainGUI_a06836509371b16181fdff6732938b7d3}} 
+\index{gui.MainGUI@{gui.MainGUI}!jContentPane@{jContentPane}}
+\index{jContentPane@{jContentPane}!gui.MainGUI@{gui.MainGUI}}
+\subsubsection{\texorpdfstring{jContentPane}{jContentPane}}
+{\footnotesize\ttfamily J\+Panel gui.\+Main\+G\+U\+I.\+j\+Content\+Pane = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 32 del archivo Main\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Main\+G\+U\+I.\+get\+J\+Content\+Pane().
+
+\mbox{\Hypertarget{classgui_1_1MainGUI_a8e1428e62a631616aefdafe08773cb96}\label{classgui_1_1MainGUI_a8e1428e62a631616aefdafe08773cb96}} 
+\index{gui.MainGUI@{gui.MainGUI}!jLabelIniciarSesion@{jLabelIniciarSesion}}
+\index{jLabelIniciarSesion@{jLabelIniciarSesion}!gui.MainGUI@{gui.MainGUI}}
+\subsubsection{\texorpdfstring{jLabelIniciarSesion}{jLabelIniciarSesion}}
+{\footnotesize\ttfamily J\+Label gui.\+Main\+G\+U\+I.\+j\+Label\+Iniciar\+Sesion\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definición en la línea 43 del archivo Main\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Main\+G\+U\+I.\+get\+Lbl\+New\+Label().
+
+\mbox{\Hypertarget{classgui_1_1MainGUI_a61d033008de636b7bec5658cdebe8fd3}\label{classgui_1_1MainGUI_a61d033008de636b7bec5658cdebe8fd3}} 
+\index{gui.MainGUI@{gui.MainGUI}!passwordField@{passwordField}}
+\index{passwordField@{passwordField}!gui.MainGUI@{gui.MainGUI}}
+\subsubsection{\texorpdfstring{passwordField}{passwordField}}
+{\footnotesize\ttfamily J\+Password\+Field gui.\+Main\+G\+U\+I.\+password\+Field\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 45 del archivo Main\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Main\+G\+U\+I.\+get\+J\+Content\+Pane().
+
+\mbox{\Hypertarget{classgui_1_1MainGUI_a75dfef8d845a0c8de7a6476c7f7d35e1}\label{classgui_1_1MainGUI_a75dfef8d845a0c8de7a6476c7f7d35e1}} 
+\index{gui.MainGUI@{gui.MainGUI}!serialVersionUID@{serialVersionUID}}
+\index{serialVersionUID@{serialVersionUID}!gui.MainGUI@{gui.MainGUI}}
+\subsubsection{\texorpdfstring{serialVersionUID}{serialVersionUID}}
+{\footnotesize\ttfamily final long gui.\+Main\+G\+U\+I.\+serial\+Version\+U\+ID = 1L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 30 del archivo Main\+G\+U\+I.\+java.
+
+\mbox{\Hypertarget{classgui_1_1MainGUI_a55b77c52b8af8b275ac73bb0965ed2f1}\label{classgui_1_1MainGUI_a55b77c52b8af8b275ac73bb0965ed2f1}} 
+\index{gui.MainGUI@{gui.MainGUI}!textFieldUsuario@{textFieldUsuario}}
+\index{textFieldUsuario@{textFieldUsuario}!gui.MainGUI@{gui.MainGUI}}
+\subsubsection{\texorpdfstring{textFieldUsuario}{textFieldUsuario}}
+{\footnotesize\ttfamily J\+Text\+Field gui.\+Main\+G\+U\+I.\+text\+Field\+Usuario\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 44 del archivo Main\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Main\+G\+U\+I.\+get\+J\+Content\+Pane().
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+src/gui/\mbox{\hyperlink{MainGUI_8java}{Main\+G\+U\+I.\+java}}\end{DoxyCompactItemize}

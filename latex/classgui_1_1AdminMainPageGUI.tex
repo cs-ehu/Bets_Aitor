@@ -1,0 +1,122 @@
+\hypertarget{classgui_1_1AdminMainPageGUI}{}\section{Referencia de la Clase gui.\+Admin\+Main\+Page\+G\+UI}
+\label{classgui_1_1AdminMainPageGUI}\index{gui.AdminMainPageGUI@{gui.AdminMainPageGUI}}
+Diagrama de herencias de gui.\+Admin\+Main\+Page\+G\+UI\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgui_1_1AdminMainPageGUI}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgui_1_1AdminMainPageGUI_a633665cdf87463b9d1ed9207dc813f93}{Admin\+Main\+Page\+G\+UI}} ()
+\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classgui_1_1AdminMainPageGUI_a164db51de4acb1b545621e6d8ef09bf3}{initialize}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+Definición en la línea 15 del archivo Admin\+Main\+Page\+G\+U\+I.\+java.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classgui_1_1AdminMainPageGUI_a633665cdf87463b9d1ed9207dc813f93}\label{classgui_1_1AdminMainPageGUI_a633665cdf87463b9d1ed9207dc813f93}} 
+\index{gui.AdminMainPageGUI@{gui.AdminMainPageGUI}!AdminMainPageGUI@{AdminMainPageGUI}}
+\index{AdminMainPageGUI@{AdminMainPageGUI}!gui.AdminMainPageGUI@{gui.AdminMainPageGUI}}
+\subsubsection{\texorpdfstring{AdminMainPageGUI()}{AdminMainPageGUI()}}
+{\footnotesize\ttfamily gui.\+Admin\+Main\+Page\+G\+U\+I.\+Admin\+Main\+Page\+G\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Create the application. 
+
+Definición en la línea 21 del archivo Admin\+Main\+Page\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21                               \{}
+\DoxyCodeLine{22         setTitle(\textcolor{stringliteral}{"Admin Page"});}
+\DoxyCodeLine{23         getContentPane().setLayout(\textcolor{keyword}{null});}
+\DoxyCodeLine{24         }
+\DoxyCodeLine{25         JButton btnCrearPregunta = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"Crear pregunta"});}
+\DoxyCodeLine{26         btnCrearPregunta.addActionListener(\textcolor{keyword}{new} ActionListener() \{}
+\DoxyCodeLine{27             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{}
+\DoxyCodeLine{28                 BLFacade facade=MainGUI.getBusinessLogic();}
+\DoxyCodeLine{29                 \textcolor{comment}{//Vector<Event> events=facade.getAllEvents();}}
+\DoxyCodeLine{30                 JFrame a = \textcolor{keyword}{new} CreateQuestionGUI(\textcolor{keyword}{new} Vector<Event>());}
+\DoxyCodeLine{31                 a.setVisible(\textcolor{keyword}{true});}
+\DoxyCodeLine{32             \}}
+\DoxyCodeLine{33         \});}
+\DoxyCodeLine{34         btnCrearPregunta.setBounds(127, 74, 209, 39);}
+\DoxyCodeLine{35         getContentPane().add(btnCrearPregunta);}
+\DoxyCodeLine{36         }
+\DoxyCodeLine{37         JButton btnCrearEvento = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"Crear evento"});}
+\DoxyCodeLine{38         btnCrearEvento.addActionListener(\textcolor{keyword}{new} ActionListener() \{}
+\DoxyCodeLine{39             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{}
+\DoxyCodeLine{40                 CreateEventGUI a = \textcolor{keyword}{new} CreateEventGUI();}
+\DoxyCodeLine{41                 a.setVisible(\textcolor{keyword}{true});}
+\DoxyCodeLine{42             \}}
+\DoxyCodeLine{43         \});}
+\DoxyCodeLine{44         btnCrearEvento.setBounds(127, 24, 209, 39);}
+\DoxyCodeLine{45         getContentPane().add(btnCrearEvento);}
+\DoxyCodeLine{46         }
+\DoxyCodeLine{47         JButton btnConsultarPreguntas = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"Consultar preguntas"});}
+\DoxyCodeLine{48         btnConsultarPreguntas.addActionListener(\textcolor{keyword}{new} ActionListener() \{}
+\DoxyCodeLine{49             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{}
+\DoxyCodeLine{50                 FindQuestionsGUI a = \textcolor{keyword}{new} FindQuestionsGUI();}
+\DoxyCodeLine{51                 a.setVisible(\textcolor{keyword}{true});}
+\DoxyCodeLine{52             \}}
+\DoxyCodeLine{53         \});}
+\DoxyCodeLine{54         btnConsultarPreguntas.setBounds(127, 124, 209, 39);}
+\DoxyCodeLine{55         getContentPane().add(btnConsultarPreguntas);}
+\DoxyCodeLine{56         }
+\DoxyCodeLine{57         JButton btnMeterResultados = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"Meter Resultados"});}
+\DoxyCodeLine{58         btnMeterResultados.addActionListener(\textcolor{keyword}{new} ActionListener() \{}
+\DoxyCodeLine{59             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{}
+\DoxyCodeLine{60                 MeterResultadosGUI a = \textcolor{keyword}{new} MeterResultadosGUI();}
+\DoxyCodeLine{61                 a.setVisible(\textcolor{keyword}{true});}
+\DoxyCodeLine{62             \}}
+\DoxyCodeLine{63         \});}
+\DoxyCodeLine{64         btnMeterResultados.setBounds(127, 174, 209, 39);}
+\DoxyCodeLine{65         getContentPane().add(btnMeterResultados);}
+\DoxyCodeLine{66         \mbox{\hyperlink{classgui_1_1AdminMainPageGUI_a164db51de4acb1b545621e6d8ef09bf3}{initialize}}();}
+\DoxyCodeLine{67     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a gui.\+Main\+G\+U\+I.\+get\+Business\+Logic() y gui.\+Admin\+Main\+Page\+G\+U\+I.\+initialize().
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classgui_1_1AdminMainPageGUI_a164db51de4acb1b545621e6d8ef09bf3}\label{classgui_1_1AdminMainPageGUI_a164db51de4acb1b545621e6d8ef09bf3}} 
+\index{gui.AdminMainPageGUI@{gui.AdminMainPageGUI}!initialize@{initialize}}
+\index{initialize@{initialize}!gui.AdminMainPageGUI@{gui.AdminMainPageGUI}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void gui.\+Admin\+Main\+Page\+G\+U\+I.\+initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Initialize the contents of the frame. 
+
+Definición en la línea 72 del archivo Admin\+Main\+Page\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{72                               \{}
+\DoxyCodeLine{73         this.setSize(495, 290);}
+\DoxyCodeLine{74     \}}
+
+\end{DoxyCode}
+
+
+Referenciado por gui.\+Admin\+Main\+Page\+G\+U\+I.\+Admin\+Main\+Page\+G\+U\+I().
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+src/gui/\mbox{\hyperlink{AdminMainPageGUI_8java}{Admin\+Main\+Page\+G\+U\+I.\+java}}\end{DoxyCompactItemize}

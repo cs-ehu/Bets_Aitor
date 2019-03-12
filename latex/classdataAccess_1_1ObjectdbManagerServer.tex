@@ -1,0 +1,230 @@
+\hypertarget{classdataAccess_1_1ObjectdbManagerServer}{}\section{Referencia de la Clase data\+Access.\+Objectdb\+Manager\+Server}
+\label{classdataAccess_1_1ObjectdbManagerServer}\index{dataAccess.ObjectdbManagerServer@{dataAccess.ObjectdbManagerServer}}
+Diagrama de herencias de data\+Access.\+Objectdb\+Manager\+Server\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdataAccess_1_1ObjectdbManagerServer}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServer_a6aac62b0bbbebbb54d3105d5820c0061}{Objectdb\+Manager\+Server}} ()
+\end{DoxyCompactItemize}
+\subsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServer_a2e0f5eddf461be78de905ca56e4295f9}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+\subsection*{Atributos del \textquotesingle{}package\textquotesingle{}}
+\begin{DoxyCompactItemize}
+\item 
+J\+Text\+Area \mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServer_ab739ebdf3a077579c9af7a881c620fd4}{text\+Area}}
+\item 
+\mbox{\hyperlink{classconfiguration_1_1ConfigXML}{Config\+X\+ML}} \mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServer_af08ecdac594a6dcaa286d9f52087d13f}{c}}
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+final J\+Panel \mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServer_ad26f12e877ed4c593d4444ece4309e6c}{content\+Panel}} = new J\+Panel()
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static final long \mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServer_aecacee957a38daebfb09c8b326497696}{serial\+Version\+U\+ID}} = 1L
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+It runs the database server as a separate process. 
+
+Definición en la línea 23 del archivo Objectdb\+Manager\+Server.\+java.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classdataAccess_1_1ObjectdbManagerServer_a6aac62b0bbbebbb54d3105d5820c0061}\label{classdataAccess_1_1ObjectdbManagerServer_a6aac62b0bbbebbb54d3105d5820c0061}} 
+\index{dataAccess.ObjectdbManagerServer@{dataAccess.ObjectdbManagerServer}!ObjectdbManagerServer@{ObjectdbManagerServer}}
+\index{ObjectdbManagerServer@{ObjectdbManagerServer}!dataAccess.ObjectdbManagerServer@{dataAccess.ObjectdbManagerServer}}
+\subsubsection{\texorpdfstring{ObjectdbManagerServer()}{ObjectdbManagerServer()}}
+{\footnotesize\ttfamily data\+Access.\+Objectdb\+Manager\+Server.\+Objectdb\+Manager\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 43 del archivo Objectdb\+Manager\+Server.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43                                    \{}
+\DoxyCodeLine{44         setTitle(\textcolor{stringliteral}{"objectDBManagerServer: running the database server"});}
+\DoxyCodeLine{45         setBounds(100, 100, 486, 180);}
+\DoxyCodeLine{46         getContentPane().setLayout(\textcolor{keyword}{new} BorderLayout());}
+\DoxyCodeLine{47         \mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServer_ad26f12e877ed4c593d4444ece4309e6c}{contentPanel}}.setBorder(\textcolor{keyword}{new} EmptyBorder(5, 5, 5, 5));}
+\DoxyCodeLine{48         getContentPane().add(\mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServer_ad26f12e877ed4c593d4444ece4309e6c}{contentPanel}}, BorderLayout.CENTER);}
+\DoxyCodeLine{49         \mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServer_ad26f12e877ed4c593d4444ece4309e6c}{contentPanel}}.setLayout(\textcolor{keyword}{new} BorderLayout(0, 0));}
+\DoxyCodeLine{50         \{}
+\DoxyCodeLine{51             \mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServer_ab739ebdf3a077579c9af7a881c620fd4}{textArea}} = \textcolor{keyword}{new} JTextArea();}
+\DoxyCodeLine{52             \mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServer_ad26f12e877ed4c593d4444ece4309e6c}{contentPanel}}.add(\mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServer_ab739ebdf3a077579c9af7a881c620fd4}{textArea}});}
+\DoxyCodeLine{53         \}}
+\DoxyCodeLine{54         \{}
+\DoxyCodeLine{55             JPanel buttonPane = \textcolor{keyword}{new} JPanel();}
+\DoxyCodeLine{56             buttonPane.setLayout(\textcolor{keyword}{new} FlowLayout(FlowLayout.RIGHT));}
+\DoxyCodeLine{57             getContentPane().add(buttonPane, BorderLayout.SOUTH);}
+\DoxyCodeLine{58             \{}
+\DoxyCodeLine{59                 JButton okButton = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"OK"});}
+\DoxyCodeLine{60                 okButton.addActionListener(\textcolor{keyword}{new} ActionListener() \{}
+\DoxyCodeLine{61                     \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{}
+\DoxyCodeLine{62                         \mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServer_ab739ebdf3a077579c9af7a881c620fd4}{textArea}}.append(\textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)n\(\backslash\)nClosing the database... "});}
+\DoxyCodeLine{63                         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{64                             System.out.println(\textcolor{stringliteral}{"Server close"});}
+\DoxyCodeLine{65                              \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{66                                     Runtime.getRuntime().exec(\textcolor{stringliteral}{"java -cp resources\(\backslash\)\(\backslash\)objectdb.jar com.objectdb.Server -port "}+ \mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServer_af08ecdac594a6dcaa286d9f52087d13f}{c}}.\mbox{\hyperlink{classconfiguration_1_1ConfigXML_abf4649caafdcfb0b506af7402f09728c}{getDatabasePort}}()+\textcolor{stringliteral}{" stop"});}
+\DoxyCodeLine{67                                 \} \textcolor{keywordflow}{catch} (Exception ioe) \{}
+\DoxyCodeLine{68                                     System.out.println (ioe);}
+\DoxyCodeLine{69                                 \}}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71                                 System.exit(1);}
+\DoxyCodeLine{72                             }
+\DoxyCodeLine{73                         \} \textcolor{keywordflow}{catch} (Exception e1) \{}
+\DoxyCodeLine{74                         \}}
+\DoxyCodeLine{75                         System.exit(1);}
+\DoxyCodeLine{76                     \}}
+\DoxyCodeLine{77                 \});}
+\DoxyCodeLine{78                 okButton.setActionCommand(\textcolor{stringliteral}{"OK"});}
+\DoxyCodeLine{79                 buttonPane.add(okButton);}
+\DoxyCodeLine{80                 getRootPane().setDefaultButton(okButton);}
+\DoxyCodeLine{81             \}}
+\DoxyCodeLine{82             \{}
+\DoxyCodeLine{83                 JButton cancelButton = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"Cancel"});}
+\DoxyCodeLine{84                 cancelButton.setActionCommand(\textcolor{stringliteral}{"Cancel"});}
+\DoxyCodeLine{85                 buttonPane.add(cancelButton);}
+\DoxyCodeLine{86             \}}
+\DoxyCodeLine{87         \}}
+\DoxyCodeLine{88         }
+\DoxyCodeLine{89         ConfigXML \mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServer_af08ecdac594a6dcaa286d9f52087d13f}{c}}=ConfigXML.\mbox{\hyperlink{classconfiguration_1_1ConfigXML_a74c5e0c09c0139554ede8d786cb808ff}{getInstance}}();}
+\DoxyCodeLine{90         }
+\DoxyCodeLine{91         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServer_af08ecdac594a6dcaa286d9f52087d13f}{c}}.\mbox{\hyperlink{classconfiguration_1_1ConfigXML_a2ee9afbde36aa3f5c0d0158a8b5449fb}{isDatabaseLocal}}()) \{}
+\DoxyCodeLine{92             \mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServer_ab739ebdf3a077579c9af7a881c620fd4}{textArea}}.append(\textcolor{stringliteral}{"\(\backslash\)nERROR, the database is configured as local"});}
+\DoxyCodeLine{93         \}}
+\DoxyCodeLine{94         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{95         \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{96             System.out.println(\textcolor{stringliteral}{"Lauching objectdb server"});}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98             }
+\DoxyCodeLine{99             \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{100                 Runtime.getRuntime().exec(\textcolor{stringliteral}{"java -cp resources\(\backslash\)\(\backslash\)objectdb.jar com.objectdb.Server -port "}+ \mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServer_af08ecdac594a6dcaa286d9f52087d13f}{c}}.\mbox{\hyperlink{classconfiguration_1_1ConfigXML_abf4649caafdcfb0b506af7402f09728c}{getDatabasePort}}()+\textcolor{stringliteral}{" start"});}
+\DoxyCodeLine{101             \} \textcolor{keywordflow}{catch} (Exception ioe) \{}
+\DoxyCodeLine{102                 System.out.println (ioe);}
+\DoxyCodeLine{103             \}}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105             \mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServer_ab739ebdf3a077579c9af7a881c620fd4}{textArea}}.append(\textcolor{stringliteral}{"\(\backslash\)nAccess granted to: "}+\mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServer_af08ecdac594a6dcaa286d9f52087d13f}{c}}.\mbox{\hyperlink{classconfiguration_1_1ConfigXML_a98e53bd841ca5f520af914f96ff2afef}{getUser}}());}
+\DoxyCodeLine{106             }
+\DoxyCodeLine{107             \mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServer_ab739ebdf3a077579c9af7a881c620fd4}{textArea}}.append(\textcolor{stringliteral}{"\(\backslash\)nPress button to exit this database server... "});}
+\DoxyCodeLine{108             }
+\DoxyCodeLine{109         \} \textcolor{keywordflow}{catch} (Exception e) \{}
+\DoxyCodeLine{110             \mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServer_ab739ebdf3a077579c9af7a881c620fd4}{textArea}}.append(\textcolor{stringliteral}{"Something has happened in ObjectDbManagerServer: "}+e.toString());}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112         \}}
+\DoxyCodeLine{113         }
+\DoxyCodeLine{114         \}}
+\DoxyCodeLine{115     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a data\+Access.\+Objectdb\+Manager\+Server.\+c, data\+Access.\+Objectdb\+Manager\+Server.\+content\+Panel, configuration.\+Config\+X\+M\+L.\+get\+Database\+Port(), configuration.\+Config\+X\+M\+L.\+get\+Instance(), configuration.\+Config\+X\+M\+L.\+get\+User(), configuration.\+Config\+X\+M\+L.\+is\+Database\+Local() y data\+Access.\+Objectdb\+Manager\+Server.\+text\+Area.
+
+
+
+Referenciado por data\+Access.\+Objectdb\+Manager\+Server.\+main().
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classdataAccess_1_1ObjectdbManagerServer_a2e0f5eddf461be78de905ca56e4295f9}\label{classdataAccess_1_1ObjectdbManagerServer_a2e0f5eddf461be78de905ca56e4295f9}} 
+\index{dataAccess.ObjectdbManagerServer@{dataAccess.ObjectdbManagerServer}!main@{main}}
+\index{main@{main}!dataAccess.ObjectdbManagerServer@{dataAccess.ObjectdbManagerServer}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void data\+Access.\+Objectdb\+Manager\+Server.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definición en la línea 32 del archivo Objectdb\+Manager\+Server.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32                                            \{}
+\DoxyCodeLine{33         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{34             \mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServer_a6aac62b0bbbebbb54d3105d5820c0061}{ObjectdbManagerServer}} dialog = \textcolor{keyword}{new} \mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServer_a6aac62b0bbbebbb54d3105d5820c0061}{ObjectdbManagerServer}}();}
+\DoxyCodeLine{35             dialog.setDefaultCloseOperation(JDialog.DISPOSE\_ON\_CLOSE);}
+\DoxyCodeLine{36             dialog.setVisible(\textcolor{keyword}{true});}
+\DoxyCodeLine{37         \} \textcolor{keywordflow}{catch} (Exception e) \{}
+\DoxyCodeLine{38             e.printStackTrace();}
+\DoxyCodeLine{39         \}}
+\DoxyCodeLine{40     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a data\+Access.\+Objectdb\+Manager\+Server.\+Objectdb\+Manager\+Server().
+
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classdataAccess_1_1ObjectdbManagerServer_af08ecdac594a6dcaa286d9f52087d13f}\label{classdataAccess_1_1ObjectdbManagerServer_af08ecdac594a6dcaa286d9f52087d13f}} 
+\index{dataAccess.ObjectdbManagerServer@{dataAccess.ObjectdbManagerServer}!c@{c}}
+\index{c@{c}!dataAccess.ObjectdbManagerServer@{dataAccess.ObjectdbManagerServer}}
+\subsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classconfiguration_1_1ConfigXML}{Config\+X\+ML}} data\+Access.\+Objectdb\+Manager\+Server.\+c\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+Definición en la línea 29 del archivo Objectdb\+Manager\+Server.\+java.
+
+
+
+Referenciado por data\+Access.\+Objectdb\+Manager\+Server.\+Objectdb\+Manager\+Server().
+
+\mbox{\Hypertarget{classdataAccess_1_1ObjectdbManagerServer_ad26f12e877ed4c593d4444ece4309e6c}\label{classdataAccess_1_1ObjectdbManagerServer_ad26f12e877ed4c593d4444ece4309e6c}} 
+\index{dataAccess.ObjectdbManagerServer@{dataAccess.ObjectdbManagerServer}!contentPanel@{contentPanel}}
+\index{contentPanel@{contentPanel}!dataAccess.ObjectdbManagerServer@{dataAccess.ObjectdbManagerServer}}
+\subsubsection{\texorpdfstring{contentPanel}{contentPanel}}
+{\footnotesize\ttfamily final J\+Panel data\+Access.\+Objectdb\+Manager\+Server.\+content\+Panel = new J\+Panel()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 27 del archivo Objectdb\+Manager\+Server.\+java.
+
+
+
+Referenciado por data\+Access.\+Objectdb\+Manager\+Server.\+Objectdb\+Manager\+Server().
+
+\mbox{\Hypertarget{classdataAccess_1_1ObjectdbManagerServer_aecacee957a38daebfb09c8b326497696}\label{classdataAccess_1_1ObjectdbManagerServer_aecacee957a38daebfb09c8b326497696}} 
+\index{dataAccess.ObjectdbManagerServer@{dataAccess.ObjectdbManagerServer}!serialVersionUID@{serialVersionUID}}
+\index{serialVersionUID@{serialVersionUID}!dataAccess.ObjectdbManagerServer@{dataAccess.ObjectdbManagerServer}}
+\subsubsection{\texorpdfstring{serialVersionUID}{serialVersionUID}}
+{\footnotesize\ttfamily final long data\+Access.\+Objectdb\+Manager\+Server.\+serial\+Version\+U\+ID = 1L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 26 del archivo Objectdb\+Manager\+Server.\+java.
+
+\mbox{\Hypertarget{classdataAccess_1_1ObjectdbManagerServer_ab739ebdf3a077579c9af7a881c620fd4}\label{classdataAccess_1_1ObjectdbManagerServer_ab739ebdf3a077579c9af7a881c620fd4}} 
+\index{dataAccess.ObjectdbManagerServer@{dataAccess.ObjectdbManagerServer}!textArea@{textArea}}
+\index{textArea@{textArea}!dataAccess.ObjectdbManagerServer@{dataAccess.ObjectdbManagerServer}}
+\subsubsection{\texorpdfstring{textArea}{textArea}}
+{\footnotesize\ttfamily J\+Text\+Area data\+Access.\+Objectdb\+Manager\+Server.\+text\+Area\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+Definición en la línea 28 del archivo Objectdb\+Manager\+Server.\+java.
+
+
+
+Referenciado por data\+Access.\+Objectdb\+Manager\+Server.\+Objectdb\+Manager\+Server().
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+src/data\+Access/\mbox{\hyperlink{ObjectdbManagerServer_8java}{Objectdb\+Manager\+Server.\+java}}\end{DoxyCompactItemize}

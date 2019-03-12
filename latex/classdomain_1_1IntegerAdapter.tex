@@ -1,0 +1,66 @@
+\hypertarget{classdomain_1_1IntegerAdapter}{}\section{Referencia de la Clase domain.\+Integer\+Adapter}
+\label{classdomain_1_1IntegerAdapter}\index{domain.IntegerAdapter@{domain.IntegerAdapter}}
+Diagrama de herencias de domain.\+Integer\+Adapter\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdomain_1_1IntegerAdapter}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+Integer \mbox{\hyperlink{classdomain_1_1IntegerAdapter_ad2bfc5af140573682dd03906b9264b51}{unmarshal}} (String s)
+\item 
+String \mbox{\hyperlink{classdomain_1_1IntegerAdapter_a407b4872b78e54ed80c9ae597cae2451}{marshal}} (Integer number)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+Definición en la línea 5 del archivo Integer\+Adapter.\+java.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classdomain_1_1IntegerAdapter_a407b4872b78e54ed80c9ae597cae2451}\label{classdomain_1_1IntegerAdapter_a407b4872b78e54ed80c9ae597cae2451}} 
+\index{domain.IntegerAdapter@{domain.IntegerAdapter}!marshal@{marshal}}
+\index{marshal@{marshal}!domain.IntegerAdapter@{domain.IntegerAdapter}}
+\subsubsection{\texorpdfstring{marshal()}{marshal()}}
+{\footnotesize\ttfamily String domain.\+Integer\+Adapter.\+marshal (\begin{DoxyParamCaption}\item[{Integer}]{number }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 11 del archivo Integer\+Adapter.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11                                           \{}
+\DoxyCodeLine{12         \textcolor{keywordflow}{if} (number == \textcolor{keyword}{null}) \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};}
+\DoxyCodeLine{13          }
+\DoxyCodeLine{14         \textcolor{keywordflow}{return} number.toString();}
+\DoxyCodeLine{15     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classdomain_1_1IntegerAdapter_ad2bfc5af140573682dd03906b9264b51}\label{classdomain_1_1IntegerAdapter_ad2bfc5af140573682dd03906b9264b51}} 
+\index{domain.IntegerAdapter@{domain.IntegerAdapter}!unmarshal@{unmarshal}}
+\index{unmarshal@{unmarshal}!domain.IntegerAdapter@{domain.IntegerAdapter}}
+\subsubsection{\texorpdfstring{unmarshal()}{unmarshal()}}
+{\footnotesize\ttfamily Integer domain.\+Integer\+Adapter.\+unmarshal (\begin{DoxyParamCaption}\item[{String}]{s }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 7 del archivo Integer\+Adapter.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7                                        \{}
+\DoxyCodeLine{8         \textcolor{keywordflow}{return} Integer.parseInt(s);}
+\DoxyCodeLine{9     \}}
+
+\end{DoxyCode}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+src/domain/\mbox{\hyperlink{IntegerAdapter_8java}{Integer\+Adapter.\+java}}\end{DoxyCompactItemize}
