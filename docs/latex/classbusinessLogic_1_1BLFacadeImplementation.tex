@@ -1,0 +1,779 @@
+\hypertarget{classbusinessLogic_1_1BLFacadeImplementation}{}\section{Referencia de la Clase business\+Logic.\+B\+L\+Facade\+Implementation}
+\label{classbusinessLogic_1_1BLFacadeImplementation}\index{businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}}
+Diagrama de herencias de business\+Logic.\+B\+L\+Facade\+Implementation\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classbusinessLogic_1_1BLFacadeImplementation}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a5888a8388b131051ab729d6a326d9414}{B\+L\+Facade\+Implementation}} ()
+\item 
+\mbox{\hyperlink{classdomain_1_1Question}{Question}} \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_ab033eb5a41a86e8b3010455b745ba267}{create\+Question}} (\mbox{\hyperlink{classdomain_1_1Event}{Event}} event, String question, float bet\+Minimum)  throws Event\+Finished, Question\+Already\+Exist
+\item 
+\mbox{\hyperlink{classdomain_1_1Question}{Question}} \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a05d93749b9cdaabcda23a8e6299fdf7d}{create\+Question}} (\mbox{\hyperlink{classdomain_1_1Event}{Event}} event, String question, \mbox{\hyperlink{classdomain_1_1Result}{Result}} result, float bet\+Minimum, float cuota)  throws Event\+Finished, Question\+Already\+Exist
+\item 
+void \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a2127be166dc2d3c992f3435006ab0575}{crear\+Usuario}} (String D\+NI, String \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_ab32bba3f140f33d176c85bb4ad8527b4}{usuario}}, String contraseña)
+\item 
+boolean \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_afa698129a017866dfc8ae32601fd00fe}{Login}} (String \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_ab32bba3f140f33d176c85bb4ad8527b4}{usuario}}, String contraseña)
+\item 
+boolean \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_ac83572a35820cc3eac9d4a51add5a752}{Esta}} (String D\+NI)
+\item 
+boolean \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a1fd11ce02084c04c70d667efb94167d0}{Es\+Admin}} (String \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_ab32bba3f140f33d176c85bb4ad8527b4}{usuario}}, String contraseña)
+\item 
+void \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a504f1b6069b3d166881c8047836a1d76}{create\+Event}} (String description, Date event\+Date)
+\item 
+float \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a2ba616628033f05a5f70a0afddb1c970}{saldo}} (String \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_ab32bba3f140f33d176c85bb4ad8527b4}{usuario}})
+\item 
+void \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a5e1a613d087a9d566c01d227e21f0b34}{anadir\+Saldo}} (String \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_ab32bba3f140f33d176c85bb4ad8527b4}{usuario}}, float \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a2ba616628033f05a5f70a0afddb1c970}{saldo}})
+\item 
+void \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a301913f0d5beb5b7a7b4d51283a41011}{create\+Apuesta}} (\mbox{\hyperlink{classdomain_1_1User}{User}} \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_ab32bba3f140f33d176c85bb4ad8527b4}{usuario}}, float dinero\+Apostado, float beneficios, \mbox{\hyperlink{classdomain_1_1Question}{Question}} apuesta)
+\item 
+\mbox{\hyperlink{classdomain_1_1User}{User}} \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_ab32bba3f140f33d176c85bb4ad8527b4}{usuario}} (String nombre)
+\item 
+\mbox{\hyperlink{classdomain_1_1Result}{Result}} \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_ac0445d578f21530433001bfb7582a175}{esta\+Resultado}} (String res)
+\item 
+Vector$<$ \mbox{\hyperlink{classdomain_1_1Event}{Event}} $>$ \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a62cba365fc047beb4523773ef8a53644}{get\+Events}} (Date date)
+\item 
+List$<$ \mbox{\hyperlink{classdomain_1_1Apuesta}{Apuesta}} $>$ \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_afbf2b534e813dc7344214b5b8d6ca4de}{get\+Apuestas}} (String name)
+\item 
+List$<$ \mbox{\hyperlink{classdomain_1_1Apuesta}{Apuesta}} $>$ \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a5cf672ed1cbdef2446948fe5472e9da5}{get\+Apuestas\+En\+Juego}} (String name)
+\item 
+List$<$ \mbox{\hyperlink{classdomain_1_1Apuesta}{Apuesta}} $>$ \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a6e151a43915c198904fe8cafdb26ed2c}{get\+Apuestas\+Finalizadas}} (String name)
+\item 
+List$<$ \mbox{\hyperlink{classdomain_1_1Apuesta}{Apuesta}} $>$ \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_af1218f1db76137f821a31adc31f47e9f}{get\+Apuestas\+A\+Coregir}} ()
+\item 
+void \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a5f915c64121f2a6e37af4fc337e88ff0}{initialize\+BD}} ()
+\item 
+Vector$<$ \mbox{\hyperlink{classdomain_1_1Apuesta}{Apuesta}} $>$ \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a1da1d7f11768f7f37c395c534a19323b}{apuestas}} (String name)
+\item 
+void \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a46e307bd8d9e04795bd15b815220d782}{corregir\+Resultado}} (\mbox{\hyperlink{classdomain_1_1Apuesta}{Apuesta}} apu, String resultado)
+\item 
+void \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a3abfaef4d8952fca7a22d4b346fb155a}{borrar\+Apuesta}} (\mbox{\hyperlink{classdomain_1_1Apuesta}{Apuesta}} ap)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+It implements the business logic as a web service. 
+
+Definición en la línea 26 del archivo B\+L\+Facade\+Implementation.\+java.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classbusinessLogic_1_1BLFacadeImplementation_a5888a8388b131051ab729d6a326d9414}\label{classbusinessLogic_1_1BLFacadeImplementation_a5888a8388b131051ab729d6a326d9414}} 
+\index{businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}!BLFacadeImplementation@{BLFacadeImplementation}}
+\index{BLFacadeImplementation@{BLFacadeImplementation}!businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}}
+\subsubsection{\texorpdfstring{BLFacadeImplementation()}{BLFacadeImplementation()}}
+{\footnotesize\ttfamily business\+Logic.\+B\+L\+Facade\+Implementation.\+B\+L\+Facade\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 28 del archivo B\+L\+Facade\+Implementation.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{28                                      \{      }
+\DoxyCodeLine{29         System.out.println(\textcolor{stringliteral}{"Creating BLFacadeImplementation instance"});}
+\DoxyCodeLine{30         ConfigXML c=ConfigXML.getInstance();}
+\DoxyCodeLine{31         }
+\DoxyCodeLine{32         \textcolor{keywordflow}{if} (c.getDataBaseOpenMode().equals(\textcolor{stringliteral}{"initialize"})) \{}
+\DoxyCodeLine{33             DataAccess dbManager=\textcolor{keyword}{new} DataAccess(c.getDataBaseOpenMode().equals(\textcolor{stringliteral}{"initialize"}));}
+\DoxyCodeLine{34             dbManager.initializeDB();}
+\DoxyCodeLine{35             dbManager.close();}
+\DoxyCodeLine{36             \}}
+\DoxyCodeLine{37         }
+\DoxyCodeLine{38     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a data\+Access.\+Data\+Access.\+close(), configuration.\+Config\+X\+M\+L.\+get\+Data\+Base\+Open\+Mode(), configuration.\+Config\+X\+M\+L.\+get\+Instance() y data\+Access.\+Data\+Access.\+initialize\+D\+B().
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classbusinessLogic_1_1BLFacadeImplementation_a5e1a613d087a9d566c01d227e21f0b34}\label{classbusinessLogic_1_1BLFacadeImplementation_a5e1a613d087a9d566c01d227e21f0b34}} 
+\index{businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}!anadirSaldo@{anadirSaldo}}
+\index{anadirSaldo@{anadirSaldo}!businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}}
+\subsubsection{\texorpdfstring{anadirSaldo()}{anadirSaldo()}}
+{\footnotesize\ttfamily void business\+Logic.\+B\+L\+Facade\+Implementation.\+anadir\+Saldo (\begin{DoxyParamCaption}\item[{String}]{usuario,  }\item[{float}]{saldo }\end{DoxyParamCaption})}
+
+
+
+Implementa \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade_a7327ebe6d1046c51d614553747d670f5}{business\+Logic.\+B\+L\+Facade}}.
+
+
+
+Definición en la línea 180 del archivo B\+L\+Facade\+Implementation.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{180                                                        \{}
+\DoxyCodeLine{181        DataAccess dBManager=\textcolor{keyword}{new} DataAccess();}
+\DoxyCodeLine{182        dBManager.anadirSaldo(\mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_ab32bba3f140f33d176c85bb4ad8527b4}{usuario}}, \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a2ba616628033f05a5f70a0afddb1c970}{saldo}});}
+\DoxyCodeLine{183        dBManager.close();      }
+\DoxyCodeLine{184    \};}
+
+\end{DoxyCode}
+
+
+Hace referencia a data\+Access.\+Data\+Access.\+anadir\+Saldo() y data\+Access.\+Data\+Access.\+close().
+
+\mbox{\Hypertarget{classbusinessLogic_1_1BLFacadeImplementation_a1da1d7f11768f7f37c395c534a19323b}\label{classbusinessLogic_1_1BLFacadeImplementation_a1da1d7f11768f7f37c395c534a19323b}} 
+\index{businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}!apuestas@{apuestas}}
+\index{apuestas@{apuestas}!businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}}
+\subsubsection{\texorpdfstring{apuestas()}{apuestas()}}
+{\footnotesize\ttfamily Vector$<$\mbox{\hyperlink{classdomain_1_1Apuesta}{Apuesta}}$>$ business\+Logic.\+B\+L\+Facade\+Implementation.\+apuestas (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+
+
+Implementa \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade_adfadb667916c0f312ad1794b052e0cbf}{business\+Logic.\+B\+L\+Facade}}.
+
+
+
+Definición en la línea 301 del archivo B\+L\+Facade\+Implementation.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{301                                                 \{}
+\DoxyCodeLine{302         DataAccess dbManager=\textcolor{keyword}{new} DataAccess();}
+\DoxyCodeLine{303         Vector<Apuesta> apuesta=dbManager.apuestas(name);}
+\DoxyCodeLine{304         dbManager.close();}
+\DoxyCodeLine{305         \textcolor{keywordflow}{return} apuesta;}
+\DoxyCodeLine{306     \};}
+
+\end{DoxyCode}
+
+
+Hace referencia a data\+Access.\+Data\+Access.\+apuestas() y data\+Access.\+Data\+Access.\+close().
+
+\mbox{\Hypertarget{classbusinessLogic_1_1BLFacadeImplementation_a3abfaef4d8952fca7a22d4b346fb155a}\label{classbusinessLogic_1_1BLFacadeImplementation_a3abfaef4d8952fca7a22d4b346fb155a}} 
+\index{businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}!borrarApuesta@{borrarApuesta}}
+\index{borrarApuesta@{borrarApuesta}!businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}}
+\subsubsection{\texorpdfstring{borrarApuesta()}{borrarApuesta()}}
+{\footnotesize\ttfamily void business\+Logic.\+B\+L\+Facade\+Implementation.\+borrar\+Apuesta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdomain_1_1Apuesta}{Apuesta}}}]{ap }\end{DoxyParamCaption})}
+
+
+
+Implementa \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade_ab30f9458b5169fda3e5bead92dcf3f84}{business\+Logic.\+B\+L\+Facade}}.
+
+
+
+Definición en la línea 317 del archivo B\+L\+Facade\+Implementation.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{317                                           \{}
+\DoxyCodeLine{318         DataAccess dbManager=\textcolor{keyword}{new} DataAccess();}
+\DoxyCodeLine{319         dbManager.borrarApuesta(ap);}
+\DoxyCodeLine{320         dbManager.close();}
+\DoxyCodeLine{321     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a data\+Access.\+Data\+Access.\+borrar\+Apuesta() y data\+Access.\+Data\+Access.\+close().
+
+\mbox{\Hypertarget{classbusinessLogic_1_1BLFacadeImplementation_a46e307bd8d9e04795bd15b815220d782}\label{classbusinessLogic_1_1BLFacadeImplementation_a46e307bd8d9e04795bd15b815220d782}} 
+\index{businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}!corregirResultado@{corregirResultado}}
+\index{corregirResultado@{corregirResultado}!businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}}
+\subsubsection{\texorpdfstring{corregirResultado()}{corregirResultado()}}
+{\footnotesize\ttfamily void business\+Logic.\+B\+L\+Facade\+Implementation.\+corregir\+Resultado (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdomain_1_1Apuesta}{Apuesta}}}]{apu,  }\item[{String}]{resultado }\end{DoxyParamCaption})}
+
+
+
+Implementa \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade_ac643520df65287794056938207db059f}{business\+Logic.\+B\+L\+Facade}}.
+
+
+
+Definición en la línea 310 del archivo B\+L\+Facade\+Implementation.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{310                                                                  \{}
+\DoxyCodeLine{311         DataAccess dbManager=\textcolor{keyword}{new} DataAccess();}
+\DoxyCodeLine{312         dbManager.corregirResultado(apu,resultado);}
+\DoxyCodeLine{313         dbManager.close();}
+\DoxyCodeLine{314     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a data\+Access.\+Data\+Access.\+close() y data\+Access.\+Data\+Access.\+corregir\+Resultado().
+
+\mbox{\Hypertarget{classbusinessLogic_1_1BLFacadeImplementation_a2127be166dc2d3c992f3435006ab0575}\label{classbusinessLogic_1_1BLFacadeImplementation_a2127be166dc2d3c992f3435006ab0575}} 
+\index{businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}!crearUsuario@{crearUsuario}}
+\index{crearUsuario@{crearUsuario}!businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}}
+\subsubsection{\texorpdfstring{crearUsuario()}{crearUsuario()}}
+{\footnotesize\ttfamily void business\+Logic.\+B\+L\+Facade\+Implementation.\+crear\+Usuario (\begin{DoxyParamCaption}\item[{String}]{D\+NI,  }\item[{String}]{usuario,  }\item[{String}]{contraseña }\end{DoxyParamCaption})}
+
+
+
+Implementa \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade_ad5ddf0ebb395d8d4d8574ccb9cc4047e}{business\+Logic.\+B\+L\+Facade}}.
+
+
+
+Definición en la línea 92 del archivo B\+L\+Facade\+Implementation.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{92                                                                           \{}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94         DataAccess dBManager=\textcolor{keyword}{new} DataAccess();}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96         \textcolor{keywordflow}{if}(dBManager.estaUsuario(DNI)) \{}
+\DoxyCodeLine{97             System.out.println(\textcolor{stringliteral}{"El usuario existe"});}
+\DoxyCodeLine{98         \}\textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{99             dBManager.crearUsuario(DNI,\mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_ab32bba3f140f33d176c85bb4ad8527b4}{usuario}},contraseña);      }
+\DoxyCodeLine{100             dBManager.close();}
+\DoxyCodeLine{101         \}}
+\DoxyCodeLine{102    \};}
+
+\end{DoxyCode}
+
+
+Hace referencia a data\+Access.\+Data\+Access.\+close(), data\+Access.\+Data\+Access.\+crear\+Usuario() y data\+Access.\+Data\+Access.\+esta\+Usuario().
+
+\mbox{\Hypertarget{classbusinessLogic_1_1BLFacadeImplementation_a301913f0d5beb5b7a7b4d51283a41011}\label{classbusinessLogic_1_1BLFacadeImplementation_a301913f0d5beb5b7a7b4d51283a41011}} 
+\index{businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}!createApuesta@{createApuesta}}
+\index{createApuesta@{createApuesta}!businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}}
+\subsubsection{\texorpdfstring{createApuesta()}{createApuesta()}}
+{\footnotesize\ttfamily void business\+Logic.\+B\+L\+Facade\+Implementation.\+create\+Apuesta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdomain_1_1User}{User}}}]{usuario,  }\item[{float}]{dinero\+Apostado,  }\item[{float}]{beneficios,  }\item[{\mbox{\hyperlink{classdomain_1_1Question}{Question}}}]{apuesta }\end{DoxyParamCaption})}
+
+
+
+Implementa \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade_a9656d5e373e849021e3b77ee4bb2ad65}{business\+Logic.\+B\+L\+Facade}}.
+
+
+
+Definición en la línea 191 del archivo B\+L\+Facade\+Implementation.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{191                                                                                                     \{}
+\DoxyCodeLine{192        }
+\DoxyCodeLine{193         DataAccess dBManager=\textcolor{keyword}{new} DataAccess();}
+\DoxyCodeLine{194 }
+\DoxyCodeLine{195         dBManager.apostar(\mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_ab32bba3f140f33d176c85bb4ad8527b4}{usuario}}, dineroApostado, beneficios, apuesta);     }
+\DoxyCodeLine{196 }
+\DoxyCodeLine{197         dBManager.close();}
+\DoxyCodeLine{198    \}; }
+
+\end{DoxyCode}
+
+
+Hace referencia a data\+Access.\+Data\+Access.\+apostar() y data\+Access.\+Data\+Access.\+close().
+
+\mbox{\Hypertarget{classbusinessLogic_1_1BLFacadeImplementation_a504f1b6069b3d166881c8047836a1d76}\label{classbusinessLogic_1_1BLFacadeImplementation_a504f1b6069b3d166881c8047836a1d76}} 
+\index{businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}!createEvent@{createEvent}}
+\index{createEvent@{createEvent}!businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}}
+\subsubsection{\texorpdfstring{createEvent()}{createEvent()}}
+{\footnotesize\ttfamily void business\+Logic.\+B\+L\+Facade\+Implementation.\+create\+Event (\begin{DoxyParamCaption}\item[{String}]{description,  }\item[{Date}]{event\+Date }\end{DoxyParamCaption})}
+
+
+
+Implementa \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade_a8ff6dbaab4c3d5312c655bce4fedfff3}{business\+Logic.\+B\+L\+Facade}}.
+
+
+
+Definición en la línea 157 del archivo B\+L\+Facade\+Implementation.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{157                                                              \{}
+\DoxyCodeLine{158        }
+\DoxyCodeLine{159         DataAccess dBManager=\textcolor{keyword}{new} DataAccess();}
+\DoxyCodeLine{160 }
+\DoxyCodeLine{161         dBManager.crearEvento(description, eventDate);      }
+\DoxyCodeLine{162 }
+\DoxyCodeLine{163         dBManager.close();}
+\DoxyCodeLine{164    \};}
+
+\end{DoxyCode}
+
+
+Hace referencia a data\+Access.\+Data\+Access.\+close() y data\+Access.\+Data\+Access.\+crear\+Evento().
+
+\mbox{\Hypertarget{classbusinessLogic_1_1BLFacadeImplementation_ab033eb5a41a86e8b3010455b745ba267}\label{classbusinessLogic_1_1BLFacadeImplementation_ab033eb5a41a86e8b3010455b745ba267}} 
+\index{businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}!createQuestion@{createQuestion}}
+\index{createQuestion@{createQuestion}!businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}}
+\subsubsection{\texorpdfstring{createQuestion()}{createQuestion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classdomain_1_1Question}{Question}} business\+Logic.\+B\+L\+Facade\+Implementation.\+create\+Question (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdomain_1_1Event}{Event}}}]{event,  }\item[{String}]{question,  }\item[{float}]{bet\+Minimum }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classexceptions_1_1EventFinished}{Event\+Finished}}, \mbox{\hyperlink{classexceptions_1_1QuestionAlreadyExist}{Question\+Already\+Exist}}}
+
+This method creates a question for an event, with a question text and the minimum bet
+
+
+\begin{DoxyParams}{Parámetros}
+{\em event} & to which question is added \\
+\hline
+{\em question} & text of the question \\
+\hline
+{\em bet\+Minimum} & minimum quantity of the bet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+the created question, or null, or an exception 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em Event\+Finished} & if current data is after data of the event \\
+\hline
+{\em Question\+Already\+Exist} & if the same question already exists for the event \\
+\hline
+\end{DoxyExceptions}
+
+
+Implementa \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade_a64a013f322555816e67b601d38f53a1a}{business\+Logic.\+B\+L\+Facade}}.
+
+
+
+Definición en la línea 52 del archivo B\+L\+Facade\+Implementation.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52                                                                                                                             \{}
+\DoxyCodeLine{53        }
+\DoxyCodeLine{54         \textcolor{comment}{//The minimum bed must be greater than 0}}
+\DoxyCodeLine{55         DataAccess dBManager=\textcolor{keyword}{new} DataAccess();}
+\DoxyCodeLine{56         Question qry=\textcolor{keyword}{null};}
+\DoxyCodeLine{57         }
+\DoxyCodeLine{58         }
+\DoxyCodeLine{59         \textcolor{keywordflow}{if}(\textcolor{keyword}{new} Date().compareTo(event.getEventDate())>0)}
+\DoxyCodeLine{60             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} EventFinished(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"ErrorEventHasFinished"}));}
+\DoxyCodeLine{61                 }
+\DoxyCodeLine{62         }
+\DoxyCodeLine{63          qry=dBManager.createQuestion(event,question,betMinimum);       }
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65         dBManager.close();}
+\DoxyCodeLine{66         }
+\DoxyCodeLine{67         \textcolor{keywordflow}{return} qry;}
+\DoxyCodeLine{68    \};}
+
+\end{DoxyCode}
+
+
+Hace referencia a data\+Access.\+Data\+Access.\+close() y data\+Access.\+Data\+Access.\+create\+Question().
+
+\mbox{\Hypertarget{classbusinessLogic_1_1BLFacadeImplementation_a05d93749b9cdaabcda23a8e6299fdf7d}\label{classbusinessLogic_1_1BLFacadeImplementation_a05d93749b9cdaabcda23a8e6299fdf7d}} 
+\index{businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}!createQuestion@{createQuestion}}
+\index{createQuestion@{createQuestion}!businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}}
+\subsubsection{\texorpdfstring{createQuestion()}{createQuestion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classdomain_1_1Question}{Question}} business\+Logic.\+B\+L\+Facade\+Implementation.\+create\+Question (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdomain_1_1Event}{Event}}}]{event,  }\item[{String}]{question,  }\item[{\mbox{\hyperlink{classdomain_1_1Result}{Result}}}]{result,  }\item[{float}]{bet\+Minimum,  }\item[{float}]{cuota }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classexceptions_1_1EventFinished}{Event\+Finished}}, \mbox{\hyperlink{classexceptions_1_1QuestionAlreadyExist}{Question\+Already\+Exist}}}
+
+
+
+Implementa \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade_a7ca4a9726d4132b8e54b6a45a321bec8}{business\+Logic.\+B\+L\+Facade}}.
+
+
+
+Definición en la línea 72 del archivo B\+L\+Facade\+Implementation.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{72                                                                                                                                                       \{}
+\DoxyCodeLine{73        }
+\DoxyCodeLine{74         \textcolor{comment}{//The minimum bed must be greater than 0}}
+\DoxyCodeLine{75         DataAccess dBManager=\textcolor{keyword}{new} DataAccess();}
+\DoxyCodeLine{76         Question qry=\textcolor{keyword}{null};}
+\DoxyCodeLine{77         }
+\DoxyCodeLine{78         }
+\DoxyCodeLine{79         \textcolor{keywordflow}{if}(\textcolor{keyword}{new} Date().compareTo(event.getEventDate())>0)}
+\DoxyCodeLine{80             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} EventFinished(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"ErrorEventHasFinished"}));}
+\DoxyCodeLine{81                 }
+\DoxyCodeLine{82         }
+\DoxyCodeLine{83          qry=dBManager.createQuestion(event,question,result,betMinimum,cuota);      }
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85         dBManager.close();}
+\DoxyCodeLine{86         }
+\DoxyCodeLine{87         \textcolor{keywordflow}{return} qry;}
+\DoxyCodeLine{88    \};}
+
+\end{DoxyCode}
+
+
+Hace referencia a data\+Access.\+Data\+Access.\+close() y data\+Access.\+Data\+Access.\+create\+Question().
+
+\mbox{\Hypertarget{classbusinessLogic_1_1BLFacadeImplementation_a1fd11ce02084c04c70d667efb94167d0}\label{classbusinessLogic_1_1BLFacadeImplementation_a1fd11ce02084c04c70d667efb94167d0}} 
+\index{businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}!EsAdmin@{EsAdmin}}
+\index{EsAdmin@{EsAdmin}!businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}}
+\subsubsection{\texorpdfstring{EsAdmin()}{EsAdmin()}}
+{\footnotesize\ttfamily boolean business\+Logic.\+B\+L\+Facade\+Implementation.\+Es\+Admin (\begin{DoxyParamCaption}\item[{String}]{usuario,  }\item[{String}]{contraseña }\end{DoxyParamCaption})}
+
+
+
+Implementa \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade_abd1601649b5bd94bd61c5c2a4893c734}{business\+Logic.\+B\+L\+Facade}}.
+
+
+
+Definición en la línea 140 del archivo B\+L\+Facade\+Implementation.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{140                                                              \{}
+\DoxyCodeLine{141 }
+\DoxyCodeLine{142         DataAccess dBManager=\textcolor{keyword}{new} DataAccess();}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144         \textcolor{keywordflow}{if}(dBManager.tipoUsuario(\mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_ab32bba3f140f33d176c85bb4ad8527b4}{usuario}}, contraseña).equals(\textcolor{stringliteral}{"admin"})) \{}
+\DoxyCodeLine{145             dBManager.close();}
+\DoxyCodeLine{146             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{147         \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{148             dBManager.close();}
+\DoxyCodeLine{149             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{150         \}}
+\DoxyCodeLine{151         }
+\DoxyCodeLine{152    \};}
+
+\end{DoxyCode}
+
+
+Hace referencia a data\+Access.\+Data\+Access.\+close() y data\+Access.\+Data\+Access.\+tipo\+Usuario().
+
+\mbox{\Hypertarget{classbusinessLogic_1_1BLFacadeImplementation_ac83572a35820cc3eac9d4a51add5a752}\label{classbusinessLogic_1_1BLFacadeImplementation_ac83572a35820cc3eac9d4a51add5a752}} 
+\index{businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}!Esta@{Esta}}
+\index{Esta@{Esta}!businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}}
+\subsubsection{\texorpdfstring{Esta()}{Esta()}}
+{\footnotesize\ttfamily boolean business\+Logic.\+B\+L\+Facade\+Implementation.\+Esta (\begin{DoxyParamCaption}\item[{String}]{D\+NI }\end{DoxyParamCaption})}
+
+
+
+Implementa \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade_a6d1b585be500b872823e516cc30929ee}{business\+Logic.\+B\+L\+Facade}}.
+
+
+
+Definición en la línea 124 del archivo B\+L\+Facade\+Implementation.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{124                                    \{}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126         DataAccess dBManager=\textcolor{keyword}{new} DataAccess();}
+\DoxyCodeLine{127 }
+\DoxyCodeLine{128         \textcolor{keywordflow}{if}(dBManager.estaUsuario(DNI)) \{}
+\DoxyCodeLine{129             dBManager.close();}
+\DoxyCodeLine{130             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{131         \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{132             dBManager.close();}
+\DoxyCodeLine{133             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{134         \}}
+\DoxyCodeLine{135         }
+\DoxyCodeLine{136    \};}
+
+\end{DoxyCode}
+
+
+Hace referencia a data\+Access.\+Data\+Access.\+close() y data\+Access.\+Data\+Access.\+esta\+Usuario().
+
+\mbox{\Hypertarget{classbusinessLogic_1_1BLFacadeImplementation_ac0445d578f21530433001bfb7582a175}\label{classbusinessLogic_1_1BLFacadeImplementation_ac0445d578f21530433001bfb7582a175}} 
+\index{businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}!estaResultado@{estaResultado}}
+\index{estaResultado@{estaResultado}!businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}}
+\subsubsection{\texorpdfstring{estaResultado()}{estaResultado()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classdomain_1_1Result}{Result}} business\+Logic.\+B\+L\+Facade\+Implementation.\+esta\+Resultado (\begin{DoxyParamCaption}\item[{String}]{res }\end{DoxyParamCaption})}
+
+
+
+Implementa \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade_a3115bea528677d182ed5725eacbdf13c}{business\+Logic.\+B\+L\+Facade}}.
+
+
+
+Definición en la línea 216 del archivo B\+L\+Facade\+Implementation.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{216                                           \{}
+\DoxyCodeLine{217        }
+\DoxyCodeLine{218         DataAccess dBManager=\textcolor{keyword}{new} DataAccess();}
+\DoxyCodeLine{219 }
+\DoxyCodeLine{220         Result r=dBManager.estaResultado(res);}
+\DoxyCodeLine{221 }
+\DoxyCodeLine{222         dBManager.close();}
+\DoxyCodeLine{223         \textcolor{keywordflow}{return} r;}
+\DoxyCodeLine{224    \};}
+
+\end{DoxyCode}
+
+
+Hace referencia a data\+Access.\+Data\+Access.\+close() y data\+Access.\+Data\+Access.\+esta\+Resultado().
+
+\mbox{\Hypertarget{classbusinessLogic_1_1BLFacadeImplementation_afbf2b534e813dc7344214b5b8d6ca4de}\label{classbusinessLogic_1_1BLFacadeImplementation_afbf2b534e813dc7344214b5b8d6ca4de}} 
+\index{businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}!getApuestas@{getApuestas}}
+\index{getApuestas@{getApuestas}!businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}}
+\subsubsection{\texorpdfstring{getApuestas()}{getApuestas()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classdomain_1_1Apuesta}{Apuesta}}$>$ business\+Logic.\+B\+L\+Facade\+Implementation.\+get\+Apuestas (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+
+
+Implementa \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade_ae1f0952366adb9a51b00889e7be9cf11}{business\+Logic.\+B\+L\+Facade}}.
+
+
+
+Definición en la línea 255 del archivo B\+L\+Facade\+Implementation.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{255                                                    \{}
+\DoxyCodeLine{256         DataAccess dbManager=\textcolor{keyword}{new} DataAccess();}
+\DoxyCodeLine{257         List<Apuesta>  \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a1da1d7f11768f7f37c395c534a19323b}{apuestas}}=dbManager.getApuestas(name);}
+\DoxyCodeLine{258         dbManager.close();}
+\DoxyCodeLine{259         \textcolor{keywordflow}{return} \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a1da1d7f11768f7f37c395c534a19323b}{apuestas}};}
+\DoxyCodeLine{260     \};}
+
+\end{DoxyCode}
+
+
+Hace referencia a data\+Access.\+Data\+Access.\+close() y data\+Access.\+Data\+Access.\+get\+Apuestas().
+
+\mbox{\Hypertarget{classbusinessLogic_1_1BLFacadeImplementation_af1218f1db76137f821a31adc31f47e9f}\label{classbusinessLogic_1_1BLFacadeImplementation_af1218f1db76137f821a31adc31f47e9f}} 
+\index{businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}!getApuestasACoregir@{getApuestasACoregir}}
+\index{getApuestasACoregir@{getApuestasACoregir}!businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}}
+\subsubsection{\texorpdfstring{getApuestasACoregir()}{getApuestasACoregir()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classdomain_1_1Apuesta}{Apuesta}}$>$ business\+Logic.\+B\+L\+Facade\+Implementation.\+get\+Apuestas\+A\+Coregir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implementa \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade_a7cd14457ed6f9b5aaef992f780a51c20}{business\+Logic.\+B\+L\+Facade}}.
+
+
+
+Definición en la línea 281 del archivo B\+L\+Facade\+Implementation.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{281                                                 \{}
+\DoxyCodeLine{282         DataAccess dbManager=\textcolor{keyword}{new} DataAccess();}
+\DoxyCodeLine{283         List<Apuesta>  \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a1da1d7f11768f7f37c395c534a19323b}{apuestas}}=dbManager.getApuestasACoregir();}
+\DoxyCodeLine{284         dbManager.close();}
+\DoxyCodeLine{285         \textcolor{keywordflow}{return} \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a1da1d7f11768f7f37c395c534a19323b}{apuestas}};}
+\DoxyCodeLine{286     \};}
+
+\end{DoxyCode}
+
+
+Hace referencia a data\+Access.\+Data\+Access.\+close() y data\+Access.\+Data\+Access.\+get\+Apuestas\+A\+Coregir().
+
+\mbox{\Hypertarget{classbusinessLogic_1_1BLFacadeImplementation_a5cf672ed1cbdef2446948fe5472e9da5}\label{classbusinessLogic_1_1BLFacadeImplementation_a5cf672ed1cbdef2446948fe5472e9da5}} 
+\index{businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}!getApuestasEnJuego@{getApuestasEnJuego}}
+\index{getApuestasEnJuego@{getApuestasEnJuego}!businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}}
+\subsubsection{\texorpdfstring{getApuestasEnJuego()}{getApuestasEnJuego()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classdomain_1_1Apuesta}{Apuesta}}$>$ business\+Logic.\+B\+L\+Facade\+Implementation.\+get\+Apuestas\+En\+Juego (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+
+
+Implementa \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade_ac88f2aca4613139544b5061d157b91a4}{business\+Logic.\+B\+L\+Facade}}.
+
+
+
+Definición en la línea 264 del archivo B\+L\+Facade\+Implementation.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{264                                                           \{}
+\DoxyCodeLine{265         DataAccess dbManager=\textcolor{keyword}{new} DataAccess();}
+\DoxyCodeLine{266         List<Apuesta>  \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a1da1d7f11768f7f37c395c534a19323b}{apuestas}}=dbManager.getApuestasEnJuego(name);}
+\DoxyCodeLine{267         dbManager.close();}
+\DoxyCodeLine{268         \textcolor{keywordflow}{return} \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a1da1d7f11768f7f37c395c534a19323b}{apuestas}};}
+\DoxyCodeLine{269     \};}
+
+\end{DoxyCode}
+
+
+Hace referencia a data\+Access.\+Data\+Access.\+close() y data\+Access.\+Data\+Access.\+get\+Apuestas\+En\+Juego().
+
+\mbox{\Hypertarget{classbusinessLogic_1_1BLFacadeImplementation_a6e151a43915c198904fe8cafdb26ed2c}\label{classbusinessLogic_1_1BLFacadeImplementation_a6e151a43915c198904fe8cafdb26ed2c}} 
+\index{businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}!getApuestasFinalizadas@{getApuestasFinalizadas}}
+\index{getApuestasFinalizadas@{getApuestasFinalizadas}!businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}}
+\subsubsection{\texorpdfstring{getApuestasFinalizadas()}{getApuestasFinalizadas()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classdomain_1_1Apuesta}{Apuesta}}$>$ business\+Logic.\+B\+L\+Facade\+Implementation.\+get\+Apuestas\+Finalizadas (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+
+
+Implementa \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade_aeface90d3879409333ceb8ab9cf134e0}{business\+Logic.\+B\+L\+Facade}}.
+
+
+
+Definición en la línea 272 del archivo B\+L\+Facade\+Implementation.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{272                                                               \{}
+\DoxyCodeLine{273         DataAccess dbManager=\textcolor{keyword}{new} DataAccess();}
+\DoxyCodeLine{274         List<Apuesta>  \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a1da1d7f11768f7f37c395c534a19323b}{apuestas}}=dbManager.getApuestasFinalizadas(name);}
+\DoxyCodeLine{275         dbManager.close();}
+\DoxyCodeLine{276         \textcolor{keywordflow}{return} \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a1da1d7f11768f7f37c395c534a19323b}{apuestas}};}
+\DoxyCodeLine{277     \};}
+
+\end{DoxyCode}
+
+
+Hace referencia a data\+Access.\+Data\+Access.\+close() y data\+Access.\+Data\+Access.\+get\+Apuestas\+Finalizadas().
+
+\mbox{\Hypertarget{classbusinessLogic_1_1BLFacadeImplementation_a62cba365fc047beb4523773ef8a53644}\label{classbusinessLogic_1_1BLFacadeImplementation_a62cba365fc047beb4523773ef8a53644}} 
+\index{businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}!getEvents@{getEvents}}
+\index{getEvents@{getEvents}!businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}}
+\subsubsection{\texorpdfstring{getEvents()}{getEvents()}}
+{\footnotesize\ttfamily Vector$<$\mbox{\hyperlink{classdomain_1_1Event}{Event}}$>$ business\+Logic.\+B\+L\+Facade\+Implementation.\+get\+Events (\begin{DoxyParamCaption}\item[{Date}]{date }\end{DoxyParamCaption})}
+
+This method invokes the data access to retrieve the events of a given date
+
+
+\begin{DoxyParams}{Parámetros}
+{\em date} & in which events are retrieved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+collection of events 
+\end{DoxyReturn}
+
+
+Implementa \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade_a9db26f96faa50c91cb53fb831695c98f}{business\+Logic.\+B\+L\+Facade}}.
+
+
+
+Definición en la línea 246 del archivo B\+L\+Facade\+Implementation.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{246                                                \{}
+\DoxyCodeLine{247         DataAccess dbManager=\textcolor{keyword}{new} DataAccess();}
+\DoxyCodeLine{248         Vector<Event>  events=dbManager.getEvents(date);}
+\DoxyCodeLine{249         dbManager.close();}
+\DoxyCodeLine{250         \textcolor{keywordflow}{return} events;}
+\DoxyCodeLine{251     \};}
+
+\end{DoxyCode}
+
+
+Hace referencia a data\+Access.\+Data\+Access.\+close() y data\+Access.\+Data\+Access.\+get\+Events().
+
+\mbox{\Hypertarget{classbusinessLogic_1_1BLFacadeImplementation_a5f915c64121f2a6e37af4fc337e88ff0}\label{classbusinessLogic_1_1BLFacadeImplementation_a5f915c64121f2a6e37af4fc337e88ff0}} 
+\index{businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}!initializeBD@{initializeBD}}
+\index{initializeBD@{initializeBD}!businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}}
+\subsubsection{\texorpdfstring{initializeBD()}{initializeBD()}}
+{\footnotesize\ttfamily void business\+Logic.\+B\+L\+Facade\+Implementation.\+initialize\+BD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method invokes the data access to initialize the database with some events and questions. It is invoked only when the option \char`\"{}initialize\char`\"{} is declared in the tag data\+Base\+Open\+Mode of resources/config.\+xml file 
+
+Implementa \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade_a8c041928b06257ae83a56fa86e8c282b}{business\+Logic.\+B\+L\+Facade}}.
+
+
+
+Definición en la línea 293 del archivo B\+L\+Facade\+Implementation.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{293                                \{}
+\DoxyCodeLine{294         DataAccess dBManager=\textcolor{keyword}{new} DataAccess();}
+\DoxyCodeLine{295         dBManager.initializeDB();}
+\DoxyCodeLine{296         dBManager.close();}
+\DoxyCodeLine{297     \};}
+
+\end{DoxyCode}
+
+
+Hace referencia a data\+Access.\+Data\+Access.\+close() y data\+Access.\+Data\+Access.\+initialize\+D\+B().
+
+\mbox{\Hypertarget{classbusinessLogic_1_1BLFacadeImplementation_afa698129a017866dfc8ae32601fd00fe}\label{classbusinessLogic_1_1BLFacadeImplementation_afa698129a017866dfc8ae32601fd00fe}} 
+\index{businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}!Login@{Login}}
+\index{Login@{Login}!businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}}
+\subsubsection{\texorpdfstring{Login()}{Login()}}
+{\footnotesize\ttfamily boolean business\+Logic.\+B\+L\+Facade\+Implementation.\+Login (\begin{DoxyParamCaption}\item[{String}]{usuario,  }\item[{String}]{contraseña }\end{DoxyParamCaption})}
+
+
+
+Implementa \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade_adef077ad68e73cc18466c7f8805f1516}{business\+Logic.\+B\+L\+Facade}}.
+
+
+
+Definición en la línea 106 del archivo B\+L\+Facade\+Implementation.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{106                                                            \{}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108         DataAccess dBManager=\textcolor{keyword}{new} DataAccess();}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110         \textcolor{keywordflow}{if}(dBManager.contraseñaCorrecta(\mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_ab32bba3f140f33d176c85bb4ad8527b4}{usuario}},contraseña)) \{}
+\DoxyCodeLine{111             dBManager.close();}
+\DoxyCodeLine{112             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{113         \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{114             dBManager.close();}
+\DoxyCodeLine{115             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{116         \}}
+\DoxyCodeLine{117         }
+\DoxyCodeLine{118    \};}
+
+\end{DoxyCode}
+
+
+Hace referencia a data\+Access.\+Data\+Access.\+close() y data\+Access.\+Data\+Access.\+contraseña\+Correcta().
+
+\mbox{\Hypertarget{classbusinessLogic_1_1BLFacadeImplementation_a2ba616628033f05a5f70a0afddb1c970}\label{classbusinessLogic_1_1BLFacadeImplementation_a2ba616628033f05a5f70a0afddb1c970}} 
+\index{businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}!saldo@{saldo}}
+\index{saldo@{saldo}!businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}}
+\subsubsection{\texorpdfstring{saldo()}{saldo()}}
+{\footnotesize\ttfamily float business\+Logic.\+B\+L\+Facade\+Implementation.\+saldo (\begin{DoxyParamCaption}\item[{String}]{usuario }\end{DoxyParamCaption})}
+
+
+
+Implementa \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade_a1b91318bf144ed2eae0c38e385dfdd1f}{business\+Logic.\+B\+L\+Facade}}.
+
+
+
+Definición en la línea 168 del archivo B\+L\+Facade\+Implementation.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{168                                      \{}
+\DoxyCodeLine{169        }
+\DoxyCodeLine{170         DataAccess dBManager=\textcolor{keyword}{new} DataAccess();}
+\DoxyCodeLine{171 }
+\DoxyCodeLine{172         \textcolor{keywordtype}{float} \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a2ba616628033f05a5f70a0afddb1c970}{saldo}}=dBManager.verSaldo(\mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_ab32bba3f140f33d176c85bb4ad8527b4}{usuario}});        }
+\DoxyCodeLine{173 }
+\DoxyCodeLine{174         dBManager.close();}
+\DoxyCodeLine{175         }
+\DoxyCodeLine{176         \textcolor{keywordflow}{return} \mbox{\hyperlink{classbusinessLogic_1_1BLFacadeImplementation_a2ba616628033f05a5f70a0afddb1c970}{saldo}};}
+\DoxyCodeLine{177    \};}
+
+\end{DoxyCode}
+
+
+Hace referencia a data\+Access.\+Data\+Access.\+close() y data\+Access.\+Data\+Access.\+ver\+Saldo().
+
+\mbox{\Hypertarget{classbusinessLogic_1_1BLFacadeImplementation_ab32bba3f140f33d176c85bb4ad8527b4}\label{classbusinessLogic_1_1BLFacadeImplementation_ab32bba3f140f33d176c85bb4ad8527b4}} 
+\index{businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}!usuario@{usuario}}
+\index{usuario@{usuario}!businessLogic.BLFacadeImplementation@{businessLogic.BLFacadeImplementation}}
+\subsubsection{\texorpdfstring{usuario()}{usuario()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classdomain_1_1User}{User}} business\+Logic.\+B\+L\+Facade\+Implementation.\+usuario (\begin{DoxyParamCaption}\item[{String}]{nombre }\end{DoxyParamCaption})}
+
+
+
+Implementa \mbox{\hyperlink{interfacebusinessLogic_1_1BLFacade_aeea4894fe11f25ad2b00531ebcb3fb4c}{business\+Logic.\+B\+L\+Facade}}.
+
+
+
+Definición en la línea 204 del archivo B\+L\+Facade\+Implementation.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{204                                      \{}
+\DoxyCodeLine{205        }
+\DoxyCodeLine{206         DataAccess dBManager=\textcolor{keyword}{new} DataAccess();}
+\DoxyCodeLine{207 }
+\DoxyCodeLine{208         User u=dBManager.Usuario(nombre);       }
+\DoxyCodeLine{209 }
+\DoxyCodeLine{210         dBManager.close();}
+\DoxyCodeLine{211         \textcolor{keywordflow}{return} u;}
+\DoxyCodeLine{212    \}; }
+
+\end{DoxyCode}
+
+
+Hace referencia a data\+Access.\+Data\+Access.\+close() y data\+Access.\+Data\+Access.\+Usuario().
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+src/business\+Logic/\mbox{\hyperlink{BLFacadeImplementation_8java}{B\+L\+Facade\+Implementation.\+java}}\end{DoxyCompactItemize}

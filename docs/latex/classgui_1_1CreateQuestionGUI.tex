@@ -1,0 +1,713 @@
+\hypertarget{classgui_1_1CreateQuestionGUI}{}\section{Referencia de la Clase gui.\+Create\+Question\+G\+UI}
+\label{classgui_1_1CreateQuestionGUI}\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+Diagrama de herencias de gui.\+Create\+Question\+G\+UI\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgui_1_1CreateQuestionGUI}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_aebd0e09c3e2f3ee4bc383d99124171d1}{Create\+Question\+G\+UI}} (Vector$<$ \mbox{\hyperlink{classdomain_1_1Event}{domain.\+Event}} $>$ v)
+\end{DoxyCompactItemize}
+\subsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a31ee6b80a30b5fb2fae4347a754f9246}{paint\+Days\+With\+Events}} (J\+Calendar \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a8f04ad9ee4441b9a1bd2f8aedcddeadb}{j\+Calendar}})
+\end{DoxyCompactItemize}
+\subsection*{Atributos del \textquotesingle{}package\textquotesingle{}}
+\begin{DoxyCompactItemize}
+\item 
+Default\+Combo\+Box\+Model$<$ \mbox{\hyperlink{classdomain_1_1Event}{Event}} $>$ \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a95eda1d4dff395e54c15f08cc579f613}{model\+Events}} =new Default\+Combo\+Box\+Model$<$\mbox{\hyperlink{classdomain_1_1Event}{Event}}$>$()
+\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a7e0dc7e52c38f32c7f5ae3e41449d4f8}{jb\+Init}} (Vector$<$ \mbox{\hyperlink{classdomain_1_1Event}{domain.\+Event}} $>$ v)  throws Exception   
+\item 
+Date \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a9eb6017713f37b1600dbe23a0fdb3a95}{trim}} (Date date)
+\item 
+void \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_ad1f4e3d488a30569844cad5d62fc31bc}{j\+Button\+Create\+\_\+action\+Performed}} (Action\+Event e)
+\item 
+void \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a9abbdb8a214e4c578ea5858fc1f52fc1}{j\+Button\+Close\+\_\+action\+Performed}} (Action\+Event e)
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+J\+Combo\+Box$<$ \mbox{\hyperlink{classdomain_1_1Event}{Event}} $>$ \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a7cba1213dbc064173f83408ee9348354}{j\+Combo\+Box\+Events}} =new J\+Combo\+Box$<$\mbox{\hyperlink{classdomain_1_1Event}{Event}}$>$()
+\item 
+J\+Label \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a891ee3134074a77ab089c9b654172fb8}{j\+Label\+List\+Of\+Events}} = new J\+Label(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}List\+Events\char`\"{}))
+\item 
+J\+Label \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a3a6aafbf3fb4ba909501668606612228}{j\+Label\+Query}} = new J\+Label(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Query\char`\"{}))
+\item 
+J\+Label \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a3c355b3f8563c1babcedb4be1f365ee6}{j\+Label\+Min\+Bet}} = new J\+Label(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Minimum\+Bet\+Price\char`\"{}))
+\item 
+J\+Label \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a5451d834c1a494fdb7b7dc2bb3499ecf}{j\+Label\+Event\+Date}} = new J\+Label(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Event\+Date\char`\"{}))
+\item 
+J\+Text\+Field \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a5b8aa435d7a5e058ac6f9bd0706d523e}{j\+Text\+Field\+Query}} = new J\+Text\+Field()
+\item 
+J\+Text\+Field \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a23aebdce43e2df93a150f96572dfb741}{j\+Text\+Field\+Price}} = new J\+Text\+Field()
+\item 
+J\+Calendar \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a8f04ad9ee4441b9a1bd2f8aedcddeadb}{j\+Calendar}} = new J\+Calendar()
+\item 
+Calendar \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a0857e19f9a0c2d101de0ca7c2dc01592}{calendar\+Mio}} = null
+\item 
+J\+Scroll\+Pane \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_ae783664b007ad81c7b0ef9bd59ec9b4a}{scroll\+Pane\+Events}} = new J\+Scroll\+Pane()
+\item 
+J\+Button \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_ab63c4d45270efeffdb0137a8be0163bb}{j\+Button\+Create}} = new J\+Button(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Create\+Query\char`\"{}))
+\item 
+J\+Button \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_ab06cd5dc6f37bc2ded45ff7b29bc18f9}{j\+Button\+Close}} = new J\+Button(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Close\char`\"{}))
+\item 
+J\+Label \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_ad0c2eb3eb7eefc996d684ddab25decf0}{j\+Label\+Msg}} = new J\+Label()
+\item 
+J\+Label \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a1cb82bebfab8f827f7ef9cc7f62db11d}{j\+Label\+Error}} = new J\+Label()
+\item 
+J\+Text\+Field \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a78b0906d852838d49df52e2b407462bf}{text\+Field\+Cuota}}
+\item 
+final J\+Label \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_aa8b6309e7e7f51e35da8339e0170ca96}{lbl\+Resultado}} = new J\+Label(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Create\+Question\+G\+U\+I.\+lbl\+Resultado.\+text\char`\"{}))
+\item 
+final J\+Text\+Field \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a4bedcfd1ede339a0bd85ae899b1dd3e2}{text\+Field\+Result}} = new J\+Text\+Field()
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static final long \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a8fb77e14fbe05d7368fabf0a88575184}{serial\+Version\+U\+ID}} = 1L
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+Definición en la línea 30 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_aebd0e09c3e2f3ee4bc383d99124171d1}\label{classgui_1_1CreateQuestionGUI_aebd0e09c3e2f3ee4bc383d99124171d1}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!CreateQuestionGUI@{CreateQuestionGUI}}
+\index{CreateQuestionGUI@{CreateQuestionGUI}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{CreateQuestionGUI()}{CreateQuestionGUI()}}
+{\footnotesize\ttfamily gui.\+Create\+Question\+G\+U\+I.\+Create\+Question\+G\+UI (\begin{DoxyParamCaption}\item[{Vector$<$ \mbox{\hyperlink{classdomain_1_1Event}{domain.\+Event}} $>$}]{v }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 61 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{62   \{}
+\DoxyCodeLine{63     \textcolor{comment}{//textFieldResult.setText(ResourceBundle.getBundle("Etiquetas").getString("CreateQuestionGUI.textField.text")); //\$NON-NLS-1\$ //\$NON-NLS-2\$}}
+\DoxyCodeLine{64     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a4bedcfd1ede339a0bd85ae899b1dd3e2}{textFieldResult}}.setBounds(233, 229, 108, 20);}
+\DoxyCodeLine{65     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a4bedcfd1ede339a0bd85ae899b1dd3e2}{textFieldResult}}.setColumns(10);}
+\DoxyCodeLine{66     \textcolor{keywordflow}{try}}
+\DoxyCodeLine{67     \{}
+\DoxyCodeLine{68       \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a7e0dc7e52c38f32c7f5ae3e41449d4f8}{jbInit}}(v);}
+\DoxyCodeLine{69     \}}
+\DoxyCodeLine{70     \textcolor{keywordflow}{catch}(Exception e)}
+\DoxyCodeLine{71     \{}
+\DoxyCodeLine{72       e.printStackTrace();}
+\DoxyCodeLine{73     \}}
+\DoxyCodeLine{74   \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a gui.\+Create\+Question\+G\+U\+I.\+jb\+Init() y gui.\+Create\+Question\+G\+U\+I.\+text\+Field\+Result.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_a7e0dc7e52c38f32c7f5ae3e41449d4f8}\label{classgui_1_1CreateQuestionGUI_a7e0dc7e52c38f32c7f5ae3e41449d4f8}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!jbInit@{jbInit}}
+\index{jbInit@{jbInit}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{jbInit()}{jbInit()}}
+{\footnotesize\ttfamily void gui.\+Create\+Question\+G\+U\+I.\+jb\+Init (\begin{DoxyParamCaption}\item[{Vector$<$ \mbox{\hyperlink{classdomain_1_1Event}{domain.\+Event}} $>$}]{v }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 76 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77   \{}
+\DoxyCodeLine{78       }
+\DoxyCodeLine{79     this.getContentPane().setLayout(\textcolor{keyword}{null});}
+\DoxyCodeLine{80     this.setSize(\textcolor{keyword}{new} Dimension(604, 370));}
+\DoxyCodeLine{81     this.setTitle(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"CreateQuery"}));}
+\DoxyCodeLine{82     }
+\DoxyCodeLine{83     }
+\DoxyCodeLine{84     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a7cba1213dbc064173f83408ee9348354}{jComboBoxEvents}}.setModel(\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a95eda1d4dff395e54c15f08cc579f613}{modelEvents}});}
+\DoxyCodeLine{85     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a7cba1213dbc064173f83408ee9348354}{jComboBoxEvents}}.setBounds(\textcolor{keyword}{new} Rectangle(275, 47, 250, 20));}
+\DoxyCodeLine{86     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a891ee3134074a77ab089c9b654172fb8}{jLabelListOfEvents}}.setBounds(\textcolor{keyword}{new} Rectangle(290, 18, 277, 20));}
+\DoxyCodeLine{87     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a3a6aafbf3fb4ba909501668606612228}{jLabelQuery}}.setBounds(\textcolor{keyword}{new} Rectangle(25, 198, 75, 20));}
+\DoxyCodeLine{88     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a5b8aa435d7a5e058ac6f9bd0706d523e}{jTextFieldQuery}}.setBounds(\textcolor{keyword}{new} Rectangle(96, 198, 429, 20));}
+\DoxyCodeLine{89     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a3c355b3f8563c1babcedb4be1f365ee6}{jLabelMinBet}}.setBounds(\textcolor{keyword}{new} Rectangle(25, 229, 75, 20));}
+\DoxyCodeLine{90     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a23aebdce43e2df93a150f96572dfb741}{jTextFieldPrice}}.setBounds(\textcolor{keyword}{new} Rectangle(96, 229, 60, 20));}
+\DoxyCodeLine{91     }
+\DoxyCodeLine{92     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a8f04ad9ee4441b9a1bd2f8aedcddeadb}{jCalendar}}.setBounds(\textcolor{keyword}{new} Rectangle(25, 37, 225, 150));}
+\DoxyCodeLine{93     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_ae783664b007ad81c7b0ef9bd59ec9b4a}{scrollPaneEvents}}.setBounds(\textcolor{keyword}{new} Rectangle(25, 44, 346, 116));}
+\DoxyCodeLine{94     }
+\DoxyCodeLine{95     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_ab63c4d45270efeffdb0137a8be0163bb}{jButtonCreate}}.setBounds(\textcolor{keyword}{new} Rectangle(106, 290, 130, 30));}
+\DoxyCodeLine{96     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_ab63c4d45270efeffdb0137a8be0163bb}{jButtonCreate}}.setEnabled(\textcolor{keyword}{false});}
+\DoxyCodeLine{97     }
+\DoxyCodeLine{98     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_ab63c4d45270efeffdb0137a8be0163bb}{jButtonCreate}}.addActionListener(\textcolor{keyword}{new} ActionListener()}
+\DoxyCodeLine{99       \{}
+\DoxyCodeLine{100         \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e)}
+\DoxyCodeLine{101         \{}
+\DoxyCodeLine{102           \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_ad1f4e3d488a30569844cad5d62fc31bc}{jButtonCreate\_actionPerformed}}(e);}
+\DoxyCodeLine{103         \}}
+\DoxyCodeLine{104       \});}
+\DoxyCodeLine{105     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_ab06cd5dc6f37bc2ded45ff7b29bc18f9}{jButtonClose}}.setBounds(\textcolor{keyword}{new} Rectangle(275, 290, 130, 30));}
+\DoxyCodeLine{106     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_ab06cd5dc6f37bc2ded45ff7b29bc18f9}{jButtonClose}}.addActionListener(\textcolor{keyword}{new} ActionListener()}
+\DoxyCodeLine{107       \{}
+\DoxyCodeLine{108         \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e)}
+\DoxyCodeLine{109         \{}
+\DoxyCodeLine{110           \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a9abbdb8a214e4c578ea5858fc1f52fc1}{jButtonClose\_actionPerformed}}(e);}
+\DoxyCodeLine{111         \}}
+\DoxyCodeLine{112       \});}
+\DoxyCodeLine{113     }
+\DoxyCodeLine{114     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_ad0c2eb3eb7eefc996d684ddab25decf0}{jLabelMsg}}.setBounds(\textcolor{keyword}{new} Rectangle(275, 182, 305, 20));}
+\DoxyCodeLine{115     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_ad0c2eb3eb7eefc996d684ddab25decf0}{jLabelMsg}}.setForeground(Color.red);}
+\DoxyCodeLine{116     \textcolor{comment}{//jLabelMsg.setSize(new Dimension(305, 20));}}
+\DoxyCodeLine{117     }
+\DoxyCodeLine{118     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a1cb82bebfab8f827f7ef9cc7f62db11d}{jLabelError}}.setBounds(\textcolor{keyword}{new} Rectangle(25, 260, 305, 20));}
+\DoxyCodeLine{119     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a1cb82bebfab8f827f7ef9cc7f62db11d}{jLabelError}}.setForeground(Color.red);}
+\DoxyCodeLine{120     }
+\DoxyCodeLine{121     }
+\DoxyCodeLine{122     this.getContentPane().add(\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_ad0c2eb3eb7eefc996d684ddab25decf0}{jLabelMsg}}, \textcolor{keyword}{null});}
+\DoxyCodeLine{123     this.getContentPane().add(\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a1cb82bebfab8f827f7ef9cc7f62db11d}{jLabelError}}, \textcolor{keyword}{null});}
+\DoxyCodeLine{124 }
+\DoxyCodeLine{125     this.getContentPane().add(\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_ab06cd5dc6f37bc2ded45ff7b29bc18f9}{jButtonClose}}, \textcolor{keyword}{null});}
+\DoxyCodeLine{126     this.getContentPane().add(\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_ab63c4d45270efeffdb0137a8be0163bb}{jButtonCreate}}, \textcolor{keyword}{null});}
+\DoxyCodeLine{127     this.getContentPane().add(\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a5b8aa435d7a5e058ac6f9bd0706d523e}{jTextFieldQuery}}, \textcolor{keyword}{null});}
+\DoxyCodeLine{128     this.getContentPane().add(\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a3a6aafbf3fb4ba909501668606612228}{jLabelQuery}}, \textcolor{keyword}{null});}
+\DoxyCodeLine{129     this.getContentPane().add(\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a23aebdce43e2df93a150f96572dfb741}{jTextFieldPrice}}, \textcolor{keyword}{null});}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{131     this.getContentPane().add(\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a3c355b3f8563c1babcedb4be1f365ee6}{jLabelMinBet}}, \textcolor{keyword}{null});}
+\DoxyCodeLine{132     this.getContentPane().add(\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a891ee3134074a77ab089c9b654172fb8}{jLabelListOfEvents}}, \textcolor{keyword}{null});}
+\DoxyCodeLine{133     this.getContentPane().add(\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a7cba1213dbc064173f83408ee9348354}{jComboBoxEvents}}, \textcolor{keyword}{null});}
+\DoxyCodeLine{134     }
+\DoxyCodeLine{135     this.getContentPane().add(\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a8f04ad9ee4441b9a1bd2f8aedcddeadb}{jCalendar}}, \textcolor{keyword}{null});}
+\DoxyCodeLine{136 }
+\DoxyCodeLine{137     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a5451d834c1a494fdb7b7dc2bb3499ecf}{jLabelEventDate}}.setBounds(\textcolor{keyword}{new} Rectangle(40, 15, 140, 25));}
+\DoxyCodeLine{138     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a5451d834c1a494fdb7b7dc2bb3499ecf}{jLabelEventDate}}.setBounds(40, 16, 140, 25);}
+\DoxyCodeLine{139     getContentPane().add(\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a5451d834c1a494fdb7b7dc2bb3499ecf}{jLabelEventDate}});}
+\DoxyCodeLine{140     }
+\DoxyCodeLine{141     JLabel lblCuota = \textcolor{keyword}{new} JLabel(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"CreateQuestionGUI.lblCuota.text"})); \textcolor{comment}{//\$NON-NLS-1\$ //\$NON-NLS-2\$}}
+\DoxyCodeLine{142     lblCuota.setBounds(370, 235, 46, 14);}
+\DoxyCodeLine{143     getContentPane().add(lblCuota);}
+\DoxyCodeLine{144     }
+\DoxyCodeLine{145     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a78b0906d852838d49df52e2b407462bf}{textFieldCuota}} = \textcolor{keyword}{new} JTextField();}
+\DoxyCodeLine{146     \textcolor{comment}{//textFieldCuota.setText(ResourceBundle.getBundle("Etiquetas").getString("CreateQuestionGUI.textField.text")); //\$NON-NLS-1\$ //\$NON-NLS-2\$}}
+\DoxyCodeLine{147     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a78b0906d852838d49df52e2b407462bf}{textFieldCuota}}.setBounds(439, 229, 86, 20);}
+\DoxyCodeLine{148     getContentPane().add(\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a78b0906d852838d49df52e2b407462bf}{textFieldCuota}});}
+\DoxyCodeLine{149     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a78b0906d852838d49df52e2b407462bf}{textFieldCuota}}.setColumns(10);}
+\DoxyCodeLine{150     \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_aa8b6309e7e7f51e35da8339e0170ca96}{lblResultado}}.setBounds(166, 229, 62, 20);}
+\DoxyCodeLine{151     }
+\DoxyCodeLine{152     getContentPane().add(\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_aa8b6309e7e7f51e35da8339e0170ca96}{lblResultado}});}
+\DoxyCodeLine{153     }
+\DoxyCodeLine{154     getContentPane().add(\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a4bedcfd1ede339a0bd85ae899b1dd3e2}{textFieldResult}});}
+\DoxyCodeLine{155     }
+\DoxyCodeLine{156 }
+\DoxyCodeLine{157     }
+\DoxyCodeLine{158     \textcolor{comment}{// Code for JCalendar}}
+\DoxyCodeLine{159     this.\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a8f04ad9ee4441b9a1bd2f8aedcddeadb}{jCalendar}}.addPropertyChangeListener(\textcolor{keyword}{new} PropertyChangeListener()}
+\DoxyCodeLine{160     \{}
+\DoxyCodeLine{161         \textcolor{keyword}{public} \textcolor{keywordtype}{void} propertyChange(PropertyChangeEvent propertychangeevent)}
+\DoxyCodeLine{162       \{}
+\DoxyCodeLine{163         \textcolor{keywordflow}{if} (propertychangeevent.getPropertyName().equals(\textcolor{stringliteral}{"locale"}))}
+\DoxyCodeLine{164         \{}
+\DoxyCodeLine{165           \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a8f04ad9ee4441b9a1bd2f8aedcddeadb}{jCalendar}}.setLocale((Locale) propertychangeevent.getNewValue());}
+\DoxyCodeLine{166         \}}
+\DoxyCodeLine{167         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (propertychangeevent.getPropertyName().equals(\textcolor{stringliteral}{"calendar"}))}
+\DoxyCodeLine{168         \{}
+\DoxyCodeLine{169           \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a0857e19f9a0c2d101de0ca7c2dc01592}{calendarMio}} = (Calendar) propertychangeevent.getNewValue();}
+\DoxyCodeLine{170           DateFormat dateformat1 = DateFormat.getDateInstance(1, \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a8f04ad9ee4441b9a1bd2f8aedcddeadb}{jCalendar}}.getLocale());}
+\DoxyCodeLine{171           \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a8f04ad9ee4441b9a1bd2f8aedcddeadb}{jCalendar}}.setCalendar(\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a0857e19f9a0c2d101de0ca7c2dc01592}{calendarMio}});}
+\DoxyCodeLine{172           Date firstDay=\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a9eb6017713f37b1600dbe23a0fdb3a95}{trim}}(\textcolor{keyword}{new} Date(\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a8f04ad9ee4441b9a1bd2f8aedcddeadb}{jCalendar}}.getCalendar().getTime().getTime()));}
+\DoxyCodeLine{173           }
+\DoxyCodeLine{174 }
+\DoxyCodeLine{175         }
+\DoxyCodeLine{176         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{177             BLFacade facade=MainGUI.getBusinessLogic();}
+\DoxyCodeLine{178 }
+\DoxyCodeLine{179             Vector<\mbox{\hyperlink{namespacedomain}{domain}}.\mbox{\hyperlink{classdomain_1_1Event}{Event}}> events=facade.getEvents(firstDay);}
+\DoxyCodeLine{180             }
+\DoxyCodeLine{181             \textcolor{keywordflow}{if} (events.isEmpty() ) \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a891ee3134074a77ab089c9b654172fb8}{jLabelListOfEvents}}.setText(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"NoEvents"})+ \textcolor{stringliteral}{": "}+dateformat1.format(\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a0857e19f9a0c2d101de0ca7c2dc01592}{calendarMio}}.getTime()));}
+\DoxyCodeLine{182               \textcolor{keywordflow}{else} \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a891ee3134074a77ab089c9b654172fb8}{jLabelListOfEvents}}.setText(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"Events"})+ \textcolor{stringliteral}{": "}+dateformat1.format(\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a0857e19f9a0c2d101de0ca7c2dc01592}{calendarMio}}.getTime()));}
+\DoxyCodeLine{183             \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a7cba1213dbc064173f83408ee9348354}{jComboBoxEvents}}.removeAllItems();}
+\DoxyCodeLine{184               System.out.println(\textcolor{stringliteral}{"Events "}+events);}
+\DoxyCodeLine{185 }
+\DoxyCodeLine{186             \textcolor{keywordflow}{for} (\mbox{\hyperlink{namespacedomain}{domain}}.\mbox{\hyperlink{classdomain_1_1Event}{Event}} ev:events)}
+\DoxyCodeLine{187                   \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a95eda1d4dff395e54c15f08cc579f613}{modelEvents}}.addElement(ev);}
+\DoxyCodeLine{188             \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a7cba1213dbc064173f83408ee9348354}{jComboBoxEvents}}.repaint();}
+\DoxyCodeLine{189             }
+\DoxyCodeLine{190             \textcolor{keywordflow}{if} (events.size()==0)}
+\DoxyCodeLine{191                 \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_ab63c4d45270efeffdb0137a8be0163bb}{jButtonCreate}}.setEnabled(\textcolor{keyword}{false});}
+\DoxyCodeLine{192             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{193                 \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_ab63c4d45270efeffdb0137a8be0163bb}{jButtonCreate}}.setEnabled(\textcolor{keyword}{true});}
+\DoxyCodeLine{194 }
+\DoxyCodeLine{195             \} \textcolor{keywordflow}{catch} (Exception e1) \{}
+\DoxyCodeLine{196 }
+\DoxyCodeLine{197                 \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a1cb82bebfab8f827f7ef9cc7f62db11d}{jLabelError}}.setText(e1.getMessage());}
+\DoxyCodeLine{198            \}}
+\DoxyCodeLine{199 }
+\DoxyCodeLine{200         \}}
+\DoxyCodeLine{201         \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a31ee6b80a30b5fb2fae4347a754f9246}{paintDaysWithEvents}}(\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a8f04ad9ee4441b9a1bd2f8aedcddeadb}{jCalendar}});}
+\DoxyCodeLine{202       \} }
+\DoxyCodeLine{203     \});}
+\DoxyCodeLine{204   \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a gui.\+Create\+Question\+G\+U\+I.\+calendar\+Mio, gui.\+Main\+G\+U\+I.\+get\+Business\+Logic(), business\+Logic.\+B\+L\+Facade.\+get\+Events(), gui.\+Create\+Question\+G\+U\+I.\+j\+Button\+Close, gui.\+Create\+Question\+G\+U\+I.\+j\+Button\+Close\+\_\+action\+Performed(), gui.\+Create\+Question\+G\+U\+I.\+j\+Button\+Create, gui.\+Create\+Question\+G\+U\+I.\+j\+Button\+Create\+\_\+action\+Performed(), gui.\+Create\+Question\+G\+U\+I.\+j\+Calendar, gui.\+Create\+Question\+G\+U\+I.\+j\+Combo\+Box\+Events, gui.\+Create\+Question\+G\+U\+I.\+j\+Label\+Error, gui.\+Create\+Question\+G\+U\+I.\+j\+Label\+Event\+Date, gui.\+Create\+Question\+G\+U\+I.\+j\+Label\+List\+Of\+Events, gui.\+Create\+Question\+G\+U\+I.\+j\+Label\+Min\+Bet, gui.\+Create\+Question\+G\+U\+I.\+j\+Label\+Msg, gui.\+Create\+Question\+G\+U\+I.\+j\+Label\+Query, gui.\+Create\+Question\+G\+U\+I.\+j\+Text\+Field\+Price, gui.\+Create\+Question\+G\+U\+I.\+j\+Text\+Field\+Query, gui.\+Create\+Question\+G\+U\+I.\+lbl\+Resultado, gui.\+Create\+Question\+G\+U\+I.\+model\+Events, gui.\+Create\+Question\+G\+U\+I.\+paint\+Days\+With\+Events(), gui.\+Create\+Question\+G\+U\+I.\+scroll\+Pane\+Events, gui.\+Create\+Question\+G\+U\+I.\+text\+Field\+Cuota, gui.\+Create\+Question\+G\+U\+I.\+text\+Field\+Result y gui.\+Create\+Question\+G\+U\+I.\+trim().
+
+
+
+Referenciado por gui.\+Create\+Question\+G\+U\+I.\+Create\+Question\+G\+U\+I().
+
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_a9abbdb8a214e4c578ea5858fc1f52fc1}\label{classgui_1_1CreateQuestionGUI_a9abbdb8a214e4c578ea5858fc1f52fc1}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!jButtonClose\_actionPerformed@{jButtonClose\_actionPerformed}}
+\index{jButtonClose\_actionPerformed@{jButtonClose\_actionPerformed}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{jButtonClose\_actionPerformed()}{jButtonClose\_actionPerformed()}}
+{\footnotesize\ttfamily void gui.\+Create\+Question\+G\+U\+I.\+j\+Button\+Close\+\_\+action\+Performed (\begin{DoxyParamCaption}\item[{Action\+Event}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 304 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{305   \{}
+\DoxyCodeLine{306     this.setVisible(\textcolor{keyword}{false});}
+\DoxyCodeLine{307   \}}
+
+\end{DoxyCode}
+
+
+Referenciado por gui.\+Create\+Question\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_ad1f4e3d488a30569844cad5d62fc31bc}\label{classgui_1_1CreateQuestionGUI_ad1f4e3d488a30569844cad5d62fc31bc}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!jButtonCreate\_actionPerformed@{jButtonCreate\_actionPerformed}}
+\index{jButtonCreate\_actionPerformed@{jButtonCreate\_actionPerformed}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{jButtonCreate\_actionPerformed()}{jButtonCreate\_actionPerformed()}}
+{\footnotesize\ttfamily void gui.\+Create\+Question\+G\+U\+I.\+j\+Button\+Create\+\_\+action\+Performed (\begin{DoxyParamCaption}\item[{Action\+Event}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 259 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{260   \{}
+\DoxyCodeLine{261         \mbox{\hyperlink{namespacedomain}{domain}}.\mbox{\hyperlink{classdomain_1_1Event}{Event}} \textcolor{keyword}{event}=((\mbox{\hyperlink{namespacedomain}{domain}}.\mbox{\hyperlink{classdomain_1_1Event}{Event}})\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a7cba1213dbc064173f83408ee9348354}{jComboBoxEvents}}.getSelectedItem());}
+\DoxyCodeLine{262             }
+\DoxyCodeLine{263         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{264             \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a1cb82bebfab8f827f7ef9cc7f62db11d}{jLabelError}}.setText(\textcolor{stringliteral}{""});}
+\DoxyCodeLine{265             \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_ad0c2eb3eb7eefc996d684ddab25decf0}{jLabelMsg}}.setText(\textcolor{stringliteral}{""});}
+\DoxyCodeLine{266 }
+\DoxyCodeLine{267             \textcolor{comment}{//Displays an exception if the query field is empty}}
+\DoxyCodeLine{268             String inputQuery= \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a5b8aa435d7a5e058ac6f9bd0706d523e}{jTextFieldQuery}}.getText();}
+\DoxyCodeLine{269 }
+\DoxyCodeLine{270             \textcolor{keywordflow}{if} (inputQuery.length()>0) \{}
+\DoxyCodeLine{271                 }
+\DoxyCodeLine{272                 \textcolor{comment}{//It could be to trigger an exception if the introduced string is not a number}}
+\DoxyCodeLine{273                 \textcolor{keywordtype}{float} inputPrice= Float.parseFloat(\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a23aebdce43e2df93a150f96572dfb741}{jTextFieldPrice}}.getText());}
+\DoxyCodeLine{274                 \textcolor{keywordtype}{float} cuota= Float.parseFloat(\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a78b0906d852838d49df52e2b407462bf}{textFieldCuota}}.getText());}
+\DoxyCodeLine{275                 String resu=\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a4bedcfd1ede339a0bd85ae899b1dd3e2}{textFieldResult}}.getText();}
+\DoxyCodeLine{276                 }
+\DoxyCodeLine{277                 \textcolor{keywordflow}{if} (inputPrice<=0) \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a1cb82bebfab8f827f7ef9cc7f62db11d}{jLabelError}}.setText(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"ErrorNumber"}));}
+\DoxyCodeLine{278                 \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{279                 }
+\DoxyCodeLine{280                 \textcolor{comment}{//Obtain the business logic from a StartWindow class (local or remote)}}
+\DoxyCodeLine{281                 BLFacade facade=MainGUI.getBusinessLogic();}
+\DoxyCodeLine{282                 \textcolor{comment}{//buscar en la base de datos si existe res y dar el reslt y sino crearlo}}
+\DoxyCodeLine{283                 Result resultado = facade.estaResultado(resu);}
+\DoxyCodeLine{284 }
+\DoxyCodeLine{285                 facade.createQuestion(event, inputQuery, resultado, inputPrice, cuota); }
+\DoxyCodeLine{286 }
+\DoxyCodeLine{287                 \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_ad0c2eb3eb7eefc996d684ddab25decf0}{jLabelMsg}}.setText(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"QueryCreated"}));}
+\DoxyCodeLine{288                 \}}
+\DoxyCodeLine{289             \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{290                 \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_ad0c2eb3eb7eefc996d684ddab25decf0}{jLabelMsg}}.setText(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"ErrorQuery"}));}
+\DoxyCodeLine{291         \} \textcolor{keywordflow}{catch} (EventFinished e1) \{}
+\DoxyCodeLine{292             \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_ad0c2eb3eb7eefc996d684ddab25decf0}{jLabelMsg}}.setText( ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"ErrorEventHasFinished"})+\textcolor{stringliteral}{": "}+\textcolor{keyword}{event}.getDescription());}
+\DoxyCodeLine{293         \} \textcolor{keywordflow}{catch} (QuestionAlreadyExist e1) \{}
+\DoxyCodeLine{294             \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_ad0c2eb3eb7eefc996d684ddab25decf0}{jLabelMsg}}.setText( ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"ErrorQueryAlreadyExist"}));}
+\DoxyCodeLine{295         \}}
+\DoxyCodeLine{296         \textcolor{keywordflow}{catch} (java.lang.NumberFormatException e1) \{}
+\DoxyCodeLine{297             \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a1cb82bebfab8f827f7ef9cc7f62db11d}{jLabelError}}.setText(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"ErrorNumber"}));}
+\DoxyCodeLine{298         \}\textcolor{keywordflow}{catch} (Exception e1) \{}
+\DoxyCodeLine{299 }
+\DoxyCodeLine{300             e1.printStackTrace();}
+\DoxyCodeLine{301 }
+\DoxyCodeLine{302         \}}
+\DoxyCodeLine{303   \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a business\+Logic.\+B\+L\+Facade.\+create\+Question(), business\+Logic.\+B\+L\+Facade.\+esta\+Resultado(), gui.\+Main\+G\+U\+I.\+get\+Business\+Logic(), gui.\+Create\+Question\+G\+U\+I.\+j\+Combo\+Box\+Events, gui.\+Create\+Question\+G\+U\+I.\+j\+Label\+Error, gui.\+Create\+Question\+G\+U\+I.\+j\+Label\+Msg, gui.\+Create\+Question\+G\+U\+I.\+j\+Text\+Field\+Price, gui.\+Create\+Question\+G\+U\+I.\+j\+Text\+Field\+Query, gui.\+Create\+Question\+G\+U\+I.\+text\+Field\+Cuota y gui.\+Create\+Question\+G\+U\+I.\+text\+Field\+Result.
+
+
+
+Referenciado por gui.\+Create\+Question\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_a31ee6b80a30b5fb2fae4347a754f9246}\label{classgui_1_1CreateQuestionGUI_a31ee6b80a30b5fb2fae4347a754f9246}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!paintDaysWithEvents@{paintDaysWithEvents}}
+\index{paintDaysWithEvents@{paintDaysWithEvents}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{paintDaysWithEvents()}{paintDaysWithEvents()}}
+{\footnotesize\ttfamily static void gui.\+Create\+Question\+G\+U\+I.\+paint\+Days\+With\+Events (\begin{DoxyParamCaption}\item[{J\+Calendar}]{j\+Calendar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definición en la línea 222 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{222                                                                \{}
+\DoxyCodeLine{223         \textcolor{comment}{// For each day in current month, it is checked if there are events, and in that case, the background color for that day is changed.}}
+\DoxyCodeLine{224         }
+\DoxyCodeLine{225                 BLFacade facade=MainGUI.getBusinessLogic();}
+\DoxyCodeLine{226          }
+\DoxyCodeLine{227               }
+\DoxyCodeLine{228                 Calendar calendar =\mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a8f04ad9ee4441b9a1bd2f8aedcddeadb}{jCalendar}}.getCalendar();}
+\DoxyCodeLine{229 }
+\DoxyCodeLine{230                       calendar.set(Calendar.DAY\_OF\_MONTH, 1);     }
+\DoxyCodeLine{231                       calendar.set(Calendar.MILLISECOND, 0);}
+\DoxyCodeLine{232                       calendar.set(Calendar.SECOND, 0);}
+\DoxyCodeLine{233                       calendar.set(Calendar.MINUTE, 0);}
+\DoxyCodeLine{234                       calendar.set(Calendar.HOUR\_OF\_DAY, 0);}
+\DoxyCodeLine{235 }
+\DoxyCodeLine{236                       \textcolor{keywordtype}{int} offset=calendar.get(Calendar.DAY\_OF\_WEEK);}
+\DoxyCodeLine{237                       \textcolor{keywordflow}{if} (Locale.getDefault().equals(\textcolor{keyword}{new} Locale(\textcolor{stringliteral}{"es"}))) offset+=4;}
+\DoxyCodeLine{238                       \textcolor{keywordflow}{else}  offset+=5;}
+\DoxyCodeLine{239 }
+\DoxyCodeLine{240                       \textcolor{keywordtype}{int} month = calendar.get(Calendar.MONTH);}
+\DoxyCodeLine{241                       \textcolor{keywordflow}{while} (month==calendar.get(Calendar.MONTH))\{}
+\DoxyCodeLine{242                           Vector<\mbox{\hyperlink{namespacedomain}{domain}}.\mbox{\hyperlink{classdomain_1_1Event}{Event}}> events=facade.getEvents(calendar.getTime());}
+\DoxyCodeLine{243                           \textcolor{keywordflow}{if} (events.size()>0) \{}
+\DoxyCodeLine{244                               \textcolor{comment}{// Obtain the component of the day in the panel of the DayChooser of the JCalendar.}}
+\DoxyCodeLine{245                               \textcolor{comment}{// The component is located after the decorator buttons of "Sun", "Mon",... or "Lun", "Mar"...,}}
+\DoxyCodeLine{246                               \textcolor{comment}{// the empty days before day 1 of month, and all the days previous to each day.}}
+\DoxyCodeLine{247                               \textcolor{comment}{// That number of components is calculated with "offset" and is different in English and Spanish}}
+\DoxyCodeLine{248 \textcolor{comment}{//                            Component o=(Component) jCalendar.getDayChooser().getDayPanel().getComponent(i+offset);; }}
+\DoxyCodeLine{249                               Component o=(Component) \mbox{\hyperlink{classgui_1_1CreateQuestionGUI_a8f04ad9ee4441b9a1bd2f8aedcddeadb}{jCalendar}}.getDayChooser().getDayPanel().getComponent(calendar.get(Calendar.DAY\_OF\_MONTH)+offset);; }
+\DoxyCodeLine{250                               o.setBackground(Color.CYAN);}
+\DoxyCodeLine{251                           \}}
+\DoxyCodeLine{252                           calendar.set(Calendar.DAY\_OF\_MONTH, calendar.get(Calendar.DAY\_OF\_MONTH)+1);}
+\DoxyCodeLine{253                       \}}
+\DoxyCodeLine{254                       calendar.set(Calendar.MONTH, month);}
+\DoxyCodeLine{255                       calendar.set(Calendar.DAY\_OF\_MONTH, 1);}
+\DoxyCodeLine{256                       \textcolor{comment}{//jCalendar.setDate(calendar.getTime());}}
+\DoxyCodeLine{257             \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a gui.\+Main\+G\+U\+I.\+get\+Business\+Logic(), business\+Logic.\+B\+L\+Facade.\+get\+Events() y gui.\+Create\+Question\+G\+U\+I.\+j\+Calendar.
+
+
+
+Referenciado por gui.\+Find\+Questions\+G\+U\+I.\+jb\+Init(), gui.\+Apuesta\+G\+U\+I.\+jb\+Init() y gui.\+Create\+Question\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_a9eb6017713f37b1600dbe23a0fdb3a95}\label{classgui_1_1CreateQuestionGUI_a9eb6017713f37b1600dbe23a0fdb3a95}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!trim@{trim}}
+\index{trim@{trim}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{trim()}{trim()}}
+{\footnotesize\ttfamily Date gui.\+Create\+Question\+G\+U\+I.\+trim (\begin{DoxyParamCaption}\item[{Date}]{date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 211 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{211                                \{}
+\DoxyCodeLine{212 }
+\DoxyCodeLine{213       Calendar calendar = Calendar.getInstance();}
+\DoxyCodeLine{214       calendar.setTime(date);}
+\DoxyCodeLine{215       calendar.set(Calendar.MILLISECOND, 0);}
+\DoxyCodeLine{216       calendar.set(Calendar.SECOND, 0);}
+\DoxyCodeLine{217       calendar.set(Calendar.MINUTE, 0);}
+\DoxyCodeLine{218       calendar.set(Calendar.HOUR\_OF\_DAY, 0);}
+\DoxyCodeLine{219       \textcolor{keywordflow}{return} calendar.getTime();}
+\DoxyCodeLine{220   \}}
+
+\end{DoxyCode}
+
+
+Referenciado por gui.\+Create\+Question\+G\+U\+I.\+jb\+Init().
+
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_a0857e19f9a0c2d101de0ca7c2dc01592}\label{classgui_1_1CreateQuestionGUI_a0857e19f9a0c2d101de0ca7c2dc01592}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!calendarMio@{calendarMio}}
+\index{calendarMio@{calendarMio}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{calendarMio}{calendarMio}}
+{\footnotesize\ttfamily Calendar gui.\+Create\+Question\+G\+U\+I.\+calendar\+Mio = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 45 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Create\+Question\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_ab06cd5dc6f37bc2ded45ff7b29bc18f9}\label{classgui_1_1CreateQuestionGUI_ab06cd5dc6f37bc2ded45ff7b29bc18f9}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!jButtonClose@{jButtonClose}}
+\index{jButtonClose@{jButtonClose}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{jButtonClose}{jButtonClose}}
+{\footnotesize\ttfamily J\+Button gui.\+Create\+Question\+G\+U\+I.\+j\+Button\+Close = new J\+Button(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Close\char`\"{}))\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 51 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Create\+Question\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_ab63c4d45270efeffdb0137a8be0163bb}\label{classgui_1_1CreateQuestionGUI_ab63c4d45270efeffdb0137a8be0163bb}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!jButtonCreate@{jButtonCreate}}
+\index{jButtonCreate@{jButtonCreate}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{jButtonCreate}{jButtonCreate}}
+{\footnotesize\ttfamily J\+Button gui.\+Create\+Question\+G\+U\+I.\+j\+Button\+Create = new J\+Button(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Create\+Query\char`\"{}))\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 50 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Create\+Question\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_a8f04ad9ee4441b9a1bd2f8aedcddeadb}\label{classgui_1_1CreateQuestionGUI_a8f04ad9ee4441b9a1bd2f8aedcddeadb}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!jCalendar@{jCalendar}}
+\index{jCalendar@{jCalendar}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{jCalendar}{jCalendar}}
+{\footnotesize\ttfamily J\+Calendar gui.\+Create\+Question\+G\+U\+I.\+j\+Calendar = new J\+Calendar()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 44 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Create\+Question\+G\+U\+I.\+jb\+Init() y gui.\+Create\+Question\+G\+U\+I.\+paint\+Days\+With\+Events().
+
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_a7cba1213dbc064173f83408ee9348354}\label{classgui_1_1CreateQuestionGUI_a7cba1213dbc064173f83408ee9348354}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!jComboBoxEvents@{jComboBoxEvents}}
+\index{jComboBoxEvents@{jComboBoxEvents}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{jComboBoxEvents}{jComboBoxEvents}}
+{\footnotesize\ttfamily J\+Combo\+Box$<$\mbox{\hyperlink{classdomain_1_1Event}{Event}}$>$ gui.\+Create\+Question\+G\+U\+I.\+j\+Combo\+Box\+Events =new J\+Combo\+Box$<$\mbox{\hyperlink{classdomain_1_1Event}{Event}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 33 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Create\+Question\+G\+U\+I.\+jb\+Init() y gui.\+Create\+Question\+G\+U\+I.\+j\+Button\+Create\+\_\+action\+Performed().
+
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_a1cb82bebfab8f827f7ef9cc7f62db11d}\label{classgui_1_1CreateQuestionGUI_a1cb82bebfab8f827f7ef9cc7f62db11d}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!jLabelError@{jLabelError}}
+\index{jLabelError@{jLabelError}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{jLabelError}{jLabelError}}
+{\footnotesize\ttfamily J\+Label gui.\+Create\+Question\+G\+U\+I.\+j\+Label\+Error = new J\+Label()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 53 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Create\+Question\+G\+U\+I.\+jb\+Init() y gui.\+Create\+Question\+G\+U\+I.\+j\+Button\+Create\+\_\+action\+Performed().
+
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_a5451d834c1a494fdb7b7dc2bb3499ecf}\label{classgui_1_1CreateQuestionGUI_a5451d834c1a494fdb7b7dc2bb3499ecf}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!jLabelEventDate@{jLabelEventDate}}
+\index{jLabelEventDate@{jLabelEventDate}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{jLabelEventDate}{jLabelEventDate}}
+{\footnotesize\ttfamily J\+Label gui.\+Create\+Question\+G\+U\+I.\+j\+Label\+Event\+Date = new J\+Label(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Event\+Date\char`\"{}))\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 39 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Create\+Question\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_a891ee3134074a77ab089c9b654172fb8}\label{classgui_1_1CreateQuestionGUI_a891ee3134074a77ab089c9b654172fb8}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!jLabelListOfEvents@{jLabelListOfEvents}}
+\index{jLabelListOfEvents@{jLabelListOfEvents}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{jLabelListOfEvents}{jLabelListOfEvents}}
+{\footnotesize\ttfamily J\+Label gui.\+Create\+Question\+G\+U\+I.\+j\+Label\+List\+Of\+Events = new J\+Label(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}List\+Events\char`\"{}))\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 36 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Create\+Question\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_a3c355b3f8563c1babcedb4be1f365ee6}\label{classgui_1_1CreateQuestionGUI_a3c355b3f8563c1babcedb4be1f365ee6}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!jLabelMinBet@{jLabelMinBet}}
+\index{jLabelMinBet@{jLabelMinBet}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{jLabelMinBet}{jLabelMinBet}}
+{\footnotesize\ttfamily J\+Label gui.\+Create\+Question\+G\+U\+I.\+j\+Label\+Min\+Bet = new J\+Label(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Minimum\+Bet\+Price\char`\"{}))\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 38 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Create\+Question\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_ad0c2eb3eb7eefc996d684ddab25decf0}\label{classgui_1_1CreateQuestionGUI_ad0c2eb3eb7eefc996d684ddab25decf0}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!jLabelMsg@{jLabelMsg}}
+\index{jLabelMsg@{jLabelMsg}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{jLabelMsg}{jLabelMsg}}
+{\footnotesize\ttfamily J\+Label gui.\+Create\+Question\+G\+U\+I.\+j\+Label\+Msg = new J\+Label()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 52 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Create\+Question\+G\+U\+I.\+jb\+Init() y gui.\+Create\+Question\+G\+U\+I.\+j\+Button\+Create\+\_\+action\+Performed().
+
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_a3a6aafbf3fb4ba909501668606612228}\label{classgui_1_1CreateQuestionGUI_a3a6aafbf3fb4ba909501668606612228}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!jLabelQuery@{jLabelQuery}}
+\index{jLabelQuery@{jLabelQuery}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{jLabelQuery}{jLabelQuery}}
+{\footnotesize\ttfamily J\+Label gui.\+Create\+Question\+G\+U\+I.\+j\+Label\+Query = new J\+Label(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Query\char`\"{}))\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 37 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Create\+Question\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_a23aebdce43e2df93a150f96572dfb741}\label{classgui_1_1CreateQuestionGUI_a23aebdce43e2df93a150f96572dfb741}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!jTextFieldPrice@{jTextFieldPrice}}
+\index{jTextFieldPrice@{jTextFieldPrice}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{jTextFieldPrice}{jTextFieldPrice}}
+{\footnotesize\ttfamily J\+Text\+Field gui.\+Create\+Question\+G\+U\+I.\+j\+Text\+Field\+Price = new J\+Text\+Field()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 43 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Create\+Question\+G\+U\+I.\+jb\+Init() y gui.\+Create\+Question\+G\+U\+I.\+j\+Button\+Create\+\_\+action\+Performed().
+
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_a5b8aa435d7a5e058ac6f9bd0706d523e}\label{classgui_1_1CreateQuestionGUI_a5b8aa435d7a5e058ac6f9bd0706d523e}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!jTextFieldQuery@{jTextFieldQuery}}
+\index{jTextFieldQuery@{jTextFieldQuery}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{jTextFieldQuery}{jTextFieldQuery}}
+{\footnotesize\ttfamily J\+Text\+Field gui.\+Create\+Question\+G\+U\+I.\+j\+Text\+Field\+Query = new J\+Text\+Field()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 42 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Create\+Question\+G\+U\+I.\+jb\+Init() y gui.\+Create\+Question\+G\+U\+I.\+j\+Button\+Create\+\_\+action\+Performed().
+
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_aa8b6309e7e7f51e35da8339e0170ca96}\label{classgui_1_1CreateQuestionGUI_aa8b6309e7e7f51e35da8339e0170ca96}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!lblResultado@{lblResultado}}
+\index{lblResultado@{lblResultado}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{lblResultado}{lblResultado}}
+{\footnotesize\ttfamily final J\+Label gui.\+Create\+Question\+G\+U\+I.\+lbl\+Resultado = new J\+Label(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Create\+Question\+G\+U\+I.\+lbl\+Resultado.\+text\char`\"{}))\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 55 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Create\+Question\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_a95eda1d4dff395e54c15f08cc579f613}\label{classgui_1_1CreateQuestionGUI_a95eda1d4dff395e54c15f08cc579f613}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!modelEvents@{modelEvents}}
+\index{modelEvents@{modelEvents}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{modelEvents}{modelEvents}}
+{\footnotesize\ttfamily Default\+Combo\+Box\+Model$<$\mbox{\hyperlink{classdomain_1_1Event}{Event}}$>$ gui.\+Create\+Question\+G\+U\+I.\+model\+Events =new Default\+Combo\+Box\+Model$<$\mbox{\hyperlink{classdomain_1_1Event}{Event}}$>$()\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+Definición en la línea 34 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Create\+Question\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_ae783664b007ad81c7b0ef9bd59ec9b4a}\label{classgui_1_1CreateQuestionGUI_ae783664b007ad81c7b0ef9bd59ec9b4a}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!scrollPaneEvents@{scrollPaneEvents}}
+\index{scrollPaneEvents@{scrollPaneEvents}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{scrollPaneEvents}{scrollPaneEvents}}
+{\footnotesize\ttfamily J\+Scroll\+Pane gui.\+Create\+Question\+G\+U\+I.\+scroll\+Pane\+Events = new J\+Scroll\+Pane()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 47 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Create\+Question\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_a8fb77e14fbe05d7368fabf0a88575184}\label{classgui_1_1CreateQuestionGUI_a8fb77e14fbe05d7368fabf0a88575184}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!serialVersionUID@{serialVersionUID}}
+\index{serialVersionUID@{serialVersionUID}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{serialVersionUID}{serialVersionUID}}
+{\footnotesize\ttfamily final long gui.\+Create\+Question\+G\+U\+I.\+serial\+Version\+U\+ID = 1L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 31 del archivo Create\+Question\+G\+U\+I.\+java.
+
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_a78b0906d852838d49df52e2b407462bf}\label{classgui_1_1CreateQuestionGUI_a78b0906d852838d49df52e2b407462bf}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!textFieldCuota@{textFieldCuota}}
+\index{textFieldCuota@{textFieldCuota}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{textFieldCuota}{textFieldCuota}}
+{\footnotesize\ttfamily J\+Text\+Field gui.\+Create\+Question\+G\+U\+I.\+text\+Field\+Cuota\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 54 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Create\+Question\+G\+U\+I.\+jb\+Init() y gui.\+Create\+Question\+G\+U\+I.\+j\+Button\+Create\+\_\+action\+Performed().
+
+\mbox{\Hypertarget{classgui_1_1CreateQuestionGUI_a4bedcfd1ede339a0bd85ae899b1dd3e2}\label{classgui_1_1CreateQuestionGUI_a4bedcfd1ede339a0bd85ae899b1dd3e2}} 
+\index{gui.CreateQuestionGUI@{gui.CreateQuestionGUI}!textFieldResult@{textFieldResult}}
+\index{textFieldResult@{textFieldResult}!gui.CreateQuestionGUI@{gui.CreateQuestionGUI}}
+\subsubsection{\texorpdfstring{textFieldResult}{textFieldResult}}
+{\footnotesize\ttfamily final J\+Text\+Field gui.\+Create\+Question\+G\+U\+I.\+text\+Field\+Result = new J\+Text\+Field()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 56 del archivo Create\+Question\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Create\+Question\+G\+U\+I.\+Create\+Question\+G\+U\+I(), gui.\+Create\+Question\+G\+U\+I.\+jb\+Init() y gui.\+Create\+Question\+G\+U\+I.\+j\+Button\+Create\+\_\+action\+Performed().
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+src/gui/\mbox{\hyperlink{CreateQuestionGUI_8java}{Create\+Question\+G\+U\+I.\+java}}\end{DoxyCompactItemize}

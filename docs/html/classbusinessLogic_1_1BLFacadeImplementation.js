@@ -1,0 +1,25 @@
+var classbusinessLogic_1_1BLFacadeImplementation =
+[
+    [ "BLFacadeImplementation", "classbusinessLogic_1_1BLFacadeImplementation.html#a5888a8388b131051ab729d6a326d9414", null ],
+    [ "anadirSaldo", "classbusinessLogic_1_1BLFacadeImplementation.html#a5e1a613d087a9d566c01d227e21f0b34", null ],
+    [ "apuestas", "classbusinessLogic_1_1BLFacadeImplementation.html#a1da1d7f11768f7f37c395c534a19323b", null ],
+    [ "borrarApuesta", "classbusinessLogic_1_1BLFacadeImplementation.html#a3abfaef4d8952fca7a22d4b346fb155a", null ],
+    [ "corregirResultado", "classbusinessLogic_1_1BLFacadeImplementation.html#a46e307bd8d9e04795bd15b815220d782", null ],
+    [ "crearUsuario", "classbusinessLogic_1_1BLFacadeImplementation.html#a2127be166dc2d3c992f3435006ab0575", null ],
+    [ "createApuesta", "classbusinessLogic_1_1BLFacadeImplementation.html#a301913f0d5beb5b7a7b4d51283a41011", null ],
+    [ "createEvent", "classbusinessLogic_1_1BLFacadeImplementation.html#a504f1b6069b3d166881c8047836a1d76", null ],
+    [ "createQuestion", "classbusinessLogic_1_1BLFacadeImplementation.html#ab033eb5a41a86e8b3010455b745ba267", null ],
+    [ "createQuestion", "classbusinessLogic_1_1BLFacadeImplementation.html#a05d93749b9cdaabcda23a8e6299fdf7d", null ],
+    [ "EsAdmin", "classbusinessLogic_1_1BLFacadeImplementation.html#a1fd11ce02084c04c70d667efb94167d0", null ],
+    [ "Esta", "classbusinessLogic_1_1BLFacadeImplementation.html#ac83572a35820cc3eac9d4a51add5a752", null ],
+    [ "estaResultado", "classbusinessLogic_1_1BLFacadeImplementation.html#ac0445d578f21530433001bfb7582a175", null ],
+    [ "getApuestas", "classbusinessLogic_1_1BLFacadeImplementation.html#afbf2b534e813dc7344214b5b8d6ca4de", null ],
+    [ "getApuestasACoregir", "classbusinessLogic_1_1BLFacadeImplementation.html#af1218f1db76137f821a31adc31f47e9f", null ],
+    [ "getApuestasEnJuego", "classbusinessLogic_1_1BLFacadeImplementation.html#a5cf672ed1cbdef2446948fe5472e9da5", null ],
+    [ "getApuestasFinalizadas", "classbusinessLogic_1_1BLFacadeImplementation.html#a6e151a43915c198904fe8cafdb26ed2c", null ],
+    [ "getEvents", "classbusinessLogic_1_1BLFacadeImplementation.html#a62cba365fc047beb4523773ef8a53644", null ],
+    [ "initializeBD", "classbusinessLogic_1_1BLFacadeImplementation.html#a5f915c64121f2a6e37af4fc337e88ff0", null ],
+    [ "Login", "classbusinessLogic_1_1BLFacadeImplementation.html#afa698129a017866dfc8ae32601fd00fe", null ],
+    [ "saldo", "classbusinessLogic_1_1BLFacadeImplementation.html#a2ba616628033f05a5f70a0afddb1c970", null ],
+    [ "usuario", "classbusinessLogic_1_1BLFacadeImplementation.html#ab32bba3f140f33d176c85bb4ad8527b4", null ]
+];

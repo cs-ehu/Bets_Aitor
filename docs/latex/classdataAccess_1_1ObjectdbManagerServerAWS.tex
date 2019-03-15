@@ -1,0 +1,74 @@
+\hypertarget{classdataAccess_1_1ObjectdbManagerServerAWS}{}\section{Referencia de la Clase data\+Access.\+Objectdb\+Manager\+Server\+A\+WS}
+\label{classdataAccess_1_1ObjectdbManagerServerAWS}\index{dataAccess.ObjectdbManagerServerAWS@{dataAccess.ObjectdbManagerServerAWS}}
+\subsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classdataAccess_1_1ObjectdbManagerServerAWS_a97455f62cfd633493d3d49eb5566f41e}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+Definición en la línea 8 del archivo Objectdb\+Manager\+Server\+A\+W\+S.\+java.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classdataAccess_1_1ObjectdbManagerServerAWS_a97455f62cfd633493d3d49eb5566f41e}\label{classdataAccess_1_1ObjectdbManagerServerAWS_a97455f62cfd633493d3d49eb5566f41e}} 
+\index{dataAccess.ObjectdbManagerServerAWS@{dataAccess.ObjectdbManagerServerAWS}!main@{main}}
+\index{main@{main}!dataAccess.ObjectdbManagerServerAWS@{dataAccess.ObjectdbManagerServerAWS}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void data\+Access.\+Objectdb\+Manager\+Server\+A\+W\+S.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definición en la línea 12 del archivo Objectdb\+Manager\+Server\+A\+W\+S.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{12                                            \{}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14         ConfigXML c=ConfigXML.getInstance();}
+\DoxyCodeLine{15         }
+\DoxyCodeLine{16         \textcolor{keywordflow}{if} (c.isDatabaseLocal()) \{}
+\DoxyCodeLine{17             System.out.println(\textcolor{stringliteral}{"\(\backslash\)nERROR, the database is configured as local"});}
+\DoxyCodeLine{18         \}}
+\DoxyCodeLine{19         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{20         \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22             System.out.println(\textcolor{stringliteral}{"Lauching objectdb server"});}
+\DoxyCodeLine{23             \textcolor{keywordflow}{try} \{ \textcolor{comment}{// Se va a ejecutar en máquina Linux: usar "/"}}
+\DoxyCodeLine{24                 String st=\textcolor{stringliteral}{"java -cp resources/objectdb.jar com.objectdb.Server -port "}+ c.getDatabasePort()+\textcolor{stringliteral}{" start"};}
+\DoxyCodeLine{25                 System.out.println(st);}
+\DoxyCodeLine{26                 Runtime.getRuntime().exec(st);}
+\DoxyCodeLine{27             \} \textcolor{keywordflow}{catch} (Exception ioe) \{}
+\DoxyCodeLine{28                 System.out.println (ioe);}
+\DoxyCodeLine{29             \}}
+\DoxyCodeLine{30             }
+\DoxyCodeLine{31             System.out.println(\textcolor{stringliteral}{"\(\backslash\)nAccess granted to: "}+c.getUser());}
+\DoxyCodeLine{32             }
+\DoxyCodeLine{33             System.out.println(\textcolor{stringliteral}{"\(\backslash\)nPress key to exit this database server... "});}
+\DoxyCodeLine{34             }
+\DoxyCodeLine{35             \textcolor{keywordflow}{while}(System.in.available()==0)\{}
+\DoxyCodeLine{36                 Thread.sleep(1000);}
+\DoxyCodeLine{37                 \}}
+\DoxyCodeLine{38             }
+\DoxyCodeLine{39         \} \textcolor{keywordflow}{catch} (Exception e) \{}
+\DoxyCodeLine{40             System.out.println(\textcolor{stringliteral}{"Something has happened in ObjectdbManagerServer: "}+e.toString());}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42         \}}
+\DoxyCodeLine{43         }
+\DoxyCodeLine{44         \}}
+\DoxyCodeLine{45     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a configuration.\+Config\+X\+M\+L.\+get\+Database\+Port(), configuration.\+Config\+X\+M\+L.\+get\+Instance(), configuration.\+Config\+X\+M\+L.\+get\+User() y configuration.\+Config\+X\+M\+L.\+is\+Database\+Local().
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+src/data\+Access/\mbox{\hyperlink{ObjectdbManagerServerAWS_8java}{Objectdb\+Manager\+Server\+A\+W\+S.\+java}}\end{DoxyCompactItemize}

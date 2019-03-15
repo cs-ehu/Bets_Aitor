@@ -1,0 +1,280 @@
+\hypertarget{classgui_1_1HistorialDeApuestasGUI2}{}\section{Referencia de la Clase gui.\+Historial\+De\+Apuestas\+G\+U\+I2}
+\label{classgui_1_1HistorialDeApuestasGUI2}\index{gui.HistorialDeApuestasGUI2@{gui.HistorialDeApuestasGUI2}}
+Diagrama de herencias de gui.\+Historial\+De\+Apuestas\+G\+U\+I2\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgui_1_1HistorialDeApuestasGUI2}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a414d7719dcd081f273de8bfcf59a46ce}{Historial\+De\+Apuestas\+G\+U\+I2}} (String name)
+\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a9cbec6c4b294115cf083b72a01add9a1}{j\+Button2\+\_\+action\+Performed}} (Action\+Event e)
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+final J\+Label \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_aae87a2fe0f346121594a611e38f3080b}{j\+Label\+Queries}} = new J\+Label(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Apuestas\char`\"{}))
+\item 
+J\+Button \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a7ca2382644c3a4c94bc4791b302a2f58}{j\+Button\+Close}} = new J\+Button(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Close\char`\"{}))
+\item 
+J\+Scroll\+Pane \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a7035ed73b84b6f1e3dc4545432d460e4}{scroll\+Pane\+Queries}} = new J\+Scroll\+Pane()
+\item 
+J\+Table \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a56d9a2f72bffe6a90852a91306fd2386}{table\+Queries}} = new J\+Table()
+\item 
+String \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a81c02821824ec5ab32139ed7b0d7b390}{column\+Names\+Queries}}
+\item 
+Default\+Table\+Model \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_ad72fe7f139dc7077abdc25c35b900ad0}{table\+Model\+Queries}} = new Default\+Table\+Model(null,\mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a81c02821824ec5ab32139ed7b0d7b390}{column\+Names\+Queries}})
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static final long \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a9560ccd956c46b75daa8ae2f6353e6a2}{serial\+Version\+U\+ID}} = 1L
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+Definición en la línea 21 del archivo Historial\+De\+Apuestas\+G\+U\+I2.\+java.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classgui_1_1HistorialDeApuestasGUI2_a414d7719dcd081f273de8bfcf59a46ce}\label{classgui_1_1HistorialDeApuestasGUI2_a414d7719dcd081f273de8bfcf59a46ce}} 
+\index{gui.HistorialDeApuestasGUI2@{gui.HistorialDeApuestasGUI2}!HistorialDeApuestasGUI2@{HistorialDeApuestasGUI2}}
+\index{HistorialDeApuestasGUI2@{HistorialDeApuestasGUI2}!gui.HistorialDeApuestasGUI2@{gui.HistorialDeApuestasGUI2}}
+\subsubsection{\texorpdfstring{HistorialDeApuestasGUI2()}{HistorialDeApuestasGUI2()}}
+{\footnotesize\ttfamily gui.\+Historial\+De\+Apuestas\+G\+U\+I2.\+Historial\+De\+Apuestas\+G\+U\+I2 (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 44 del archivo Historial\+De\+Apuestas\+G\+U\+I2.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45     \{}
+\DoxyCodeLine{46         setTitle(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"MisApuestasGUI.this.title"})); \textcolor{comment}{//\$NON-NLS-1\$ //\$NON-NLS-2\$}}
+\DoxyCodeLine{47             }
+\DoxyCodeLine{48             this.getContentPane().setLayout(\textcolor{keyword}{null});}
+\DoxyCodeLine{49             this.setSize(\textcolor{keyword}{new} Dimension(700, 350));}
+\DoxyCodeLine{50             \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_aae87a2fe0f346121594a611e38f3080b}{jLabelQueries}}.setBounds(43, 24, 406, 14);}
+\DoxyCodeLine{51             this.getContentPane().add(\mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_aae87a2fe0f346121594a611e38f3080b}{jLabelQueries}});}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53             \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a7035ed73b84b6f1e3dc4545432d460e4}{scrollPaneQueries}}.setBounds(\textcolor{keyword}{new} Rectangle(23, 55, 640, 192));}
+\DoxyCodeLine{54             \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a7ca2382644c3a4c94bc4791b302a2f58}{jButtonClose}}.setBounds(\textcolor{keyword}{new} Rectangle(220, 258, 130, 30));}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56             \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a7ca2382644c3a4c94bc4791b302a2f58}{jButtonClose}}.addActionListener(\textcolor{keyword}{new} ActionListener()}
+\DoxyCodeLine{57             \{}
+\DoxyCodeLine{58                 \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e)}
+\DoxyCodeLine{59                 \{}
+\DoxyCodeLine{60                     \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a9cbec6c4b294115cf083b72a01add9a1}{jButton2\_actionPerformed}}(e);}
+\DoxyCodeLine{61                 \}}
+\DoxyCodeLine{62             \});}
+\DoxyCodeLine{63             }
+\DoxyCodeLine{64             this.getContentPane().add(\mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a7ca2382644c3a4c94bc4791b302a2f58}{jButtonClose}}, \textcolor{keyword}{null});}
+\DoxyCodeLine{65             \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_ad72fe7f139dc7077abdc25c35b900ad0}{tableModelQueries}}.setColumnCount(9);}
+\DoxyCodeLine{66             \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a56d9a2f72bffe6a90852a91306fd2386}{tableQueries}} = \textcolor{keyword}{new} JTable(\mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_ad72fe7f139dc7077abdc25c35b900ad0}{tableModelQueries}});}
+\DoxyCodeLine{67             }
+\DoxyCodeLine{68             BLFacade facade=MainGUI.getBusinessLogic();     }
+\DoxyCodeLine{69             List<Apuesta> apues = facade.getApuestas(name);}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71             \textcolor{keywordflow}{if}(apues.isEmpty()) \{}
+\DoxyCodeLine{72                 System.out.println(\textcolor{stringliteral}{"no hay apuestas"});}
+\DoxyCodeLine{73             \}\textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{74                 System.out.println(\textcolor{stringliteral}{"hay apuestas"});}
+\DoxyCodeLine{75                 \textcolor{keywordflow}{for} (\mbox{\hyperlink{namespacedomain}{domain}}.\mbox{\hyperlink{classdomain_1_1Apuesta}{Apuesta}} ap:apues)\{}
+\DoxyCodeLine{76                     Vector<Object> row = \textcolor{keyword}{new} Vector<Object>();}
+\DoxyCodeLine{77                     System.out.println(ap.getApuesta().getEvent().getDescription());}
+\DoxyCodeLine{78                     }
+\DoxyCodeLine{79                     row.add(ap.getApuesta().getEvent().getDescription());}
+\DoxyCodeLine{80                     row.add(ap.getApuesta().getEvent().getEventDate());}
+\DoxyCodeLine{81                     row.add(ap.getApuesta().getQuestion());}
+\DoxyCodeLine{82                     row.add(ap.getApuesta().getCuota());}
+\DoxyCodeLine{83                     row.add(ap.getDineroApostado());}
+\DoxyCodeLine{84                     row.add(ap.getApuesta().getResult().getResult());}
+\DoxyCodeLine{85                     row.add(ap.getBeneficios());}
+\DoxyCodeLine{86                     row.add(ap.getCobrada());}
+\DoxyCodeLine{87                     row.add(ap.getAcertada());}
+\DoxyCodeLine{88                     \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_ad72fe7f139dc7077abdc25c35b900ad0}{tableModelQueries}}.addRow(row);}
+\DoxyCodeLine{89                     \textcolor{comment}{//tableModelQueries.insertRow(tableModelQueries.getRowCount(), row);}}
+\DoxyCodeLine{90                     }
+\DoxyCodeLine{91                 }
+\DoxyCodeLine{92                 \}}
+\DoxyCodeLine{93                 \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a56d9a2f72bffe6a90852a91306fd2386}{tableQueries}}.getColumnModel().getColumn(0).setPreferredWidth(25);}
+\DoxyCodeLine{94                 \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a56d9a2f72bffe6a90852a91306fd2386}{tableQueries}}.getColumnModel().getColumn(1).setPreferredWidth(50);}
+\DoxyCodeLine{95                 \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a56d9a2f72bffe6a90852a91306fd2386}{tableQueries}}.getColumnModel().getColumn(2).setPreferredWidth(25);}
+\DoxyCodeLine{96                 \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a56d9a2f72bffe6a90852a91306fd2386}{tableQueries}}.getColumnModel().getColumn(3).setPreferredWidth(15);}
+\DoxyCodeLine{97                 \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a56d9a2f72bffe6a90852a91306fd2386}{tableQueries}}.getColumnModel().getColumn(4).setPreferredWidth(15);}
+\DoxyCodeLine{98                 \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a56d9a2f72bffe6a90852a91306fd2386}{tableQueries}}.getColumnModel().getColumn(5).setPreferredWidth(15);}
+\DoxyCodeLine{99                 \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a56d9a2f72bffe6a90852a91306fd2386}{tableQueries}}.getColumnModel().getColumn(6).setPreferredWidth(10);}
+\DoxyCodeLine{100                 \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a56d9a2f72bffe6a90852a91306fd2386}{tableQueries}}.getColumnModel().getColumn(7).setPreferredWidth(10);}
+\DoxyCodeLine{101                 \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a56d9a2f72bffe6a90852a91306fd2386}{tableQueries}}.getColumnModel().getColumn(8).setPreferredWidth(10);}
+\DoxyCodeLine{102                 }
+\DoxyCodeLine{103             \}}
+\DoxyCodeLine{104                 }
+\DoxyCodeLine{105             \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a7035ed73b84b6f1e3dc4545432d460e4}{scrollPaneQueries}}.setViewportView(\mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a56d9a2f72bffe6a90852a91306fd2386}{tableQueries}});}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107             \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a56d9a2f72bffe6a90852a91306fd2386}{tableQueries}}.setModel(\mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_ad72fe7f139dc7077abdc25c35b900ad0}{tableModelQueries}});}
+\DoxyCodeLine{108             \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a56d9a2f72bffe6a90852a91306fd2386}{tableQueries}}.getColumnModel().getColumn(0).setPreferredWidth(25);}
+\DoxyCodeLine{109             \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a56d9a2f72bffe6a90852a91306fd2386}{tableQueries}}.getColumnModel().getColumn(1).setPreferredWidth(50);}
+\DoxyCodeLine{110             \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a56d9a2f72bffe6a90852a91306fd2386}{tableQueries}}.getColumnModel().getColumn(2).setPreferredWidth(25);}
+\DoxyCodeLine{111             \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a56d9a2f72bffe6a90852a91306fd2386}{tableQueries}}.getColumnModel().getColumn(3).setPreferredWidth(15);}
+\DoxyCodeLine{112             \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a56d9a2f72bffe6a90852a91306fd2386}{tableQueries}}.getColumnModel().getColumn(4).setPreferredWidth(15);}
+\DoxyCodeLine{113             \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a56d9a2f72bffe6a90852a91306fd2386}{tableQueries}}.getColumnModel().getColumn(5).setPreferredWidth(15);}
+\DoxyCodeLine{114             \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a56d9a2f72bffe6a90852a91306fd2386}{tableQueries}}.getColumnModel().getColumn(6).setPreferredWidth(10);}
+\DoxyCodeLine{115             \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a56d9a2f72bffe6a90852a91306fd2386}{tableQueries}}.getColumnModel().getColumn(7).setPreferredWidth(10);}
+\DoxyCodeLine{116             \mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a56d9a2f72bffe6a90852a91306fd2386}{tableQueries}}.getColumnModel().getColumn(8).setPreferredWidth(10);}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119             this.getContentPane().add(\mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a7035ed73b84b6f1e3dc4545432d460e4}{scrollPaneQueries}}, \textcolor{keyword}{null});}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a business\+Logic.\+B\+L\+Facade.\+get\+Apuestas(), gui.\+Main\+G\+U\+I.\+get\+Business\+Logic(), gui.\+Historial\+De\+Apuestas\+G\+U\+I2.\+j\+Button2\+\_\+action\+Performed(), gui.\+Historial\+De\+Apuestas\+G\+U\+I2.\+j\+Button\+Close, gui.\+Historial\+De\+Apuestas\+G\+U\+I2.\+j\+Label\+Queries, gui.\+Historial\+De\+Apuestas\+G\+U\+I2.\+scroll\+Pane\+Queries, gui.\+Historial\+De\+Apuestas\+G\+U\+I2.\+table\+Model\+Queries y gui.\+Historial\+De\+Apuestas\+G\+U\+I2.\+table\+Queries.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classgui_1_1HistorialDeApuestasGUI2_a9cbec6c4b294115cf083b72a01add9a1}\label{classgui_1_1HistorialDeApuestasGUI2_a9cbec6c4b294115cf083b72a01add9a1}} 
+\index{gui.HistorialDeApuestasGUI2@{gui.HistorialDeApuestasGUI2}!jButton2\_actionPerformed@{jButton2\_actionPerformed}}
+\index{jButton2\_actionPerformed@{jButton2\_actionPerformed}!gui.HistorialDeApuestasGUI2@{gui.HistorialDeApuestasGUI2}}
+\subsubsection{\texorpdfstring{jButton2\_actionPerformed()}{jButton2\_actionPerformed()}}
+{\footnotesize\ttfamily void gui.\+Historial\+De\+Apuestas\+G\+U\+I2.\+j\+Button2\+\_\+action\+Performed (\begin{DoxyParamCaption}\item[{Action\+Event}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 123 del archivo Historial\+De\+Apuestas\+G\+U\+I2.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{123                                                          \{}
+\DoxyCodeLine{124         this.setVisible(\textcolor{keyword}{false});}
+\DoxyCodeLine{125     \}}
+
+\end{DoxyCode}
+
+
+Referenciado por gui.\+Historial\+De\+Apuestas\+G\+U\+I2.\+Historial\+De\+Apuestas\+G\+U\+I2().
+
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classgui_1_1HistorialDeApuestasGUI2_a81c02821824ec5ab32139ed7b0d7b390}\label{classgui_1_1HistorialDeApuestasGUI2_a81c02821824ec5ab32139ed7b0d7b390}} 
+\index{gui.HistorialDeApuestasGUI2@{gui.HistorialDeApuestasGUI2}!columnNamesQueries@{columnNamesQueries}}
+\index{columnNamesQueries@{columnNamesQueries}!gui.HistorialDeApuestasGUI2@{gui.HistorialDeApuestasGUI2}}
+\subsubsection{\texorpdfstring{columnNamesQueries}{columnNamesQueries}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} gui.\+Historial\+De\+Apuestas\+G\+U\+I2.\+column\+Names\+Queries\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Valor inicial\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} String[] \{}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Evento"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Fecha evento"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Pregunta"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Cuota"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Dinero Apostado"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Resultado"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Beneficios"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Corregida"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Acertada"}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definición en la línea 30 del archivo Historial\+De\+Apuestas\+G\+U\+I2.\+java.
+
+\mbox{\Hypertarget{classgui_1_1HistorialDeApuestasGUI2_a7ca2382644c3a4c94bc4791b302a2f58}\label{classgui_1_1HistorialDeApuestasGUI2_a7ca2382644c3a4c94bc4791b302a2f58}} 
+\index{gui.HistorialDeApuestasGUI2@{gui.HistorialDeApuestasGUI2}!jButtonClose@{jButtonClose}}
+\index{jButtonClose@{jButtonClose}!gui.HistorialDeApuestasGUI2@{gui.HistorialDeApuestasGUI2}}
+\subsubsection{\texorpdfstring{jButtonClose}{jButtonClose}}
+{\footnotesize\ttfamily J\+Button gui.\+Historial\+De\+Apuestas\+G\+U\+I2.\+j\+Button\+Close = new J\+Button(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Close\char`\"{}))\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 25 del archivo Historial\+De\+Apuestas\+G\+U\+I2.\+java.
+
+
+
+Referenciado por gui.\+Historial\+De\+Apuestas\+G\+U\+I2.\+Historial\+De\+Apuestas\+G\+U\+I2().
+
+\mbox{\Hypertarget{classgui_1_1HistorialDeApuestasGUI2_aae87a2fe0f346121594a611e38f3080b}\label{classgui_1_1HistorialDeApuestasGUI2_aae87a2fe0f346121594a611e38f3080b}} 
+\index{gui.HistorialDeApuestasGUI2@{gui.HistorialDeApuestasGUI2}!jLabelQueries@{jLabelQueries}}
+\index{jLabelQueries@{jLabelQueries}!gui.HistorialDeApuestasGUI2@{gui.HistorialDeApuestasGUI2}}
+\subsubsection{\texorpdfstring{jLabelQueries}{jLabelQueries}}
+{\footnotesize\ttfamily final J\+Label gui.\+Historial\+De\+Apuestas\+G\+U\+I2.\+j\+Label\+Queries = new J\+Label(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Apuestas\char`\"{}))\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 23 del archivo Historial\+De\+Apuestas\+G\+U\+I2.\+java.
+
+
+
+Referenciado por gui.\+Historial\+De\+Apuestas\+G\+U\+I2.\+Historial\+De\+Apuestas\+G\+U\+I2().
+
+\mbox{\Hypertarget{classgui_1_1HistorialDeApuestasGUI2_a7035ed73b84b6f1e3dc4545432d460e4}\label{classgui_1_1HistorialDeApuestasGUI2_a7035ed73b84b6f1e3dc4545432d460e4}} 
+\index{gui.HistorialDeApuestasGUI2@{gui.HistorialDeApuestasGUI2}!scrollPaneQueries@{scrollPaneQueries}}
+\index{scrollPaneQueries@{scrollPaneQueries}!gui.HistorialDeApuestasGUI2@{gui.HistorialDeApuestasGUI2}}
+\subsubsection{\texorpdfstring{scrollPaneQueries}{scrollPaneQueries}}
+{\footnotesize\ttfamily J\+Scroll\+Pane gui.\+Historial\+De\+Apuestas\+G\+U\+I2.\+scroll\+Pane\+Queries = new J\+Scroll\+Pane()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 26 del archivo Historial\+De\+Apuestas\+G\+U\+I2.\+java.
+
+
+
+Referenciado por gui.\+Historial\+De\+Apuestas\+G\+U\+I2.\+Historial\+De\+Apuestas\+G\+U\+I2().
+
+\mbox{\Hypertarget{classgui_1_1HistorialDeApuestasGUI2_a9560ccd956c46b75daa8ae2f6353e6a2}\label{classgui_1_1HistorialDeApuestasGUI2_a9560ccd956c46b75daa8ae2f6353e6a2}} 
+\index{gui.HistorialDeApuestasGUI2@{gui.HistorialDeApuestasGUI2}!serialVersionUID@{serialVersionUID}}
+\index{serialVersionUID@{serialVersionUID}!gui.HistorialDeApuestasGUI2@{gui.HistorialDeApuestasGUI2}}
+\subsubsection{\texorpdfstring{serialVersionUID}{serialVersionUID}}
+{\footnotesize\ttfamily final long gui.\+Historial\+De\+Apuestas\+G\+U\+I2.\+serial\+Version\+U\+ID = 1L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 22 del archivo Historial\+De\+Apuestas\+G\+U\+I2.\+java.
+
+\mbox{\Hypertarget{classgui_1_1HistorialDeApuestasGUI2_ad72fe7f139dc7077abdc25c35b900ad0}\label{classgui_1_1HistorialDeApuestasGUI2_ad72fe7f139dc7077abdc25c35b900ad0}} 
+\index{gui.HistorialDeApuestasGUI2@{gui.HistorialDeApuestasGUI2}!tableModelQueries@{tableModelQueries}}
+\index{tableModelQueries@{tableModelQueries}!gui.HistorialDeApuestasGUI2@{gui.HistorialDeApuestasGUI2}}
+\subsubsection{\texorpdfstring{tableModelQueries}{tableModelQueries}}
+{\footnotesize\ttfamily Default\+Table\+Model gui.\+Historial\+De\+Apuestas\+G\+U\+I2.\+table\+Model\+Queries = new Default\+Table\+Model(null,\mbox{\hyperlink{classgui_1_1HistorialDeApuestasGUI2_a81c02821824ec5ab32139ed7b0d7b390}{column\+Names\+Queries}})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 42 del archivo Historial\+De\+Apuestas\+G\+U\+I2.\+java.
+
+
+
+Referenciado por gui.\+Historial\+De\+Apuestas\+G\+U\+I2.\+Historial\+De\+Apuestas\+G\+U\+I2().
+
+\mbox{\Hypertarget{classgui_1_1HistorialDeApuestasGUI2_a56d9a2f72bffe6a90852a91306fd2386}\label{classgui_1_1HistorialDeApuestasGUI2_a56d9a2f72bffe6a90852a91306fd2386}} 
+\index{gui.HistorialDeApuestasGUI2@{gui.HistorialDeApuestasGUI2}!tableQueries@{tableQueries}}
+\index{tableQueries@{tableQueries}!gui.HistorialDeApuestasGUI2@{gui.HistorialDeApuestasGUI2}}
+\subsubsection{\texorpdfstring{tableQueries}{tableQueries}}
+{\footnotesize\ttfamily J\+Table gui.\+Historial\+De\+Apuestas\+G\+U\+I2.\+table\+Queries = new J\+Table()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 27 del archivo Historial\+De\+Apuestas\+G\+U\+I2.\+java.
+
+
+
+Referenciado por gui.\+Historial\+De\+Apuestas\+G\+U\+I2.\+Historial\+De\+Apuestas\+G\+U\+I2().
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+src/gui/\mbox{\hyperlink{HistorialDeApuestasGUI2_8java}{Historial\+De\+Apuestas\+G\+U\+I2.\+java}}\end{DoxyCompactItemize}

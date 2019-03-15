@@ -1,0 +1,9 @@
+var searchData=
+[
+  ['question',['Question',['../classdomain_1_1Question.html',1,'domain.Question'],['../classdomain_1_1Question.html#a3f1c6038e83e09658df60eed71e5deb4',1,'domain.Question.question()'],['../classdomain_1_1Question.html#ad025aa3764e207e64c6f5b5e09976af3',1,'domain.Question.Question()'],['../classdomain_1_1Question.html#ac026fc0206761497b2b1827a1b4ff1ce',1,'domain.Question.Question(Integer queryNumber, String query, float betMinimum, Event event)'],['../classdomain_1_1Question.html#a724bb2ee772f7f1050ddbed1a4b6bd74',1,'domain.Question.Question(Integer queryNumber, String query, Result result, float betMinimum, Event event, float cuota)'],['../classdomain_1_1Question.html#a3e1f15538bc3f7b204e0e80cf9079d6d',1,'domain.Question.Question(String query, float betMinimum, Event event)'],['../classdomain_1_1Question.html#a92286f88946d50c5dfb61ce54c155462',1,'domain.Question.Question(String query, Result result, float betMinimum, float cuota, Event event)']]],
+  ['question_2ejava',['Question.java',['../Question_8java.html',1,'']]],
+  ['questionalreadyexist',['QuestionAlreadyExist',['../classexceptions_1_1QuestionAlreadyExist.html',1,'exceptions.QuestionAlreadyExist'],['../classexceptions_1_1QuestionAlreadyExist.html#abed5df180abbd882b23b603f7d528eaf',1,'exceptions.QuestionAlreadyExist.QuestionAlreadyExist()'],['../classexceptions_1_1QuestionAlreadyExist.html#a72cd9055ca4d7a2abd6cc27f79eedecd',1,'exceptions.QuestionAlreadyExist.QuestionAlreadyExist(String s)']]],
+  ['questionalreadyexist_2ejava',['QuestionAlreadyExist.java',['../QuestionAlreadyExist_8java.html',1,'']]],
+  ['questionnumber',['questionNumber',['../classdomain_1_1Question.html#a0570239b13202e004eef891b49db538e',1,'domain::Question']]],
+  ['questions',['questions',['../classdomain_1_1Event.html#ab5621abc5bae7bc3d8ece713fa2e1e38',1,'domain::Event']]]
+];

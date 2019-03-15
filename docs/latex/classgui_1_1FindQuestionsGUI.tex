@@ -1,0 +1,569 @@
+\hypertarget{classgui_1_1FindQuestionsGUI}{}\section{Referencia de la Clase gui.\+Find\+Questions\+G\+UI}
+\label{classgui_1_1FindQuestionsGUI}\index{gui.FindQuestionsGUI@{gui.FindQuestionsGUI}}
+Diagrama de herencias de gui.\+Find\+Questions\+G\+UI\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgui_1_1FindQuestionsGUI}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgui_1_1FindQuestionsGUI_ab650ec475d8d7e0861cb35ebc66b86b5}{Find\+Questions\+G\+UI}} ()
+\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_aad17c86d2c85160c905e9daec2406c2f}{jb\+Init}} ()  throws Exception 	
+\item 
+void \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a6a37a659df1fc28f79c4f8fa20ba5dcc}{j\+Button2\+\_\+action\+Performed}} (Action\+Event e)
+\item 
+Date \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a6156ed3f274fcc9d14722f62a96ac73e}{trim}} (Date date)
+\item 
+Date \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_ac4294b9a4abc6073fc9151ef97929b98}{new\+Date}} (int year, int month, int day)
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+final J\+Label \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a490e1658b079f1999219d1eb7c5bd0c4}{j\+Label\+Event\+Date}} = new J\+Label(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Event\+Date\char`\"{}))
+\item 
+final J\+Label \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a7e0f66edb87cb23a1ed731a4cbbf6679}{j\+Label\+Queries}} = new J\+Label(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Queries\char`\"{}))
+\item 
+final J\+Label \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a44489404c630d443ef23d756a0a59ddd}{j\+Label\+Events}} = new J\+Label(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Events\char`\"{}))
+\item 
+J\+Button \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_aa434da3107eda36011f1dd89b1c02d65}{j\+Button\+Close}} = new J\+Button(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Close\char`\"{}))
+\item 
+J\+Calendar \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_ae9cccb6f4b0319f8d786fa5040d6bed3}{j\+Calendar1}} = new J\+Calendar()
+\item 
+Calendar \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_ae91cb03b6f7c5fd36436fcb4ec118613}{calendar\+Mio}} = null
+\item 
+J\+Scroll\+Pane \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_ace1a155185cdae07dc3ed59a80f173fa}{scroll\+Pane\+Events}} = new J\+Scroll\+Pane()
+\item 
+J\+Scroll\+Pane \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a7657e8883157c1d005bb73744458bbf8}{scroll\+Pane\+Queries}} = new J\+Scroll\+Pane()
+\item 
+J\+Table \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a022fc8764d950afede789bb83ce7b5aa}{table\+Events}} = new J\+Table()
+\item 
+J\+Table \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a593cb17bb67700c97f5cf1dcd636526f}{table\+Queries}} = new J\+Table()
+\item 
+Default\+Table\+Model \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a142cc8ef4c568a9fa22bbd21393dcd66}{table\+Model\+Events}}
+\item 
+Default\+Table\+Model \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_aec87a2a23f53df34886c52c6bb405666}{table\+Model\+Queries}}
+\item 
+String \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a7d72ae353614e87787788d83e329a2e7}{column\+Names\+Events}}
+\item 
+String \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_abcca88495948619b8f7517aef8e846e6}{column\+Names\+Queries}}
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static final long \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_ae92822eeba6f2ba8dcae73d5ad17325c}{serial\+Version\+U\+ID}} = 1L
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+Definición en la línea 18 del archivo Find\+Questions\+G\+U\+I.\+java.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classgui_1_1FindQuestionsGUI_ab650ec475d8d7e0861cb35ebc66b86b5}\label{classgui_1_1FindQuestionsGUI_ab650ec475d8d7e0861cb35ebc66b86b5}} 
+\index{gui.FindQuestionsGUI@{gui.FindQuestionsGUI}!FindQuestionsGUI@{FindQuestionsGUI}}
+\index{FindQuestionsGUI@{FindQuestionsGUI}!gui.FindQuestionsGUI@{gui.FindQuestionsGUI}}
+\subsubsection{\texorpdfstring{FindQuestionsGUI()}{FindQuestionsGUI()}}
+{\footnotesize\ttfamily gui.\+Find\+Questions\+G\+U\+I.\+Find\+Questions\+G\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 53 del archivo Find\+Questions\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{54     \{}
+\DoxyCodeLine{55         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{56         \{}
+\DoxyCodeLine{57             \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_aad17c86d2c85160c905e9daec2406c2f}{jbInit}}();}
+\DoxyCodeLine{58         \}}
+\DoxyCodeLine{59         \textcolor{keywordflow}{catch}(Exception e)}
+\DoxyCodeLine{60         \{}
+\DoxyCodeLine{61             e.printStackTrace();}
+\DoxyCodeLine{62         \}}
+\DoxyCodeLine{63     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a gui.\+Find\+Questions\+G\+U\+I.\+jb\+Init().
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classgui_1_1FindQuestionsGUI_aad17c86d2c85160c905e9daec2406c2f}\label{classgui_1_1FindQuestionsGUI_aad17c86d2c85160c905e9daec2406c2f}} 
+\index{gui.FindQuestionsGUI@{gui.FindQuestionsGUI}!jbInit@{jbInit}}
+\index{jbInit@{jbInit}!gui.FindQuestionsGUI@{gui.FindQuestionsGUI}}
+\subsubsection{\texorpdfstring{jbInit()}{jbInit()}}
+{\footnotesize\ttfamily void gui.\+Find\+Questions\+G\+U\+I.\+jb\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 66 del archivo Find\+Questions\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{67     \{}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69         this.getContentPane().setLayout(\textcolor{keyword}{null});}
+\DoxyCodeLine{70         this.setSize(\textcolor{keyword}{new} Dimension(700, 500));}
+\DoxyCodeLine{71         this.setTitle(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"QueryQueries"}));}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a490e1658b079f1999219d1eb7c5bd0c4}{jLabelEventDate}}.setBounds(\textcolor{keyword}{new} Rectangle(40, 15, 140, 25));}
+\DoxyCodeLine{74         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a7e0f66edb87cb23a1ed731a4cbbf6679}{jLabelQueries}}.setBounds(138, 248, 406, 14);}
+\DoxyCodeLine{75         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a44489404c630d443ef23d756a0a59ddd}{jLabelEvents}}.setBounds(295, 19, 259, 16);}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77         this.getContentPane().add(\mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a490e1658b079f1999219d1eb7c5bd0c4}{jLabelEventDate}}, \textcolor{keyword}{null});}
+\DoxyCodeLine{78         this.getContentPane().add(\mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a7e0f66edb87cb23a1ed731a4cbbf6679}{jLabelQueries}});}
+\DoxyCodeLine{79         this.getContentPane().add(\mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a44489404c630d443ef23d756a0a59ddd}{jLabelEvents}});}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_aa434da3107eda36011f1dd89b1c02d65}{jButtonClose}}.setBounds(\textcolor{keyword}{new} Rectangle(274, 419, 130, 30));}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_aa434da3107eda36011f1dd89b1c02d65}{jButtonClose}}.addActionListener(\textcolor{keyword}{new} ActionListener()}
+\DoxyCodeLine{84         \{}
+\DoxyCodeLine{85             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e)}
+\DoxyCodeLine{86             \{}
+\DoxyCodeLine{87                 \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a6a37a659df1fc28f79c4f8fa20ba5dcc}{jButton2\_actionPerformed}}(e);}
+\DoxyCodeLine{88             \}}
+\DoxyCodeLine{89         \});}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91         this.getContentPane().add(\mbox{\hyperlink{classgui_1_1FindQuestionsGUI_aa434da3107eda36011f1dd89b1c02d65}{jButtonClose}}, \textcolor{keyword}{null});}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_ae9cccb6f4b0319f8d786fa5040d6bed3}{jCalendar1}}.setBounds(\textcolor{keyword}{new} Rectangle(40, 50, 225, 150));}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97         \textcolor{comment}{// Code for JCalendar}}
+\DoxyCodeLine{98         this.\mbox{\hyperlink{classgui_1_1FindQuestionsGUI_ae9cccb6f4b0319f8d786fa5040d6bed3}{jCalendar1}}.addPropertyChangeListener(\textcolor{keyword}{new} PropertyChangeListener()}
+\DoxyCodeLine{99         \{}
+\DoxyCodeLine{100             \textcolor{keyword}{public} \textcolor{keywordtype}{void} propertyChange(PropertyChangeEvent propertychangeevent)}
+\DoxyCodeLine{101             \{}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103                 \textcolor{keywordflow}{if} (propertychangeevent.getPropertyName().equals(\textcolor{stringliteral}{"locale"}))}
+\DoxyCodeLine{104                 \{}
+\DoxyCodeLine{105                     \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_ae9cccb6f4b0319f8d786fa5040d6bed3}{jCalendar1}}.setLocale((Locale) propertychangeevent.getNewValue());}
+\DoxyCodeLine{106                 \}}
+\DoxyCodeLine{107                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (propertychangeevent.getPropertyName().equals(\textcolor{stringliteral}{"calendar"}))}
+\DoxyCodeLine{108                 \{}
+\DoxyCodeLine{109                     \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_ae91cb03b6f7c5fd36436fcb4ec118613}{calendarMio}} = (Calendar) propertychangeevent.getNewValue();}
+\DoxyCodeLine{110                     DateFormat dateformat1 = DateFormat.getDateInstance(1, \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_ae9cccb6f4b0319f8d786fa5040d6bed3}{jCalendar1}}.getLocale());}
+\DoxyCodeLine{111                     \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_ae9cccb6f4b0319f8d786fa5040d6bed3}{jCalendar1}}.setCalendar(\mbox{\hyperlink{classgui_1_1FindQuestionsGUI_ae91cb03b6f7c5fd36436fcb4ec118613}{calendarMio}});}
+\DoxyCodeLine{112                     Date firstDay=\mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a6156ed3f274fcc9d14722f62a96ac73e}{trim}}(\textcolor{keyword}{new} Date(\mbox{\hyperlink{classgui_1_1FindQuestionsGUI_ae9cccb6f4b0319f8d786fa5040d6bed3}{jCalendar1}}.getCalendar().getTime().getTime()));}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114 }
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116                     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{117                         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a142cc8ef4c568a9fa22bbd21393dcd66}{tableModelEvents}}.setDataVector(\textcolor{keyword}{null}, \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a7d72ae353614e87787788d83e329a2e7}{columnNamesEvents}});}
+\DoxyCodeLine{118                         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a142cc8ef4c568a9fa22bbd21393dcd66}{tableModelEvents}}.setColumnCount(3); \textcolor{comment}{// another column added to allocate ev objects}}
+\DoxyCodeLine{119 }
+\DoxyCodeLine{120                         BLFacade facade=MainGUI.getBusinessLogic();}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122                         Vector<\mbox{\hyperlink{namespacedomain}{domain}}.\mbox{\hyperlink{classdomain_1_1Event}{Event}}> events=facade.getEvents(firstDay);}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124                         \textcolor{keywordflow}{if} (events.isEmpty() ) \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a44489404c630d443ef23d756a0a59ddd}{jLabelEvents}}.setText(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"NoEvents"})+ \textcolor{stringliteral}{": "}+dateformat1.format(\mbox{\hyperlink{classgui_1_1FindQuestionsGUI_ae91cb03b6f7c5fd36436fcb4ec118613}{calendarMio}}.getTime()));}
+\DoxyCodeLine{125                         \textcolor{keywordflow}{else} \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a44489404c630d443ef23d756a0a59ddd}{jLabelEvents}}.setText(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"Events"})+ \textcolor{stringliteral}{": "}+dateformat1.format(\mbox{\hyperlink{classgui_1_1FindQuestionsGUI_ae91cb03b6f7c5fd36436fcb4ec118613}{calendarMio}}.getTime()));}
+\DoxyCodeLine{126                         \textcolor{keywordflow}{for} (\mbox{\hyperlink{namespacedomain}{domain}}.\mbox{\hyperlink{classdomain_1_1Event}{Event}} ev:events)\{}
+\DoxyCodeLine{127                             Vector<Object> row = \textcolor{keyword}{new} Vector<Object>();}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{129                             System.out.println(\textcolor{stringliteral}{"Events "}+ev);}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{131                             row.add(ev.getEventNumber());}
+\DoxyCodeLine{132                             row.add(ev.getDescription());}
+\DoxyCodeLine{133                             row.add(ev); \textcolor{comment}{// ev object added in order to obtain it with tableModelEvents.getValueAt(i,2)}}
+\DoxyCodeLine{134                             \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a142cc8ef4c568a9fa22bbd21393dcd66}{tableModelEvents}}.addRow(row);       }
+\DoxyCodeLine{135                         \}}
+\DoxyCodeLine{136                         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a022fc8764d950afede789bb83ce7b5aa}{tableEvents}}.getColumnModel().getColumn(0).setPreferredWidth(25);}
+\DoxyCodeLine{137                         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a022fc8764d950afede789bb83ce7b5aa}{tableEvents}}.getColumnModel().getColumn(1).setPreferredWidth(268);}
+\DoxyCodeLine{138                         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a022fc8764d950afede789bb83ce7b5aa}{tableEvents}}.getColumnModel().removeColumn(\mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a022fc8764d950afede789bb83ce7b5aa}{tableEvents}}.getColumnModel().getColumn(2)); \textcolor{comment}{// not shown in JTable}}
+\DoxyCodeLine{139                     \} \textcolor{keywordflow}{catch} (Exception e1) \{}
+\DoxyCodeLine{140 }
+\DoxyCodeLine{141                         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a7e0f66edb87cb23a1ed731a4cbbf6679}{jLabelQueries}}.setText(e1.getMessage());}
+\DoxyCodeLine{142                     \}}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144                 \}}
+\DoxyCodeLine{145                 CreateQuestionGUI.paintDaysWithEvents(\mbox{\hyperlink{classgui_1_1FindQuestionsGUI_ae9cccb6f4b0319f8d786fa5040d6bed3}{jCalendar1}});}
+\DoxyCodeLine{146             \} }
+\DoxyCodeLine{147         \});}
+\DoxyCodeLine{148 }
+\DoxyCodeLine{149         this.getContentPane().add(\mbox{\hyperlink{classgui_1_1FindQuestionsGUI_ae9cccb6f4b0319f8d786fa5040d6bed3}{jCalendar1}}, \textcolor{keyword}{null});}
+\DoxyCodeLine{150         }
+\DoxyCodeLine{151         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_ace1a155185cdae07dc3ed59a80f173fa}{scrollPaneEvents}}.setBounds(\textcolor{keyword}{new} Rectangle(292, 50, 346, 150));}
+\DoxyCodeLine{152         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a7657e8883157c1d005bb73744458bbf8}{scrollPaneQueries}}.setBounds(\textcolor{keyword}{new} Rectangle(138, 273, 406, 116));}
+\DoxyCodeLine{153 }
+\DoxyCodeLine{154         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a022fc8764d950afede789bb83ce7b5aa}{tableEvents}}.addMouseListener(\textcolor{keyword}{new} MouseAdapter() \{}
+\DoxyCodeLine{155             @Override}
+\DoxyCodeLine{156             \textcolor{keyword}{public} \textcolor{keywordtype}{void} mouseClicked(MouseEvent e) \{}
+\DoxyCodeLine{157                 \textcolor{keywordtype}{int} i=\mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a022fc8764d950afede789bb83ce7b5aa}{tableEvents}}.getSelectedRow();}
+\DoxyCodeLine{158                 \mbox{\hyperlink{namespacedomain}{domain}}.\mbox{\hyperlink{classdomain_1_1Event}{Event}} ev=(\mbox{\hyperlink{namespacedomain}{domain}}.\mbox{\hyperlink{classdomain_1_1Event}{Event}})\mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a142cc8ef4c568a9fa22bbd21393dcd66}{tableModelEvents}}.getValueAt(i,2); \textcolor{comment}{// obtain ev object}}
+\DoxyCodeLine{159                 Vector<Question> queries=ev.getQuestions();}
+\DoxyCodeLine{160 }
+\DoxyCodeLine{161                 \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_aec87a2a23f53df34886c52c6bb405666}{tableModelQueries}}.setDataVector(\textcolor{keyword}{null}, \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_abcca88495948619b8f7517aef8e846e6}{columnNamesQueries}});}
+\DoxyCodeLine{162 }
+\DoxyCodeLine{163                 \textcolor{keywordflow}{if} (queries.isEmpty())}
+\DoxyCodeLine{164                     \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a7e0f66edb87cb23a1ed731a4cbbf6679}{jLabelQueries}}.setText(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"NoQueries"})+\textcolor{stringliteral}{": "}+ev.getDescription());}
+\DoxyCodeLine{165                 \textcolor{keywordflow}{else} }
+\DoxyCodeLine{166                     \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a7e0f66edb87cb23a1ed731a4cbbf6679}{jLabelQueries}}.setText(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"SelectedEvent"})+\textcolor{stringliteral}{" "}+ev.getDescription());}
+\DoxyCodeLine{167 }
+\DoxyCodeLine{168                 \textcolor{keywordflow}{for} (\mbox{\hyperlink{namespacedomain}{domain}}.\mbox{\hyperlink{classdomain_1_1Question}{Question}} q:queries)\{}
+\DoxyCodeLine{169                     Vector<Object> row = \textcolor{keyword}{new} Vector<Object>();}
+\DoxyCodeLine{170 }
+\DoxyCodeLine{171                     row.add(q.getQuestionNumber());}
+\DoxyCodeLine{172                     row.add(q.getQuestion());}
+\DoxyCodeLine{173                     row.add(q.getResult().getResult());}
+\DoxyCodeLine{174                     row.add(q.getBetMinimum());}
+\DoxyCodeLine{175                     row.add(q.getCuota());}
+\DoxyCodeLine{176                     \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_aec87a2a23f53df34886c52c6bb405666}{tableModelQueries}}.addRow(row); }
+\DoxyCodeLine{177                 \}}
+\DoxyCodeLine{178                 \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a593cb17bb67700c97f5cf1dcd636526f}{tableQueries}}.getColumnModel().getColumn(0).setPreferredWidth(25);}
+\DoxyCodeLine{179                 \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a593cb17bb67700c97f5cf1dcd636526f}{tableQueries}}.getColumnModel().getColumn(1).setPreferredWidth(50);}
+\DoxyCodeLine{180                 \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a593cb17bb67700c97f5cf1dcd636526f}{tableQueries}}.getColumnModel().getColumn(2).setPreferredWidth(25);}
+\DoxyCodeLine{181                 \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a593cb17bb67700c97f5cf1dcd636526f}{tableQueries}}.getColumnModel().getColumn(3).setPreferredWidth(15);}
+\DoxyCodeLine{182                 \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a593cb17bb67700c97f5cf1dcd636526f}{tableQueries}}.getColumnModel().getColumn(4).setPreferredWidth(15);}
+\DoxyCodeLine{183             \}}
+\DoxyCodeLine{184         \});}
+\DoxyCodeLine{185 }
+\DoxyCodeLine{186         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_ace1a155185cdae07dc3ed59a80f173fa}{scrollPaneEvents}}.setViewportView(\mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a022fc8764d950afede789bb83ce7b5aa}{tableEvents}});}
+\DoxyCodeLine{187         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a142cc8ef4c568a9fa22bbd21393dcd66}{tableModelEvents}} = \textcolor{keyword}{new} DefaultTableModel(\textcolor{keyword}{null}, \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a7d72ae353614e87787788d83e329a2e7}{columnNamesEvents}});}
+\DoxyCodeLine{188 }
+\DoxyCodeLine{189         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a022fc8764d950afede789bb83ce7b5aa}{tableEvents}}.setModel(\mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a142cc8ef4c568a9fa22bbd21393dcd66}{tableModelEvents}});}
+\DoxyCodeLine{190         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a022fc8764d950afede789bb83ce7b5aa}{tableEvents}}.getColumnModel().getColumn(0).setPreferredWidth(25);}
+\DoxyCodeLine{191         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a022fc8764d950afede789bb83ce7b5aa}{tableEvents}}.getColumnModel().getColumn(1).setPreferredWidth(268);}
+\DoxyCodeLine{192         }
+\DoxyCodeLine{193 }
+\DoxyCodeLine{194 }
+\DoxyCodeLine{195         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a7657e8883157c1d005bb73744458bbf8}{scrollPaneQueries}}.setViewportView(\mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a593cb17bb67700c97f5cf1dcd636526f}{tableQueries}});}
+\DoxyCodeLine{196         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_aec87a2a23f53df34886c52c6bb405666}{tableModelQueries}} = \textcolor{keyword}{new} DefaultTableModel(\textcolor{keyword}{null}, \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_abcca88495948619b8f7517aef8e846e6}{columnNamesQueries}});}
+\DoxyCodeLine{197 }
+\DoxyCodeLine{198         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a593cb17bb67700c97f5cf1dcd636526f}{tableQueries}}.setModel(\mbox{\hyperlink{classgui_1_1FindQuestionsGUI_aec87a2a23f53df34886c52c6bb405666}{tableModelQueries}});}
+\DoxyCodeLine{199         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a593cb17bb67700c97f5cf1dcd636526f}{tableQueries}}.getColumnModel().getColumn(0).setPreferredWidth(25);}
+\DoxyCodeLine{200         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a593cb17bb67700c97f5cf1dcd636526f}{tableQueries}}.getColumnModel().getColumn(1).setPreferredWidth(50);}
+\DoxyCodeLine{201         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a593cb17bb67700c97f5cf1dcd636526f}{tableQueries}}.getColumnModel().getColumn(2).setPreferredWidth(25);}
+\DoxyCodeLine{202         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a593cb17bb67700c97f5cf1dcd636526f}{tableQueries}}.getColumnModel().getColumn(3).setPreferredWidth(15);}
+\DoxyCodeLine{203         \mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a593cb17bb67700c97f5cf1dcd636526f}{tableQueries}}.getColumnModel().getColumn(4).setPreferredWidth(15);}
+\DoxyCodeLine{204 }
+\DoxyCodeLine{205         this.getContentPane().add(\mbox{\hyperlink{classgui_1_1FindQuestionsGUI_ace1a155185cdae07dc3ed59a80f173fa}{scrollPaneEvents}}, \textcolor{keyword}{null});}
+\DoxyCodeLine{206         this.getContentPane().add(\mbox{\hyperlink{classgui_1_1FindQuestionsGUI_a7657e8883157c1d005bb73744458bbf8}{scrollPaneQueries}}, \textcolor{keyword}{null});}
+\DoxyCodeLine{207 }
+\DoxyCodeLine{208     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a gui.\+Find\+Questions\+G\+U\+I.\+calendar\+Mio, gui.\+Find\+Questions\+G\+U\+I.\+column\+Names\+Events, gui.\+Find\+Questions\+G\+U\+I.\+column\+Names\+Queries, gui.\+Main\+G\+U\+I.\+get\+Business\+Logic(), business\+Logic.\+B\+L\+Facade.\+get\+Events(), gui.\+Find\+Questions\+G\+U\+I.\+j\+Button2\+\_\+action\+Performed(), gui.\+Find\+Questions\+G\+U\+I.\+j\+Button\+Close, gui.\+Find\+Questions\+G\+U\+I.\+j\+Calendar1, gui.\+Find\+Questions\+G\+U\+I.\+j\+Label\+Event\+Date, gui.\+Find\+Questions\+G\+U\+I.\+j\+Label\+Events, gui.\+Find\+Questions\+G\+U\+I.\+j\+Label\+Queries, gui.\+Create\+Question\+G\+U\+I.\+paint\+Days\+With\+Events(), gui.\+Find\+Questions\+G\+U\+I.\+scroll\+Pane\+Events, gui.\+Find\+Questions\+G\+U\+I.\+scroll\+Pane\+Queries, gui.\+Find\+Questions\+G\+U\+I.\+table\+Events, gui.\+Find\+Questions\+G\+U\+I.\+table\+Model\+Events, gui.\+Find\+Questions\+G\+U\+I.\+table\+Model\+Queries, gui.\+Find\+Questions\+G\+U\+I.\+table\+Queries y gui.\+Find\+Questions\+G\+U\+I.\+trim().
+
+
+
+Referenciado por gui.\+Find\+Questions\+G\+U\+I.\+Find\+Questions\+G\+U\+I().
+
+\mbox{\Hypertarget{classgui_1_1FindQuestionsGUI_a6a37a659df1fc28f79c4f8fa20ba5dcc}\label{classgui_1_1FindQuestionsGUI_a6a37a659df1fc28f79c4f8fa20ba5dcc}} 
+\index{gui.FindQuestionsGUI@{gui.FindQuestionsGUI}!jButton2\_actionPerformed@{jButton2\_actionPerformed}}
+\index{jButton2\_actionPerformed@{jButton2\_actionPerformed}!gui.FindQuestionsGUI@{gui.FindQuestionsGUI}}
+\subsubsection{\texorpdfstring{jButton2\_actionPerformed()}{jButton2\_actionPerformed()}}
+{\footnotesize\ttfamily void gui.\+Find\+Questions\+G\+U\+I.\+j\+Button2\+\_\+action\+Performed (\begin{DoxyParamCaption}\item[{Action\+Event}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 210 del archivo Find\+Questions\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{210                                                          \{}
+\DoxyCodeLine{211         this.setVisible(\textcolor{keyword}{false});}
+\DoxyCodeLine{212     \}}
+
+\end{DoxyCode}
+
+
+Referenciado por gui.\+Find\+Questions\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1FindQuestionsGUI_ac4294b9a4abc6073fc9151ef97929b98}\label{classgui_1_1FindQuestionsGUI_ac4294b9a4abc6073fc9151ef97929b98}} 
+\index{gui.FindQuestionsGUI@{gui.FindQuestionsGUI}!newDate@{newDate}}
+\index{newDate@{newDate}!gui.FindQuestionsGUI@{gui.FindQuestionsGUI}}
+\subsubsection{\texorpdfstring{newDate()}{newDate()}}
+{\footnotesize\ttfamily Date gui.\+Find\+Questions\+G\+U\+I.\+new\+Date (\begin{DoxyParamCaption}\item[{int}]{year,  }\item[{int}]{month,  }\item[{int}]{day }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 225 del archivo Find\+Questions\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{225                                                      \{}
+\DoxyCodeLine{226 }
+\DoxyCodeLine{227          Calendar calendar = Calendar.getInstance();}
+\DoxyCodeLine{228          calendar.set(year, month, day,0,0,0);}
+\DoxyCodeLine{229          calendar.set(Calendar.MILLISECOND, 0);}
+\DoxyCodeLine{230 }
+\DoxyCodeLine{231          \textcolor{keywordflow}{return} calendar.getTime();}
+\DoxyCodeLine{232     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classgui_1_1FindQuestionsGUI_a6156ed3f274fcc9d14722f62a96ac73e}\label{classgui_1_1FindQuestionsGUI_a6156ed3f274fcc9d14722f62a96ac73e}} 
+\index{gui.FindQuestionsGUI@{gui.FindQuestionsGUI}!trim@{trim}}
+\index{trim@{trim}!gui.FindQuestionsGUI@{gui.FindQuestionsGUI}}
+\subsubsection{\texorpdfstring{trim()}{trim()}}
+{\footnotesize\ttfamily Date gui.\+Find\+Questions\+G\+U\+I.\+trim (\begin{DoxyParamCaption}\item[{Date}]{date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 215 del archivo Find\+Questions\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{215                                  \{}
+\DoxyCodeLine{216         Calendar calendar = Calendar.getInstance();}
+\DoxyCodeLine{217         calendar.setTime(date);}
+\DoxyCodeLine{218         calendar.set(Calendar.MILLISECOND, 0);}
+\DoxyCodeLine{219         calendar.set(Calendar.SECOND, 0);}
+\DoxyCodeLine{220         calendar.set(Calendar.MINUTE, 0);}
+\DoxyCodeLine{221         calendar.set(Calendar.HOUR\_OF\_DAY, 0);}
+\DoxyCodeLine{222         \textcolor{keywordflow}{return} calendar.getTime();}
+\DoxyCodeLine{223     \}}
+
+\end{DoxyCode}
+
+
+Referenciado por gui.\+Find\+Questions\+G\+U\+I.\+jb\+Init().
+
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classgui_1_1FindQuestionsGUI_ae91cb03b6f7c5fd36436fcb4ec118613}\label{classgui_1_1FindQuestionsGUI_ae91cb03b6f7c5fd36436fcb4ec118613}} 
+\index{gui.FindQuestionsGUI@{gui.FindQuestionsGUI}!calendarMio@{calendarMio}}
+\index{calendarMio@{calendarMio}!gui.FindQuestionsGUI@{gui.FindQuestionsGUI}}
+\subsubsection{\texorpdfstring{calendarMio}{calendarMio}}
+{\footnotesize\ttfamily Calendar gui.\+Find\+Questions\+G\+U\+I.\+calendar\+Mio = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 29 del archivo Find\+Questions\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Find\+Questions\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1FindQuestionsGUI_a7d72ae353614e87787788d83e329a2e7}\label{classgui_1_1FindQuestionsGUI_a7d72ae353614e87787788d83e329a2e7}} 
+\index{gui.FindQuestionsGUI@{gui.FindQuestionsGUI}!columnNamesEvents@{columnNamesEvents}}
+\index{columnNamesEvents@{columnNamesEvents}!gui.FindQuestionsGUI@{gui.FindQuestionsGUI}}
+\subsubsection{\texorpdfstring{columnNamesEvents}{columnNamesEvents}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} gui.\+Find\+Questions\+G\+U\+I.\+column\+Names\+Events\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Valor inicial\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} String[] \{}
+\DoxyCodeLine{            ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"EventN"}), }
+\DoxyCodeLine{            ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"Event"}), }
+\DoxyCodeLine{}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definición en la línea 40 del archivo Find\+Questions\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Find\+Questions\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1FindQuestionsGUI_abcca88495948619b8f7517aef8e846e6}\label{classgui_1_1FindQuestionsGUI_abcca88495948619b8f7517aef8e846e6}} 
+\index{gui.FindQuestionsGUI@{gui.FindQuestionsGUI}!columnNamesQueries@{columnNamesQueries}}
+\index{columnNamesQueries@{columnNamesQueries}!gui.FindQuestionsGUI@{gui.FindQuestionsGUI}}
+\subsubsection{\texorpdfstring{columnNamesQueries}{columnNamesQueries}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} gui.\+Find\+Questions\+G\+U\+I.\+column\+Names\+Queries\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Valor inicial\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} String[] \{}
+\DoxyCodeLine{            ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"QueryN"}), }
+\DoxyCodeLine{            ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"Query"}),}
+\DoxyCodeLine{            ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"Result"}), }
+\DoxyCodeLine{            ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"BetMin"}),}
+\DoxyCodeLine{            ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"Cuota"})}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definición en la línea 45 del archivo Find\+Questions\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Find\+Questions\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1FindQuestionsGUI_aa434da3107eda36011f1dd89b1c02d65}\label{classgui_1_1FindQuestionsGUI_aa434da3107eda36011f1dd89b1c02d65}} 
+\index{gui.FindQuestionsGUI@{gui.FindQuestionsGUI}!jButtonClose@{jButtonClose}}
+\index{jButtonClose@{jButtonClose}!gui.FindQuestionsGUI@{gui.FindQuestionsGUI}}
+\subsubsection{\texorpdfstring{jButtonClose}{jButtonClose}}
+{\footnotesize\ttfamily J\+Button gui.\+Find\+Questions\+G\+U\+I.\+j\+Button\+Close = new J\+Button(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Close\char`\"{}))\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 25 del archivo Find\+Questions\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Find\+Questions\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1FindQuestionsGUI_ae9cccb6f4b0319f8d786fa5040d6bed3}\label{classgui_1_1FindQuestionsGUI_ae9cccb6f4b0319f8d786fa5040d6bed3}} 
+\index{gui.FindQuestionsGUI@{gui.FindQuestionsGUI}!jCalendar1@{jCalendar1}}
+\index{jCalendar1@{jCalendar1}!gui.FindQuestionsGUI@{gui.FindQuestionsGUI}}
+\subsubsection{\texorpdfstring{jCalendar1}{jCalendar1}}
+{\footnotesize\ttfamily J\+Calendar gui.\+Find\+Questions\+G\+U\+I.\+j\+Calendar1 = new J\+Calendar()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 28 del archivo Find\+Questions\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Find\+Questions\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1FindQuestionsGUI_a490e1658b079f1999219d1eb7c5bd0c4}\label{classgui_1_1FindQuestionsGUI_a490e1658b079f1999219d1eb7c5bd0c4}} 
+\index{gui.FindQuestionsGUI@{gui.FindQuestionsGUI}!jLabelEventDate@{jLabelEventDate}}
+\index{jLabelEventDate@{jLabelEventDate}!gui.FindQuestionsGUI@{gui.FindQuestionsGUI}}
+\subsubsection{\texorpdfstring{jLabelEventDate}{jLabelEventDate}}
+{\footnotesize\ttfamily final J\+Label gui.\+Find\+Questions\+G\+U\+I.\+j\+Label\+Event\+Date = new J\+Label(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Event\+Date\char`\"{}))\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 21 del archivo Find\+Questions\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Find\+Questions\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1FindQuestionsGUI_a44489404c630d443ef23d756a0a59ddd}\label{classgui_1_1FindQuestionsGUI_a44489404c630d443ef23d756a0a59ddd}} 
+\index{gui.FindQuestionsGUI@{gui.FindQuestionsGUI}!jLabelEvents@{jLabelEvents}}
+\index{jLabelEvents@{jLabelEvents}!gui.FindQuestionsGUI@{gui.FindQuestionsGUI}}
+\subsubsection{\texorpdfstring{jLabelEvents}{jLabelEvents}}
+{\footnotesize\ttfamily final J\+Label gui.\+Find\+Questions\+G\+U\+I.\+j\+Label\+Events = new J\+Label(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Events\char`\"{}))\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 23 del archivo Find\+Questions\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Find\+Questions\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1FindQuestionsGUI_a7e0f66edb87cb23a1ed731a4cbbf6679}\label{classgui_1_1FindQuestionsGUI_a7e0f66edb87cb23a1ed731a4cbbf6679}} 
+\index{gui.FindQuestionsGUI@{gui.FindQuestionsGUI}!jLabelQueries@{jLabelQueries}}
+\index{jLabelQueries@{jLabelQueries}!gui.FindQuestionsGUI@{gui.FindQuestionsGUI}}
+\subsubsection{\texorpdfstring{jLabelQueries}{jLabelQueries}}
+{\footnotesize\ttfamily final J\+Label gui.\+Find\+Questions\+G\+U\+I.\+j\+Label\+Queries = new J\+Label(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Queries\char`\"{}))\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 22 del archivo Find\+Questions\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Find\+Questions\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1FindQuestionsGUI_ace1a155185cdae07dc3ed59a80f173fa}\label{classgui_1_1FindQuestionsGUI_ace1a155185cdae07dc3ed59a80f173fa}} 
+\index{gui.FindQuestionsGUI@{gui.FindQuestionsGUI}!scrollPaneEvents@{scrollPaneEvents}}
+\index{scrollPaneEvents@{scrollPaneEvents}!gui.FindQuestionsGUI@{gui.FindQuestionsGUI}}
+\subsubsection{\texorpdfstring{scrollPaneEvents}{scrollPaneEvents}}
+{\footnotesize\ttfamily J\+Scroll\+Pane gui.\+Find\+Questions\+G\+U\+I.\+scroll\+Pane\+Events = new J\+Scroll\+Pane()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 30 del archivo Find\+Questions\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Find\+Questions\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1FindQuestionsGUI_a7657e8883157c1d005bb73744458bbf8}\label{classgui_1_1FindQuestionsGUI_a7657e8883157c1d005bb73744458bbf8}} 
+\index{gui.FindQuestionsGUI@{gui.FindQuestionsGUI}!scrollPaneQueries@{scrollPaneQueries}}
+\index{scrollPaneQueries@{scrollPaneQueries}!gui.FindQuestionsGUI@{gui.FindQuestionsGUI}}
+\subsubsection{\texorpdfstring{scrollPaneQueries}{scrollPaneQueries}}
+{\footnotesize\ttfamily J\+Scroll\+Pane gui.\+Find\+Questions\+G\+U\+I.\+scroll\+Pane\+Queries = new J\+Scroll\+Pane()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 31 del archivo Find\+Questions\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Find\+Questions\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1FindQuestionsGUI_ae92822eeba6f2ba8dcae73d5ad17325c}\label{classgui_1_1FindQuestionsGUI_ae92822eeba6f2ba8dcae73d5ad17325c}} 
+\index{gui.FindQuestionsGUI@{gui.FindQuestionsGUI}!serialVersionUID@{serialVersionUID}}
+\index{serialVersionUID@{serialVersionUID}!gui.FindQuestionsGUI@{gui.FindQuestionsGUI}}
+\subsubsection{\texorpdfstring{serialVersionUID}{serialVersionUID}}
+{\footnotesize\ttfamily final long gui.\+Find\+Questions\+G\+U\+I.\+serial\+Version\+U\+ID = 1L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 19 del archivo Find\+Questions\+G\+U\+I.\+java.
+
+\mbox{\Hypertarget{classgui_1_1FindQuestionsGUI_a022fc8764d950afede789bb83ce7b5aa}\label{classgui_1_1FindQuestionsGUI_a022fc8764d950afede789bb83ce7b5aa}} 
+\index{gui.FindQuestionsGUI@{gui.FindQuestionsGUI}!tableEvents@{tableEvents}}
+\index{tableEvents@{tableEvents}!gui.FindQuestionsGUI@{gui.FindQuestionsGUI}}
+\subsubsection{\texorpdfstring{tableEvents}{tableEvents}}
+{\footnotesize\ttfamily J\+Table gui.\+Find\+Questions\+G\+U\+I.\+table\+Events = new J\+Table()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 33 del archivo Find\+Questions\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Find\+Questions\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1FindQuestionsGUI_a142cc8ef4c568a9fa22bbd21393dcd66}\label{classgui_1_1FindQuestionsGUI_a142cc8ef4c568a9fa22bbd21393dcd66}} 
+\index{gui.FindQuestionsGUI@{gui.FindQuestionsGUI}!tableModelEvents@{tableModelEvents}}
+\index{tableModelEvents@{tableModelEvents}!gui.FindQuestionsGUI@{gui.FindQuestionsGUI}}
+\subsubsection{\texorpdfstring{tableModelEvents}{tableModelEvents}}
+{\footnotesize\ttfamily Default\+Table\+Model gui.\+Find\+Questions\+G\+U\+I.\+table\+Model\+Events\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 36 del archivo Find\+Questions\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Find\+Questions\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1FindQuestionsGUI_aec87a2a23f53df34886c52c6bb405666}\label{classgui_1_1FindQuestionsGUI_aec87a2a23f53df34886c52c6bb405666}} 
+\index{gui.FindQuestionsGUI@{gui.FindQuestionsGUI}!tableModelQueries@{tableModelQueries}}
+\index{tableModelQueries@{tableModelQueries}!gui.FindQuestionsGUI@{gui.FindQuestionsGUI}}
+\subsubsection{\texorpdfstring{tableModelQueries}{tableModelQueries}}
+{\footnotesize\ttfamily Default\+Table\+Model gui.\+Find\+Questions\+G\+U\+I.\+table\+Model\+Queries\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 37 del archivo Find\+Questions\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Find\+Questions\+G\+U\+I.\+jb\+Init().
+
+\mbox{\Hypertarget{classgui_1_1FindQuestionsGUI_a593cb17bb67700c97f5cf1dcd636526f}\label{classgui_1_1FindQuestionsGUI_a593cb17bb67700c97f5cf1dcd636526f}} 
+\index{gui.FindQuestionsGUI@{gui.FindQuestionsGUI}!tableQueries@{tableQueries}}
+\index{tableQueries@{tableQueries}!gui.FindQuestionsGUI@{gui.FindQuestionsGUI}}
+\subsubsection{\texorpdfstring{tableQueries}{tableQueries}}
+{\footnotesize\ttfamily J\+Table gui.\+Find\+Questions\+G\+U\+I.\+table\+Queries = new J\+Table()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 34 del archivo Find\+Questions\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Find\+Questions\+G\+U\+I.\+jb\+Init().
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+src/gui/\mbox{\hyperlink{FindQuestionsGUI_8java}{Find\+Questions\+G\+U\+I.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,69 @@
+\hypertarget{classbusinessLogic_1_1BusinessLogicServerAWS}{}\section{Referencia de la Clase business\+Logic.\+Business\+Logic\+Server\+A\+WS}
+\label{classbusinessLogic_1_1BusinessLogicServerAWS}\index{businessLogic.BusinessLogicServerAWS@{businessLogic.BusinessLogicServerAWS}}
+\subsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classbusinessLogic_1_1BusinessLogicServerAWS_a1a3efa4578ccdced4b0668444e71e9ad}{main}} (String args\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+Definición en la línea 7 del archivo Business\+Logic\+Server\+A\+W\+S.\+java.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classbusinessLogic_1_1BusinessLogicServerAWS_a1a3efa4578ccdced4b0668444e71e9ad}\label{classbusinessLogic_1_1BusinessLogicServerAWS_a1a3efa4578ccdced4b0668444e71e9ad}} 
+\index{businessLogic.BusinessLogicServerAWS@{businessLogic.BusinessLogicServerAWS}!main@{main}}
+\index{main@{main}!businessLogic.BusinessLogicServerAWS@{businessLogic.BusinessLogicServerAWS}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void business\+Logic.\+Business\+Logic\+Server\+A\+W\+S.\+main (\begin{DoxyParamCaption}\item[{String}]{args\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definición en la línea 9 del archivo Business\+Logic\+Server\+A\+W\+S.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9                                           \{}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11         String service;}
+\DoxyCodeLine{12         }
+\DoxyCodeLine{13         ConfigXML c=ConfigXML.getInstance();}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16         \textcolor{keywordflow}{if} (c.isBusinessLogicLocal()) \{}
+\DoxyCodeLine{17             System.out.println(\textcolor{stringliteral}{"\(\backslash\)nERROR, the business logic is configured as local"});}
+\DoxyCodeLine{18         \}}
+\DoxyCodeLine{19         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{20         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{21             }
+\DoxyCodeLine{22             \textcolor{keywordflow}{if} (!c.isDatabaseLocal()) \{}
+\DoxyCodeLine{23                 System.out.println(\textcolor{stringliteral}{"\(\backslash\)nWARNING: Please be sure ObjectdbManagerServer is launched\(\backslash\)n           in machine: "}+c.getDatabaseNode()+\textcolor{stringliteral}{" port: "}+c.getDatabasePort()+\textcolor{stringliteral}{"\(\backslash\)n"});  }
+\DoxyCodeLine{24             \}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26             service= \textcolor{stringliteral}{"http://"}+c.getBusinessLogicNode() +\textcolor{stringliteral}{":"}+ c.getBusinessLogicPort()+\textcolor{stringliteral}{"/ws/"}+c.getBusinessLogicName();}
+\DoxyCodeLine{27                 }
+\DoxyCodeLine{28             Endpoint.publish(service, \textcolor{keyword}{new} BLFacadeImplementation());}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30             System.out.println(\textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)nRunning service at:\(\backslash\)n\(\backslash\)t"} + service);}
+\DoxyCodeLine{31             System.out.println(\textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)n\(\backslash\)nPress button to exit this server... "});}
+\DoxyCodeLine{32             }
+\DoxyCodeLine{33         \} \textcolor{keywordflow}{catch} (Exception e) \{}
+\DoxyCodeLine{34             System.out.println(e.toString());}
+\DoxyCodeLine{35         \}}
+\DoxyCodeLine{36      \}}
+\DoxyCodeLine{37     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a configuration.\+Config\+X\+M\+L.\+get\+Business\+Logic\+Name(), configuration.\+Config\+X\+M\+L.\+get\+Business\+Logic\+Node(), configuration.\+Config\+X\+M\+L.\+get\+Business\+Logic\+Port(), configuration.\+Config\+X\+M\+L.\+get\+Database\+Node(), configuration.\+Config\+X\+M\+L.\+get\+Database\+Port(), configuration.\+Config\+X\+M\+L.\+get\+Instance(), configuration.\+Config\+X\+M\+L.\+is\+Business\+Logic\+Local() y configuration.\+Config\+X\+M\+L.\+is\+Database\+Local().
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+src/business\+Logic/\mbox{\hyperlink{BusinessLogicServerAWS_8java}{Business\+Logic\+Server\+A\+W\+S.\+java}}\end{DoxyCompactItemize}

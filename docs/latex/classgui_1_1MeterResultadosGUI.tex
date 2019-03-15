@@ -1,0 +1,325 @@
+\hypertarget{classgui_1_1MeterResultadosGUI}{}\section{Referencia de la Clase gui.\+Meter\+Resultados\+G\+UI}
+\label{classgui_1_1MeterResultadosGUI}\index{gui.MeterResultadosGUI@{gui.MeterResultadosGUI}}
+Diagrama de herencias de gui.\+Meter\+Resultados\+G\+UI\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgui_1_1MeterResultadosGUI}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a9499e52fa7b3e85edb2ace269393b2c4}{Meter\+Resultados\+G\+UI}} ()
+\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_ae1dc5f8c26ed59e1e6e28353f9e6c339}{j\+Button2\+\_\+action\+Performed}} (Action\+Event e)
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+final J\+Label \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a7b346c03a4e3e6e9b6a4b280a73da693}{j\+Label\+Queries}} = new J\+Label(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Apuestas\char`\"{}))
+\item 
+J\+Button \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a18640ba21118837b12dd167366965f57}{j\+Button\+Close}} = new J\+Button(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Close\char`\"{}))
+\item 
+J\+Scroll\+Pane \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a1dbee32fc39f903b2a5cdbb09301368f}{scroll\+Pane\+Queries}} = new J\+Scroll\+Pane()
+\item 
+J\+Table \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a21b8ddf3a50cf3fb49737078ff9fe7ba}{table\+Queries}} = new J\+Table()
+\item 
+String \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a627fb2fd35893e8742ee7db4723cfd97}{column\+Names\+Queries}} = new String\mbox{[}$\,$\mbox{]} \{ \char`\"{}Evento\char`\"{},\char`\"{}Fecha evento\char`\"{}, \char`\"{}Pregunta\char`\"{}, \char`\"{}Resultado\char`\"{},\char`\"{}Corregida\char`\"{},\}
+\item 
+Default\+Table\+Model \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a80d5962a095c4cb15ea9adde965fc730}{table\+Model\+Queries}} = new Default\+Table\+Model(null, \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a627fb2fd35893e8742ee7db4723cfd97}{column\+Names\+Queries}})
+\item 
+J\+Text\+Field \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a3ac9b2987e549c1ba2fd7b26b257ff57}{text\+Field\+Resultado}}
+\item 
+\mbox{\hyperlink{classdomain_1_1Apuesta}{domain.\+Apuesta}} \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_acf472c1e18849ac7970bd55052a927b6}{apu}}
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static final long \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a14d6fdea71a82da0b570b99c866e7464}{serial\+Version\+U\+ID}} = 1L
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+Definición en la línea 26 del archivo Meter\+Resultados\+G\+U\+I.\+java.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classgui_1_1MeterResultadosGUI_a9499e52fa7b3e85edb2ace269393b2c4}\label{classgui_1_1MeterResultadosGUI_a9499e52fa7b3e85edb2ace269393b2c4}} 
+\index{gui.MeterResultadosGUI@{gui.MeterResultadosGUI}!MeterResultadosGUI@{MeterResultadosGUI}}
+\index{MeterResultadosGUI@{MeterResultadosGUI}!gui.MeterResultadosGUI@{gui.MeterResultadosGUI}}
+\subsubsection{\texorpdfstring{MeterResultadosGUI()}{MeterResultadosGUI()}}
+{\footnotesize\ttfamily gui.\+Meter\+Resultados\+G\+U\+I.\+Meter\+Resultados\+G\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 43 del archivo Meter\+Resultados\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43                                 \{}
+\DoxyCodeLine{44         setTitle(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"MisApuestasGUI.this.title"})); \textcolor{comment}{//\$NON-NLS-1\$ //\$NON-NLS-2\$}}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46         this.getContentPane().setLayout(\textcolor{keyword}{null});}
+\DoxyCodeLine{47         this.setSize(\textcolor{keyword}{new} Dimension(700, 350));}
+\DoxyCodeLine{48         \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a7b346c03a4e3e6e9b6a4b280a73da693}{jLabelQueries}}.setBounds(43, 24, 130, 14);}
+\DoxyCodeLine{49         this.getContentPane().add(\mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a7b346c03a4e3e6e9b6a4b280a73da693}{jLabelQueries}});}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51         \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a1dbee32fc39f903b2a5cdbb09301368f}{scrollPaneQueries}}.setBounds(\textcolor{keyword}{new} Rectangle(23, 55, 640, 192));}
+\DoxyCodeLine{52         \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a18640ba21118837b12dd167366965f57}{jButtonClose}}.setBounds(\textcolor{keyword}{new} Rectangle(533, 258, 130, 30));}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54         \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a18640ba21118837b12dd167366965f57}{jButtonClose}}.addActionListener(\textcolor{keyword}{new} ActionListener() \{}
+\DoxyCodeLine{55             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{}
+\DoxyCodeLine{56                 \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_ae1dc5f8c26ed59e1e6e28353f9e6c339}{jButton2\_actionPerformed}}(e);}
+\DoxyCodeLine{57             \}}
+\DoxyCodeLine{58         \});}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60         this.getContentPane().add(\mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a18640ba21118837b12dd167366965f57}{jButtonClose}}, \textcolor{keyword}{null});}
+\DoxyCodeLine{61         \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a80d5962a095c4cb15ea9adde965fc730}{tableModelQueries}}.setColumnCount(6);}
+\DoxyCodeLine{62         \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a21b8ddf3a50cf3fb49737078ff9fe7ba}{tableQueries}} = \textcolor{keyword}{new} JTable(\mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a80d5962a095c4cb15ea9adde965fc730}{tableModelQueries}});}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64         BLFacade facade = MainGUI.getBusinessLogic();}
+\DoxyCodeLine{65         List<Apuesta> apues = facade.getApuestasACoregir();}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67         \textcolor{keywordflow}{if} (apues.isEmpty()) \{}
+\DoxyCodeLine{68             System.out.println(\textcolor{stringliteral}{"no hay apuestas"});}
+\DoxyCodeLine{69         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{70             System.out.println(\textcolor{stringliteral}{"hay apuestas"});}
+\DoxyCodeLine{71             \textcolor{keywordflow}{for} (\mbox{\hyperlink{namespacedomain}{domain}}.\mbox{\hyperlink{classdomain_1_1Apuesta}{Apuesta}} ap : apues) \{}
+\DoxyCodeLine{72                 Vector<Object> row = \textcolor{keyword}{new} Vector<Object>();}
+\DoxyCodeLine{73                 System.out.println(ap.getApuesta().getEvent().getDescription());}
+\DoxyCodeLine{74                 }
+\DoxyCodeLine{75                 row.add(ap.getApuesta().getEvent().getDescription());}
+\DoxyCodeLine{76                 row.add(ap.getApuesta().getEvent().getEventDate());}
+\DoxyCodeLine{77                 row.add(ap.getApuesta().getQuestion());}
+\DoxyCodeLine{78                 row.add(ap.getApuesta().getResult().getResult());}
+\DoxyCodeLine{79                 row.add(ap.getCobrada());}
+\DoxyCodeLine{80                 row.add(ap);}
+\DoxyCodeLine{81                 \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a80d5962a095c4cb15ea9adde965fc730}{tableModelQueries}}.addRow(row);}
+\DoxyCodeLine{82                 \textcolor{comment}{// tableModelQueries.insertRow(tableModelQueries.getRowCount(), row);}}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84             \}}
+\DoxyCodeLine{85             \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a21b8ddf3a50cf3fb49737078ff9fe7ba}{tableQueries}}.getColumnModel().getColumn(0).setPreferredWidth(25);}
+\DoxyCodeLine{86             \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a21b8ddf3a50cf3fb49737078ff9fe7ba}{tableQueries}}.getColumnModel().getColumn(1).setPreferredWidth(50);}
+\DoxyCodeLine{87             \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a21b8ddf3a50cf3fb49737078ff9fe7ba}{tableQueries}}.getColumnModel().getColumn(2).setPreferredWidth(25);}
+\DoxyCodeLine{88             \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a21b8ddf3a50cf3fb49737078ff9fe7ba}{tableQueries}}.getColumnModel().getColumn(3).setPreferredWidth(15);}
+\DoxyCodeLine{89             \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a21b8ddf3a50cf3fb49737078ff9fe7ba}{tableQueries}}.getColumnModel().getColumn(4).setPreferredWidth(15);}
+\DoxyCodeLine{90             \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a21b8ddf3a50cf3fb49737078ff9fe7ba}{tableQueries}}.getColumnModel().removeColumn(\mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a21b8ddf3a50cf3fb49737078ff9fe7ba}{tableQueries}}.getColumnModel().getColumn(5));}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92         \}}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94         \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a1dbee32fc39f903b2a5cdbb09301368f}{scrollPaneQueries}}.setViewportView(\mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a21b8ddf3a50cf3fb49737078ff9fe7ba}{tableQueries}});}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96         \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a21b8ddf3a50cf3fb49737078ff9fe7ba}{tableQueries}}.setModel(\mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a80d5962a095c4cb15ea9adde965fc730}{tableModelQueries}});}
+\DoxyCodeLine{97         \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a21b8ddf3a50cf3fb49737078ff9fe7ba}{tableQueries}}.getColumnModel().getColumn(0).setPreferredWidth(25);}
+\DoxyCodeLine{98         \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a21b8ddf3a50cf3fb49737078ff9fe7ba}{tableQueries}}.getColumnModel().getColumn(1).setPreferredWidth(50);}
+\DoxyCodeLine{99         \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a21b8ddf3a50cf3fb49737078ff9fe7ba}{tableQueries}}.getColumnModel().getColumn(2).setPreferredWidth(25);}
+\DoxyCodeLine{100         \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a21b8ddf3a50cf3fb49737078ff9fe7ba}{tableQueries}}.getColumnModel().getColumn(3).setPreferredWidth(15);}
+\DoxyCodeLine{101         \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a21b8ddf3a50cf3fb49737078ff9fe7ba}{tableQueries}}.getColumnModel().getColumn(4).setPreferredWidth(15);}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104         \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a21b8ddf3a50cf3fb49737078ff9fe7ba}{tableQueries}}.addMouseListener(\textcolor{keyword}{new} MouseAdapter() \{}
+\DoxyCodeLine{105             @Override}
+\DoxyCodeLine{106             \textcolor{keyword}{public} \textcolor{keywordtype}{void} mouseClicked(MouseEvent e) \{}
+\DoxyCodeLine{107                 \textcolor{keywordtype}{int} i=\mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a21b8ddf3a50cf3fb49737078ff9fe7ba}{tableQueries}}.getSelectedRow();}
+\DoxyCodeLine{108                 \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_acf472c1e18849ac7970bd55052a927b6}{apu}}=(\mbox{\hyperlink{namespacedomain}{domain}}.\mbox{\hyperlink{classdomain_1_1Apuesta}{Apuesta}})\mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a80d5962a095c4cb15ea9adde965fc730}{tableModelQueries}}.getValueAt(i,5); \textcolor{comment}{// obtain qu object     }}
+\DoxyCodeLine{109             \}}
+\DoxyCodeLine{110         \});}
+\DoxyCodeLine{111         }
+\DoxyCodeLine{112         }
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114         this.getContentPane().add(\mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a1dbee32fc39f903b2a5cdbb09301368f}{scrollPaneQueries}}, \textcolor{keyword}{null});}
+\DoxyCodeLine{115         }
+\DoxyCodeLine{116         JLabel lblMeterResultado = \textcolor{keyword}{new} JLabel(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"MeterResultadosGUI.lblMeterResultado.text"})); \textcolor{comment}{//\$NON-NLS-1\$ //\$NON-NLS-2\$}}
+\DoxyCodeLine{117         lblMeterResultado.setBounds(23, 263, 130, 20);}
+\DoxyCodeLine{118         getContentPane().add(lblMeterResultado);}
+\DoxyCodeLine{119         }
+\DoxyCodeLine{120         \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a3ac9b2987e549c1ba2fd7b26b257ff57}{textFieldResultado}} = \textcolor{keyword}{new} JTextField();}
+\DoxyCodeLine{121         \textcolor{comment}{//textField.setText(ResourceBundle.getBundle("Etiquetas").getString("MeterResultadosGUI.textField.text")); //\$NON-NLS-1\$ //\$NON-NLS-2\$}}
+\DoxyCodeLine{122         \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a3ac9b2987e549c1ba2fd7b26b257ff57}{textFieldResultado}}.setBounds(128, 261, 185, 25);}
+\DoxyCodeLine{123         getContentPane().add(\mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a3ac9b2987e549c1ba2fd7b26b257ff57}{textFieldResultado}});}
+\DoxyCodeLine{124         \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a3ac9b2987e549c1ba2fd7b26b257ff57}{textFieldResultado}}.setColumns(10);}
+\DoxyCodeLine{125         }
+\DoxyCodeLine{126         JButton btnMeterResultado = \textcolor{keyword}{new} JButton(ResourceBundle.getBundle(\textcolor{stringliteral}{"Etiquetas"}).getString(\textcolor{stringliteral}{"MeterResultadosGUI.btnMeterResultado.text"})); \textcolor{comment}{//\$NON-NLS-1\$ //\$NON-NLS-2\$}}
+\DoxyCodeLine{127         btnMeterResultado.addActionListener(\textcolor{keyword}{new} ActionListener() \{}
+\DoxyCodeLine{128             \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent arg0) \{}
+\DoxyCodeLine{129                 BLFacade facade=MainGUI.getBusinessLogic();}
+\DoxyCodeLine{130                 String res = \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a3ac9b2987e549c1ba2fd7b26b257ff57}{textFieldResultado}}.getText();}
+\DoxyCodeLine{131                 \textcolor{keywordflow}{if} (res== \textcolor{keyword}{null} || \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_acf472c1e18849ac7970bd55052a927b6}{apu}} == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{132                     System.out.println(\textcolor{stringliteral}{"Mete resultado o selecciona"});}
+\DoxyCodeLine{133                 \}\textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{134                     facade.corregirResultado(\mbox{\hyperlink{classgui_1_1MeterResultadosGUI_acf472c1e18849ac7970bd55052a927b6}{apu}}, res);}
+\DoxyCodeLine{135                     }
+\DoxyCodeLine{136                     \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a7b346c03a4e3e6e9b6a4b280a73da693}{jLabelQueries}}.setVisible(\textcolor{keyword}{false});}
+\DoxyCodeLine{137                     \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_ae1dc5f8c26ed59e1e6e28353f9e6c339}{jButton2\_actionPerformed}}(arg0);}
+\DoxyCodeLine{138                     \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a9499e52fa7b3e85edb2ace269393b2c4}{MeterResultadosGUI}} m= \textcolor{keyword}{new} \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a9499e52fa7b3e85edb2ace269393b2c4}{MeterResultadosGUI}}();}
+\DoxyCodeLine{139                     m.setVisible(\textcolor{keyword}{true});             }
+\DoxyCodeLine{140                 \}}
+\DoxyCodeLine{141             \}}
+\DoxyCodeLine{142         \});}
+\DoxyCodeLine{143         btnMeterResultado.setBounds(344, 258, 130, 30);}
+\DoxyCodeLine{144         getContentPane().add(btnMeterResultado);}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{146 }
+\DoxyCodeLine{147     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a gui.\+Meter\+Resultados\+G\+U\+I.\+apu, business\+Logic.\+B\+L\+Facade.\+corregir\+Resultado(), business\+Logic.\+B\+L\+Facade.\+get\+Apuestas\+A\+Coregir(), gui.\+Main\+G\+U\+I.\+get\+Business\+Logic(), gui.\+Meter\+Resultados\+G\+U\+I.\+j\+Button2\+\_\+action\+Performed(), gui.\+Meter\+Resultados\+G\+U\+I.\+j\+Button\+Close, gui.\+Meter\+Resultados\+G\+U\+I.\+j\+Label\+Queries, gui.\+Meter\+Resultados\+G\+U\+I.\+scroll\+Pane\+Queries, gui.\+Meter\+Resultados\+G\+U\+I.\+table\+Model\+Queries, gui.\+Meter\+Resultados\+G\+U\+I.\+table\+Queries y gui.\+Meter\+Resultados\+G\+U\+I.\+text\+Field\+Resultado.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classgui_1_1MeterResultadosGUI_ae1dc5f8c26ed59e1e6e28353f9e6c339}\label{classgui_1_1MeterResultadosGUI_ae1dc5f8c26ed59e1e6e28353f9e6c339}} 
+\index{gui.MeterResultadosGUI@{gui.MeterResultadosGUI}!jButton2\_actionPerformed@{jButton2\_actionPerformed}}
+\index{jButton2\_actionPerformed@{jButton2\_actionPerformed}!gui.MeterResultadosGUI@{gui.MeterResultadosGUI}}
+\subsubsection{\texorpdfstring{jButton2\_actionPerformed()}{jButton2\_actionPerformed()}}
+{\footnotesize\ttfamily void gui.\+Meter\+Resultados\+G\+U\+I.\+j\+Button2\+\_\+action\+Performed (\begin{DoxyParamCaption}\item[{Action\+Event}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 149 del archivo Meter\+Resultados\+G\+U\+I.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{149                                                          \{}
+\DoxyCodeLine{150         this.setVisible(\textcolor{keyword}{false});}
+\DoxyCodeLine{151     \}}
+
+\end{DoxyCode}
+
+
+Referenciado por gui.\+Meter\+Resultados\+G\+U\+I.\+Meter\+Resultados\+G\+U\+I().
+
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classgui_1_1MeterResultadosGUI_acf472c1e18849ac7970bd55052a927b6}\label{classgui_1_1MeterResultadosGUI_acf472c1e18849ac7970bd55052a927b6}} 
+\index{gui.MeterResultadosGUI@{gui.MeterResultadosGUI}!apu@{apu}}
+\index{apu@{apu}!gui.MeterResultadosGUI@{gui.MeterResultadosGUI}}
+\subsubsection{\texorpdfstring{apu}{apu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classdomain_1_1Apuesta}{domain.\+Apuesta}} gui.\+Meter\+Resultados\+G\+U\+I.\+apu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 39 del archivo Meter\+Resultados\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Meter\+Resultados\+G\+U\+I.\+Meter\+Resultados\+G\+U\+I().
+
+\mbox{\Hypertarget{classgui_1_1MeterResultadosGUI_a627fb2fd35893e8742ee7db4723cfd97}\label{classgui_1_1MeterResultadosGUI_a627fb2fd35893e8742ee7db4723cfd97}} 
+\index{gui.MeterResultadosGUI@{gui.MeterResultadosGUI}!columnNamesQueries@{columnNamesQueries}}
+\index{columnNamesQueries@{columnNamesQueries}!gui.MeterResultadosGUI@{gui.MeterResultadosGUI}}
+\subsubsection{\texorpdfstring{columnNamesQueries}{columnNamesQueries}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} gui.\+Meter\+Resultados\+G\+U\+I.\+column\+Names\+Queries = new String\mbox{[}$\,$\mbox{]} \{ \char`\"{}Evento\char`\"{},\char`\"{}Fecha evento\char`\"{}, \char`\"{}Pregunta\char`\"{}, \char`\"{}Resultado\char`\"{},\char`\"{}Corregida\char`\"{},\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 35 del archivo Meter\+Resultados\+G\+U\+I.\+java.
+
+\mbox{\Hypertarget{classgui_1_1MeterResultadosGUI_a18640ba21118837b12dd167366965f57}\label{classgui_1_1MeterResultadosGUI_a18640ba21118837b12dd167366965f57}} 
+\index{gui.MeterResultadosGUI@{gui.MeterResultadosGUI}!jButtonClose@{jButtonClose}}
+\index{jButtonClose@{jButtonClose}!gui.MeterResultadosGUI@{gui.MeterResultadosGUI}}
+\subsubsection{\texorpdfstring{jButtonClose}{jButtonClose}}
+{\footnotesize\ttfamily J\+Button gui.\+Meter\+Resultados\+G\+U\+I.\+j\+Button\+Close = new J\+Button(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Close\char`\"{}))\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 31 del archivo Meter\+Resultados\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Meter\+Resultados\+G\+U\+I.\+Meter\+Resultados\+G\+U\+I().
+
+\mbox{\Hypertarget{classgui_1_1MeterResultadosGUI_a7b346c03a4e3e6e9b6a4b280a73da693}\label{classgui_1_1MeterResultadosGUI_a7b346c03a4e3e6e9b6a4b280a73da693}} 
+\index{gui.MeterResultadosGUI@{gui.MeterResultadosGUI}!jLabelQueries@{jLabelQueries}}
+\index{jLabelQueries@{jLabelQueries}!gui.MeterResultadosGUI@{gui.MeterResultadosGUI}}
+\subsubsection{\texorpdfstring{jLabelQueries}{jLabelQueries}}
+{\footnotesize\ttfamily final J\+Label gui.\+Meter\+Resultados\+G\+U\+I.\+j\+Label\+Queries = new J\+Label(Resource\+Bundle.\+get\+Bundle(\char`\"{}Etiquetas\char`\"{}).get\+String(\char`\"{}Apuestas\char`\"{}))\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 29 del archivo Meter\+Resultados\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Meter\+Resultados\+G\+U\+I.\+Meter\+Resultados\+G\+U\+I().
+
+\mbox{\Hypertarget{classgui_1_1MeterResultadosGUI_a1dbee32fc39f903b2a5cdbb09301368f}\label{classgui_1_1MeterResultadosGUI_a1dbee32fc39f903b2a5cdbb09301368f}} 
+\index{gui.MeterResultadosGUI@{gui.MeterResultadosGUI}!scrollPaneQueries@{scrollPaneQueries}}
+\index{scrollPaneQueries@{scrollPaneQueries}!gui.MeterResultadosGUI@{gui.MeterResultadosGUI}}
+\subsubsection{\texorpdfstring{scrollPaneQueries}{scrollPaneQueries}}
+{\footnotesize\ttfamily J\+Scroll\+Pane gui.\+Meter\+Resultados\+G\+U\+I.\+scroll\+Pane\+Queries = new J\+Scroll\+Pane()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 32 del archivo Meter\+Resultados\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Meter\+Resultados\+G\+U\+I.\+Meter\+Resultados\+G\+U\+I().
+
+\mbox{\Hypertarget{classgui_1_1MeterResultadosGUI_a14d6fdea71a82da0b570b99c866e7464}\label{classgui_1_1MeterResultadosGUI_a14d6fdea71a82da0b570b99c866e7464}} 
+\index{gui.MeterResultadosGUI@{gui.MeterResultadosGUI}!serialVersionUID@{serialVersionUID}}
+\index{serialVersionUID@{serialVersionUID}!gui.MeterResultadosGUI@{gui.MeterResultadosGUI}}
+\subsubsection{\texorpdfstring{serialVersionUID}{serialVersionUID}}
+{\footnotesize\ttfamily final long gui.\+Meter\+Resultados\+G\+U\+I.\+serial\+Version\+U\+ID = 1L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definición en la línea 28 del archivo Meter\+Resultados\+G\+U\+I.\+java.
+
+\mbox{\Hypertarget{classgui_1_1MeterResultadosGUI_a80d5962a095c4cb15ea9adde965fc730}\label{classgui_1_1MeterResultadosGUI_a80d5962a095c4cb15ea9adde965fc730}} 
+\index{gui.MeterResultadosGUI@{gui.MeterResultadosGUI}!tableModelQueries@{tableModelQueries}}
+\index{tableModelQueries@{tableModelQueries}!gui.MeterResultadosGUI@{gui.MeterResultadosGUI}}
+\subsubsection{\texorpdfstring{tableModelQueries}{tableModelQueries}}
+{\footnotesize\ttfamily Default\+Table\+Model gui.\+Meter\+Resultados\+G\+U\+I.\+table\+Model\+Queries = new Default\+Table\+Model(null, \mbox{\hyperlink{classgui_1_1MeterResultadosGUI_a627fb2fd35893e8742ee7db4723cfd97}{column\+Names\+Queries}})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 37 del archivo Meter\+Resultados\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Meter\+Resultados\+G\+U\+I.\+Meter\+Resultados\+G\+U\+I().
+
+\mbox{\Hypertarget{classgui_1_1MeterResultadosGUI_a21b8ddf3a50cf3fb49737078ff9fe7ba}\label{classgui_1_1MeterResultadosGUI_a21b8ddf3a50cf3fb49737078ff9fe7ba}} 
+\index{gui.MeterResultadosGUI@{gui.MeterResultadosGUI}!tableQueries@{tableQueries}}
+\index{tableQueries@{tableQueries}!gui.MeterResultadosGUI@{gui.MeterResultadosGUI}}
+\subsubsection{\texorpdfstring{tableQueries}{tableQueries}}
+{\footnotesize\ttfamily J\+Table gui.\+Meter\+Resultados\+G\+U\+I.\+table\+Queries = new J\+Table()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 33 del archivo Meter\+Resultados\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Meter\+Resultados\+G\+U\+I.\+Meter\+Resultados\+G\+U\+I().
+
+\mbox{\Hypertarget{classgui_1_1MeterResultadosGUI_a3ac9b2987e549c1ba2fd7b26b257ff57}\label{classgui_1_1MeterResultadosGUI_a3ac9b2987e549c1ba2fd7b26b257ff57}} 
+\index{gui.MeterResultadosGUI@{gui.MeterResultadosGUI}!textFieldResultado@{textFieldResultado}}
+\index{textFieldResultado@{textFieldResultado}!gui.MeterResultadosGUI@{gui.MeterResultadosGUI}}
+\subsubsection{\texorpdfstring{textFieldResultado}{textFieldResultado}}
+{\footnotesize\ttfamily J\+Text\+Field gui.\+Meter\+Resultados\+G\+U\+I.\+text\+Field\+Resultado\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 38 del archivo Meter\+Resultados\+G\+U\+I.\+java.
+
+
+
+Referenciado por gui.\+Meter\+Resultados\+G\+U\+I.\+Meter\+Resultados\+G\+U\+I().
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+src/gui/\mbox{\hyperlink{MeterResultadosGUI_8java}{Meter\+Resultados\+G\+U\+I.\+java}}\end{DoxyCompactItemize}

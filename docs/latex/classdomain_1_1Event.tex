@@ -1,0 +1,559 @@
+\hypertarget{classdomain_1_1Event}{}\section{Referencia de la Clase domain.\+Event}
+\label{classdomain_1_1Event}\index{domain.Event@{domain.Event}}
+Diagrama de herencias de domain.\+Event\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdomain_1_1Event}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+Vector$<$ \mbox{\hyperlink{classdomain_1_1Question}{Question}} $>$ \mbox{\hyperlink{classdomain_1_1Event_a00fc2897c3329b2319545e165e54b8da}{get\+Questions}} ()
+\item 
+void \mbox{\hyperlink{classdomain_1_1Event_ae1bcc6c5a8da547b4f930132fdfb7a36}{set\+Questions}} (Vector$<$ \mbox{\hyperlink{classdomain_1_1Question}{Question}} $>$ \mbox{\hyperlink{classdomain_1_1Event_ab5621abc5bae7bc3d8ece713fa2e1e38}{questions}})
+\item 
+\mbox{\hyperlink{classdomain_1_1Event_a1d0bc6f1fb6b0d7f7732ab132c09e868}{Event}} ()
+\item 
+\mbox{\hyperlink{classdomain_1_1Event_ae54063394d89364db7a777096e64d2e0}{Event}} (Integer \mbox{\hyperlink{classdomain_1_1Event_a7a297461605e871f55e9752c5652a07e}{event\+Number}}, String \mbox{\hyperlink{classdomain_1_1Event_a14d38176e81b4e75c84d4aaea994a306}{description}}, Date \mbox{\hyperlink{classdomain_1_1Event_a3cc1c6dde4868b8048cc2dc0626cd269}{event\+Date}})
+\item 
+\mbox{\hyperlink{classdomain_1_1Event_a42cb94d15d4097d61e63d501f3f846c6}{Event}} (String \mbox{\hyperlink{classdomain_1_1Event_a14d38176e81b4e75c84d4aaea994a306}{description}}, Date \mbox{\hyperlink{classdomain_1_1Event_a3cc1c6dde4868b8048cc2dc0626cd269}{event\+Date}})
+\item 
+Integer \mbox{\hyperlink{classdomain_1_1Event_a8b5055f21582c239b4e315e0c6050cb4}{get\+Event\+Number}} ()
+\item 
+void \mbox{\hyperlink{classdomain_1_1Event_ace19804912ce14a756e677a394c29fe5}{set\+Event\+Number}} (Integer \mbox{\hyperlink{classdomain_1_1Event_a7a297461605e871f55e9752c5652a07e}{event\+Number}})
+\item 
+String \mbox{\hyperlink{classdomain_1_1Event_a161f14b5bbd0140360b090d9f466ac57}{get\+Description}} ()
+\item 
+void \mbox{\hyperlink{classdomain_1_1Event_aa17b7e9162813a1010056c84e3fc8143}{set\+Description}} (String \mbox{\hyperlink{classdomain_1_1Event_a14d38176e81b4e75c84d4aaea994a306}{description}})
+\item 
+Date \mbox{\hyperlink{classdomain_1_1Event_ac0959d1f92fa9081b0a883c3d60e6dfa}{get\+Event\+Date}} ()
+\item 
+void \mbox{\hyperlink{classdomain_1_1Event_ab27cd00d447385efcdfa8eeca32f8088}{set\+Event\+Date}} (Date \mbox{\hyperlink{classdomain_1_1Event_a3cc1c6dde4868b8048cc2dc0626cd269}{event\+Date}})
+\item 
+String \mbox{\hyperlink{classdomain_1_1Event_a0d1615cfe917523681dde8d72190c327}{to\+String}} ()
+\item 
+\mbox{\hyperlink{classdomain_1_1Question}{Question}} \mbox{\hyperlink{classdomain_1_1Event_a6e0414a3ec8ad5169aedd5dd068fc4cf}{add\+Question}} (String question, float bet\+Minimum)
+\item 
+\mbox{\hyperlink{classdomain_1_1Question}{Question}} \mbox{\hyperlink{classdomain_1_1Event_a3eaf7a3d45a8c285684e4434ea3d91b0}{add\+Question}} (String question, \mbox{\hyperlink{classdomain_1_1Result}{Result}} result, float bet\+Minimum, float cuota)
+\item 
+boolean \mbox{\hyperlink{classdomain_1_1Event_ad41c734db360bd942b9028ddbefc77d2}{Does\+Question\+Exists}} (String question)
+\item 
+int \mbox{\hyperlink{classdomain_1_1Event_a8fc944944dd04c43c73bab5068b5349e}{hash\+Code}} ()
+\item 
+boolean \mbox{\hyperlink{classdomain_1_1Event_aeb56c0c6301d176e3f861ae04f50fab7}{equals}} (Object obj)
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+Integer \mbox{\hyperlink{classdomain_1_1Event_a7a297461605e871f55e9752c5652a07e}{event\+Number}}
+\item 
+String \mbox{\hyperlink{classdomain_1_1Event_a14d38176e81b4e75c84d4aaea994a306}{description}}
+\item 
+Date \mbox{\hyperlink{classdomain_1_1Event_a3cc1c6dde4868b8048cc2dc0626cd269}{event\+Date}}
+\item 
+Vector$<$ \mbox{\hyperlink{classdomain_1_1Question}{Question}} $>$ \mbox{\hyperlink{classdomain_1_1Event_ab5621abc5bae7bc3d8ece713fa2e1e38}{questions}} =new Vector$<$\mbox{\hyperlink{classdomain_1_1Question}{Question}}$>$()
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+Definición en la línea 18 del archivo Event.\+java.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classdomain_1_1Event_a1d0bc6f1fb6b0d7f7732ab132c09e868}\label{classdomain_1_1Event_a1d0bc6f1fb6b0d7f7732ab132c09e868}} 
+\index{domain.Event@{domain.Event}!Event@{Event}}
+\index{Event@{Event}!domain.Event@{domain.Event}}
+\subsubsection{\texorpdfstring{Event()}{Event()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily domain.\+Event.\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 37 del archivo Event.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37                    \{}
+\DoxyCodeLine{38         super();}
+\DoxyCodeLine{39     \}}
+
+\end{DoxyCode}
+
+
+Referenciado por domain.\+Event.\+equals().
+
+\mbox{\Hypertarget{classdomain_1_1Event_ae54063394d89364db7a777096e64d2e0}\label{classdomain_1_1Event_ae54063394d89364db7a777096e64d2e0}} 
+\index{domain.Event@{domain.Event}!Event@{Event}}
+\index{Event@{Event}!domain.Event@{domain.Event}}
+\subsubsection{\texorpdfstring{Event()}{Event()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily domain.\+Event.\+Event (\begin{DoxyParamCaption}\item[{Integer}]{event\+Number,  }\item[{String}]{description,  }\item[{Date}]{event\+Date }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 41 del archivo Event.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{41                                                                          \{}
+\DoxyCodeLine{42         this.\mbox{\hyperlink{classdomain_1_1Event_a7a297461605e871f55e9752c5652a07e}{eventNumber}} = \mbox{\hyperlink{classdomain_1_1Event_a7a297461605e871f55e9752c5652a07e}{eventNumber}};}
+\DoxyCodeLine{43         this.\mbox{\hyperlink{classdomain_1_1Event_a14d38176e81b4e75c84d4aaea994a306}{description}} = \mbox{\hyperlink{classdomain_1_1Event_a14d38176e81b4e75c84d4aaea994a306}{description}};}
+\DoxyCodeLine{44         this.\mbox{\hyperlink{classdomain_1_1Event_a3cc1c6dde4868b8048cc2dc0626cd269}{eventDate}}=\mbox{\hyperlink{classdomain_1_1Event_a3cc1c6dde4868b8048cc2dc0626cd269}{eventDate}};}
+\DoxyCodeLine{45     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a domain.\+Event.\+description, domain.\+Event.\+event\+Date y domain.\+Event.\+event\+Number.
+
+\mbox{\Hypertarget{classdomain_1_1Event_a42cb94d15d4097d61e63d501f3f846c6}\label{classdomain_1_1Event_a42cb94d15d4097d61e63d501f3f846c6}} 
+\index{domain.Event@{domain.Event}!Event@{Event}}
+\index{Event@{Event}!domain.Event@{domain.Event}}
+\subsubsection{\texorpdfstring{Event()}{Event()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily domain.\+Event.\+Event (\begin{DoxyParamCaption}\item[{String}]{description,  }\item[{Date}]{event\+Date }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 47 del archivo Event.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47                                                      \{}
+\DoxyCodeLine{48         this.\mbox{\hyperlink{classdomain_1_1Event_a14d38176e81b4e75c84d4aaea994a306}{description}} = \mbox{\hyperlink{classdomain_1_1Event_a14d38176e81b4e75c84d4aaea994a306}{description}};}
+\DoxyCodeLine{49         this.\mbox{\hyperlink{classdomain_1_1Event_a3cc1c6dde4868b8048cc2dc0626cd269}{eventDate}}=\mbox{\hyperlink{classdomain_1_1Event_a3cc1c6dde4868b8048cc2dc0626cd269}{eventDate}};}
+\DoxyCodeLine{50     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a domain.\+Event.\+description y domain.\+Event.\+event\+Date.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classdomain_1_1Event_a6e0414a3ec8ad5169aedd5dd068fc4cf}\label{classdomain_1_1Event_a6e0414a3ec8ad5169aedd5dd068fc4cf}} 
+\index{domain.Event@{domain.Event}!addQuestion@{addQuestion}}
+\index{addQuestion@{addQuestion}!domain.Event@{domain.Event}}
+\subsubsection{\texorpdfstring{addQuestion()}{addQuestion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classdomain_1_1Question}{Question}} domain.\+Event.\+add\+Question (\begin{DoxyParamCaption}\item[{String}]{question,  }\item[{float}]{bet\+Minimum }\end{DoxyParamCaption})}
+
+This method creates a bet with a question, minimum bet ammount and percentual profit
+
+
+\begin{DoxyParams}{Parámetros}
+{\em question} & to be added to the event \\
+\hline
+{\em bet\+Minimum} & of that question \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Bet 
+\end{DoxyReturn}
+
+
+Definición en la línea 88 del archivo Event.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{88                                                                     \{}
+\DoxyCodeLine{89         Question q=\textcolor{keyword}{new} Question(question,betMinimum, \textcolor{keyword}{this});}
+\DoxyCodeLine{90         \mbox{\hyperlink{classdomain_1_1Event_ab5621abc5bae7bc3d8ece713fa2e1e38}{questions}}.add(q);}
+\DoxyCodeLine{91         \textcolor{keywordflow}{return} q;}
+\DoxyCodeLine{92     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a domain.\+Event.\+questions.
+
+
+
+Referenciado por data\+Access.\+Data\+Access.\+create\+Question() y data\+Access.\+Data\+Access.\+initialize\+D\+B().
+
+\mbox{\Hypertarget{classdomain_1_1Event_a3eaf7a3d45a8c285684e4434ea3d91b0}\label{classdomain_1_1Event_a3eaf7a3d45a8c285684e4434ea3d91b0}} 
+\index{domain.Event@{domain.Event}!addQuestion@{addQuestion}}
+\index{addQuestion@{addQuestion}!domain.Event@{domain.Event}}
+\subsubsection{\texorpdfstring{addQuestion()}{addQuestion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classdomain_1_1Question}{Question}} domain.\+Event.\+add\+Question (\begin{DoxyParamCaption}\item[{String}]{question,  }\item[{\mbox{\hyperlink{classdomain_1_1Result}{Result}}}]{result,  }\item[{float}]{bet\+Minimum,  }\item[{float}]{cuota }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 95 del archivo Event.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{95                                                                                                \{}
+\DoxyCodeLine{96         Question q=\textcolor{keyword}{new} Question(question,result,betMinimum,cuota, \textcolor{keyword}{this});}
+\DoxyCodeLine{97         \mbox{\hyperlink{classdomain_1_1Event_ab5621abc5bae7bc3d8ece713fa2e1e38}{questions}}.add(q);}
+\DoxyCodeLine{98         \textcolor{keywordflow}{return} q;}
+\DoxyCodeLine{99     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a domain.\+Event.\+questions.
+
+\mbox{\Hypertarget{classdomain_1_1Event_ad41c734db360bd942b9028ddbefc77d2}\label{classdomain_1_1Event_ad41c734db360bd942b9028ddbefc77d2}} 
+\index{domain.Event@{domain.Event}!DoesQuestionExists@{DoesQuestionExists}}
+\index{DoesQuestionExists@{DoesQuestionExists}!domain.Event@{domain.Event}}
+\subsubsection{\texorpdfstring{DoesQuestionExists()}{DoesQuestionExists()}}
+{\footnotesize\ttfamily boolean domain.\+Event.\+Does\+Question\+Exists (\begin{DoxyParamCaption}\item[{String}]{question }\end{DoxyParamCaption})}
+
+This method checks if the question already exists for that event
+
+
+\begin{DoxyParams}{Parámetros}
+{\em question} & that needs to be checked if there exists \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true if the question exists and false in other case 
+\end{DoxyReturn}
+
+
+Definición en la línea 107 del archivo Event.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{107                                                         \{   }
+\DoxyCodeLine{108         \textcolor{keywordflow}{for} (Question q:this.\mbox{\hyperlink{classdomain_1_1Event_a00fc2897c3329b2319545e165e54b8da}{getQuestions}}())\{}
+\DoxyCodeLine{109             \textcolor{keywordflow}{if} (q.getQuestion().compareTo(question)==0)}
+\DoxyCodeLine{110                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{111         \}}
+\DoxyCodeLine{112         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{113     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a domain.\+Event.\+get\+Questions().
+
+
+
+Referenciado por data\+Access.\+Data\+Access.\+create\+Question().
+
+\mbox{\Hypertarget{classdomain_1_1Event_aeb56c0c6301d176e3f861ae04f50fab7}\label{classdomain_1_1Event_aeb56c0c6301d176e3f861ae04f50fab7}} 
+\index{domain.Event@{domain.Event}!equals@{equals}}
+\index{equals@{equals}!domain.Event@{domain.Event}}
+\subsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily boolean domain.\+Event.\+equals (\begin{DoxyParamCaption}\item[{Object}]{obj }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 126 del archivo Event.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{126                                       \{}
+\DoxyCodeLine{127         \textcolor{keywordflow}{if} (\textcolor{keyword}{this} == obj)}
+\DoxyCodeLine{128             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{129         \textcolor{keywordflow}{if} (obj == \textcolor{keyword}{null})}
+\DoxyCodeLine{130             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{131         \textcolor{keywordflow}{if} (getClass() != obj.getClass())}
+\DoxyCodeLine{132             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{133         \mbox{\hyperlink{classdomain_1_1Event_a1d0bc6f1fb6b0d7f7732ab132c09e868}{Event}} other = (\mbox{\hyperlink{classdomain_1_1Event_a1d0bc6f1fb6b0d7f7732ab132c09e868}{Event}}) obj;}
+\DoxyCodeLine{134         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classdomain_1_1Event_a7a297461605e871f55e9752c5652a07e}{eventNumber}} != other.eventNumber)}
+\DoxyCodeLine{135             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{136         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{137     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a domain.\+Event.\+Event() y domain.\+Event.\+event\+Number.
+
+\mbox{\Hypertarget{classdomain_1_1Event_a161f14b5bbd0140360b090d9f466ac57}\label{classdomain_1_1Event_a161f14b5bbd0140360b090d9f466ac57}} 
+\index{domain.Event@{domain.Event}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!domain.Event@{domain.Event}}
+\subsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily String domain.\+Event.\+get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 60 del archivo Event.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60                                    \{}
+\DoxyCodeLine{61         \textcolor{keywordflow}{return} \mbox{\hyperlink{classdomain_1_1Event_a14d38176e81b4e75c84d4aaea994a306}{description}};}
+\DoxyCodeLine{62     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a domain.\+Event.\+description.
+
+
+
+Referenciado por data\+Access.\+Data\+Access.\+corregir\+Resultado().
+
+\mbox{\Hypertarget{classdomain_1_1Event_ac0959d1f92fa9081b0a883c3d60e6dfa}\label{classdomain_1_1Event_ac0959d1f92fa9081b0a883c3d60e6dfa}} 
+\index{domain.Event@{domain.Event}!getEventDate@{getEventDate}}
+\index{getEventDate@{getEventDate}!domain.Event@{domain.Event}}
+\subsubsection{\texorpdfstring{getEventDate()}{getEventDate()}}
+{\footnotesize\ttfamily Date domain.\+Event.\+get\+Event\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 68 del archivo Event.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{68                                \{}
+\DoxyCodeLine{69         \textcolor{keywordflow}{return} \mbox{\hyperlink{classdomain_1_1Event_a3cc1c6dde4868b8048cc2dc0626cd269}{eventDate}};}
+\DoxyCodeLine{70     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a domain.\+Event.\+event\+Date.
+
+
+
+Referenciado por gui.\+Mis\+Apuestas\+G\+U\+I.\+Mis\+Apuestas\+G\+U\+I().
+
+\mbox{\Hypertarget{classdomain_1_1Event_a8b5055f21582c239b4e315e0c6050cb4}\label{classdomain_1_1Event_a8b5055f21582c239b4e315e0c6050cb4}} 
+\index{domain.Event@{domain.Event}!getEventNumber@{getEventNumber}}
+\index{getEventNumber@{getEventNumber}!domain.Event@{domain.Event}}
+\subsubsection{\texorpdfstring{getEventNumber()}{getEventNumber()}}
+{\footnotesize\ttfamily Integer domain.\+Event.\+get\+Event\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 52 del archivo Event.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52                                     \{}
+\DoxyCodeLine{53         \textcolor{keywordflow}{return} \mbox{\hyperlink{classdomain_1_1Event_a7a297461605e871f55e9752c5652a07e}{eventNumber}};}
+\DoxyCodeLine{54     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a domain.\+Event.\+event\+Number.
+
+
+
+Referenciado por data\+Access.\+Data\+Access.\+create\+Question().
+
+\mbox{\Hypertarget{classdomain_1_1Event_a00fc2897c3329b2319545e165e54b8da}\label{classdomain_1_1Event_a00fc2897c3329b2319545e165e54b8da}} 
+\index{domain.Event@{domain.Event}!getQuestions@{getQuestions}}
+\index{getQuestions@{getQuestions}!domain.Event@{domain.Event}}
+\subsubsection{\texorpdfstring{getQuestions()}{getQuestions()}}
+{\footnotesize\ttfamily Vector$<$\mbox{\hyperlink{classdomain_1_1Question}{Question}}$>$ domain.\+Event.\+get\+Questions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 29 del archivo Event.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{29                                            \{}
+\DoxyCodeLine{30         \textcolor{keywordflow}{return} \mbox{\hyperlink{classdomain_1_1Event_ab5621abc5bae7bc3d8ece713fa2e1e38}{questions}};}
+\DoxyCodeLine{31     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a domain.\+Event.\+questions.
+
+
+
+Referenciado por domain.\+Event.\+Does\+Question\+Exists().
+
+\mbox{\Hypertarget{classdomain_1_1Event_a8fc944944dd04c43c73bab5068b5349e}\label{classdomain_1_1Event_a8fc944944dd04c43c73bab5068b5349e}} 
+\index{domain.Event@{domain.Event}!hashCode@{hashCode}}
+\index{hashCode@{hashCode}!domain.Event@{domain.Event}}
+\subsubsection{\texorpdfstring{hashCode()}{hashCode()}}
+{\footnotesize\ttfamily int domain.\+Event.\+hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 118 del archivo Event.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{118                           \{}
+\DoxyCodeLine{119         \textcolor{keyword}{final} \textcolor{keywordtype}{int} prime = 31;}
+\DoxyCodeLine{120         \textcolor{keywordtype}{int} result = 1;}
+\DoxyCodeLine{121         result = prime * result + \mbox{\hyperlink{classdomain_1_1Event_a7a297461605e871f55e9752c5652a07e}{eventNumber}};}
+\DoxyCodeLine{122         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{123     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a domain.\+Event.\+event\+Number.
+
+\mbox{\Hypertarget{classdomain_1_1Event_aa17b7e9162813a1010056c84e3fc8143}\label{classdomain_1_1Event_aa17b7e9162813a1010056c84e3fc8143}} 
+\index{domain.Event@{domain.Event}!setDescription@{setDescription}}
+\index{setDescription@{setDescription}!domain.Event@{domain.Event}}
+\subsubsection{\texorpdfstring{setDescription()}{setDescription()}}
+{\footnotesize\ttfamily void domain.\+Event.\+set\+Description (\begin{DoxyParamCaption}\item[{String}]{description }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 64 del archivo Event.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64                                                    \{}
+\DoxyCodeLine{65         this.\mbox{\hyperlink{classdomain_1_1Event_a14d38176e81b4e75c84d4aaea994a306}{description}}=\mbox{\hyperlink{classdomain_1_1Event_a14d38176e81b4e75c84d4aaea994a306}{description}};}
+\DoxyCodeLine{66     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a domain.\+Event.\+description.
+
+\mbox{\Hypertarget{classdomain_1_1Event_ab27cd00d447385efcdfa8eeca32f8088}\label{classdomain_1_1Event_ab27cd00d447385efcdfa8eeca32f8088}} 
+\index{domain.Event@{domain.Event}!setEventDate@{setEventDate}}
+\index{setEventDate@{setEventDate}!domain.Event@{domain.Event}}
+\subsubsection{\texorpdfstring{setEventDate()}{setEventDate()}}
+{\footnotesize\ttfamily void domain.\+Event.\+set\+Event\+Date (\begin{DoxyParamCaption}\item[{Date}]{event\+Date }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 72 del archivo Event.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{72                                              \{}
+\DoxyCodeLine{73         this.\mbox{\hyperlink{classdomain_1_1Event_a3cc1c6dde4868b8048cc2dc0626cd269}{eventDate}} = \mbox{\hyperlink{classdomain_1_1Event_a3cc1c6dde4868b8048cc2dc0626cd269}{eventDate}};}
+\DoxyCodeLine{74     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a domain.\+Event.\+event\+Date.
+
+\mbox{\Hypertarget{classdomain_1_1Event_ace19804912ce14a756e677a394c29fe5}\label{classdomain_1_1Event_ace19804912ce14a756e677a394c29fe5}} 
+\index{domain.Event@{domain.Event}!setEventNumber@{setEventNumber}}
+\index{setEventNumber@{setEventNumber}!domain.Event@{domain.Event}}
+\subsubsection{\texorpdfstring{setEventNumber()}{setEventNumber()}}
+{\footnotesize\ttfamily void domain.\+Event.\+set\+Event\+Number (\begin{DoxyParamCaption}\item[{Integer}]{event\+Number }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 56 del archivo Event.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56                                                     \{}
+\DoxyCodeLine{57         this.\mbox{\hyperlink{classdomain_1_1Event_a7a297461605e871f55e9752c5652a07e}{eventNumber}} = \mbox{\hyperlink{classdomain_1_1Event_a7a297461605e871f55e9752c5652a07e}{eventNumber}};}
+\DoxyCodeLine{58     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a domain.\+Event.\+event\+Number.
+
+\mbox{\Hypertarget{classdomain_1_1Event_ae1bcc6c5a8da547b4f930132fdfb7a36}\label{classdomain_1_1Event_ae1bcc6c5a8da547b4f930132fdfb7a36}} 
+\index{domain.Event@{domain.Event}!setQuestions@{setQuestions}}
+\index{setQuestions@{setQuestions}!domain.Event@{domain.Event}}
+\subsubsection{\texorpdfstring{setQuestions()}{setQuestions()}}
+{\footnotesize\ttfamily void domain.\+Event.\+set\+Questions (\begin{DoxyParamCaption}\item[{Vector$<$ \mbox{\hyperlink{classdomain_1_1Question}{Question}} $>$}]{questions }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 33 del archivo Event.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33                                                          \{}
+\DoxyCodeLine{34         this.\mbox{\hyperlink{classdomain_1_1Event_ab5621abc5bae7bc3d8ece713fa2e1e38}{questions}} = \mbox{\hyperlink{classdomain_1_1Event_ab5621abc5bae7bc3d8ece713fa2e1e38}{questions}};}
+\DoxyCodeLine{35     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a domain.\+Event.\+questions.
+
+\mbox{\Hypertarget{classdomain_1_1Event_a0d1615cfe917523681dde8d72190c327}\label{classdomain_1_1Event_a0d1615cfe917523681dde8d72190c327}} 
+\index{domain.Event@{domain.Event}!toString@{toString}}
+\index{toString@{toString}!domain.Event@{domain.Event}}
+\subsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String domain.\+Event.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 77 del archivo Event.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77                             \{}
+\DoxyCodeLine{78         \textcolor{keywordflow}{return} \mbox{\hyperlink{classdomain_1_1Event_a7a297461605e871f55e9752c5652a07e}{eventNumber}}+\textcolor{stringliteral}{";"}+\mbox{\hyperlink{classdomain_1_1Event_a14d38176e81b4e75c84d4aaea994a306}{description}};}
+\DoxyCodeLine{79     \}}
+
+\end{DoxyCode}
+
+
+Hace referencia a domain.\+Event.\+description y domain.\+Event.\+event\+Number.
+
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{classdomain_1_1Event_a14d38176e81b4e75c84d4aaea994a306}\label{classdomain_1_1Event_a14d38176e81b4e75c84d4aaea994a306}} 
+\index{domain.Event@{domain.Event}!description@{description}}
+\index{description@{description}!domain.Event@{domain.Event}}
+\subsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily String domain.\+Event.\+description\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 24 del archivo Event.\+java.
+
+
+
+Referenciado por domain.\+Event.\+Event(), domain.\+Event.\+get\+Description(), domain.\+Event.\+set\+Description() y domain.\+Event.\+to\+String().
+
+\mbox{\Hypertarget{classdomain_1_1Event_a3cc1c6dde4868b8048cc2dc0626cd269}\label{classdomain_1_1Event_a3cc1c6dde4868b8048cc2dc0626cd269}} 
+\index{domain.Event@{domain.Event}!eventDate@{eventDate}}
+\index{eventDate@{eventDate}!domain.Event@{domain.Event}}
+\subsubsection{\texorpdfstring{eventDate}{eventDate}}
+{\footnotesize\ttfamily Date domain.\+Event.\+event\+Date\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 25 del archivo Event.\+java.
+
+
+
+Referenciado por domain.\+Event.\+Event(), domain.\+Event.\+get\+Event\+Date() y domain.\+Event.\+set\+Event\+Date().
+
+\mbox{\Hypertarget{classdomain_1_1Event_a7a297461605e871f55e9752c5652a07e}\label{classdomain_1_1Event_a7a297461605e871f55e9752c5652a07e}} 
+\index{domain.Event@{domain.Event}!eventNumber@{eventNumber}}
+\index{eventNumber@{eventNumber}!domain.Event@{domain.Event}}
+\subsubsection{\texorpdfstring{eventNumber}{eventNumber}}
+{\footnotesize\ttfamily Integer domain.\+Event.\+event\+Number\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 23 del archivo Event.\+java.
+
+
+
+Referenciado por domain.\+Event.\+equals(), domain.\+Event.\+Event(), domain.\+Event.\+get\+Event\+Number(), domain.\+Event.\+hash\+Code(), domain.\+Event.\+set\+Event\+Number() y domain.\+Event.\+to\+String().
+
+\mbox{\Hypertarget{classdomain_1_1Event_ab5621abc5bae7bc3d8ece713fa2e1e38}\label{classdomain_1_1Event_ab5621abc5bae7bc3d8ece713fa2e1e38}} 
+\index{domain.Event@{domain.Event}!questions@{questions}}
+\index{questions@{questions}!domain.Event@{domain.Event}}
+\subsubsection{\texorpdfstring{questions}{questions}}
+{\footnotesize\ttfamily Vector$<$\mbox{\hyperlink{classdomain_1_1Question}{Question}}$>$ domain.\+Event.\+questions =new Vector$<$\mbox{\hyperlink{classdomain_1_1Question}{Question}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 27 del archivo Event.\+java.
+
+
+
+Referenciado por domain.\+Event.\+add\+Question(), domain.\+Event.\+get\+Questions() y domain.\+Event.\+set\+Questions().
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+src/domain/\mbox{\hyperlink{Event_8java}{Event.\+java}}\end{DoxyCompactItemize}
