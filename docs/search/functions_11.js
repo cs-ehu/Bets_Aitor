@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['saldo',['saldo',['../interfacebusinessLogic_1_1BLFacade.html#a1b91318bf144ed2eae0c38e385dfdd1f',1,'businessLogic.BLFacade.saldo()'],['../classbusinessLogic_1_1BLFacadeImplementation.html#a2ba616628033f05a5f70a0afddb1c970',1,'businessLogic.BLFacadeImplementation.saldo()']]],
+  ['setacertada',['setAcertada',['../classdomain_1_1Apuesta.html#a7a57b0ad3b625f2a7228809f59c2fcfa',1,'domain::Apuesta']]],
+  ['setapuesta',['setApuesta',['../classdomain_1_1Apuesta.html#add05d4c5b0aef4171628c2eaec38fe93',1,'domain::Apuesta']]],
+  ['setbeneficios',['setBeneficios',['../classdomain_1_1Apuesta.html#a98a5d5593ba08e9cdf74857c501bc1ef',1,'domain::Apuesta']]],
+  ['setbetminimum',['setBetMinimum',['../classdomain_1_1Question.html#a66ef61fd241c1ee6dbb8ea9ce14ae9ce',1,'domain::Question']]],
+  ['setbussinesslogic',['setBussinessLogic',['../classgui_1_1MainGUI.html#af7625125ee61bf5c18af79c7f356a346',1,'gui.MainGUI.setBussinessLogic()'],['../classgui_1_1MainGUI2.html#ace6c1da32a8c116a6d207f17b446160a',1,'gui.MainGUI2.setBussinessLogic()']]],
+  ['setcobrada',['setCobrada',['../classdomain_1_1Apuesta.html#ac083871d9b4afb8707553c422ef247f2',1,'domain::Apuesta']]],
+  ['setcodigoapuesta',['setcodigoApuesta',['../classdomain_1_1Apuesta.html#ac6f9b493d59c2f2f26d6d1374913a0f4',1,'domain::Apuesta']]],
+  ['setcontraseña',['setContraseña',['../classdomain_1_1User.html#ae292b37cef599e77881672b0b848f136',1,'domain::User']]],
+  ['setcuota',['setCuota',['../classdomain_1_1Question.html#a2025d578b6bfb29a5cc5f511eedaad3e',1,'domain::Question']]],
+  ['setdescription',['setDescription',['../classdomain_1_1Event.html#aa17b7e9162813a1010056c84e3fc8143',1,'domain::Event']]],
+  ['setdineroapostado',['setDineroApostado',['../classdomain_1_1Apuesta.html#a9eb68253373b08cadd232dcc0d2959a2',1,'domain::Apuesta']]],
+  ['setdni',['setDNI',['../classdomain_1_1User.html#acdb5b5bf6b571a77af5596da0da953fa',1,'domain::User']]],
+  ['setevent',['setEvent',['../classdomain_1_1Question.html#aeef540c71cd56151c4bd3b9d1aab5dd4',1,'domain::Question']]],
+  ['seteventdate',['setEventDate',['../classdomain_1_1Event.html#ab27cd00d447385efcdfa8eeca32f8088',1,'domain::Event']]],
+  ['seteventnumber',['setEventNumber',['../classdomain_1_1Event.html#ace19804912ce14a756e677a394c29fe5',1,'domain::Event']]],
+  ['setquestion',['setQuestion',['../classdomain_1_1Question.html#a612ee55b9eac9032980063ddb1119eee',1,'domain::Question']]],
+  ['setquestionnumber',['setQuestionNumber',['../classdomain_1_1Question.html#a15eb1f8e8b06528ef1b27fcca4712ef8',1,'domain::Question']]],
+  ['setquestions',['setQuestions',['../classdomain_1_1Event.html#ae1bcc6c5a8da547b4f930132fdfb7a36',1,'domain::Event']]],
+  ['setresult',['setResult',['../classdomain_1_1Question.html#a22d08940b4ce10963bb93d7c3017d458',1,'domain.Question.setResult()'],['../classdomain_1_1Result.html#a5648afcb541d207b61a7202609a41a27',1,'domain.Result.setResult()']]],
+  ['setresultnumber',['setResultNumber',['../classdomain_1_1Result.html#aa74643d5a07d5d5af733e1b5584eca03',1,'domain::Result']]],
+  ['setsaldo',['setSaldo',['../classdomain_1_1User.html#ab0da73a44b69fbb13668ec2093e8d3e7',1,'domain::User']]],
+  ['settipo',['setTipo',['../classdomain_1_1User.html#aa5010bb10a4aaacd7731ca313e2ae6ce',1,'domain::User']]],
+  ['setuser',['setUser',['../classdomain_1_1User.html#ae58cb8a12b63ea9f60b8308ab3e09712',1,'domain::User']]],
+  ['setusuario',['setUsuario',['../classdomain_1_1Apuesta.html#a1efaf2e67d5395ed2ef056db4833e0da',1,'domain::Apuesta']]]
+];

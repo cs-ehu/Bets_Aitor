@@ -1,0 +1,25 @@
+var classdomain_1_1Apuesta =
+[
+    [ "Apuesta", "classdomain_1_1Apuesta.html#a470f63c3f95a850ee19b7ef39ba8808e", null ],
+    [ "getAcertada", "classdomain_1_1Apuesta.html#a5ca4b42ddce2ef92feacc2ac747fe140", null ],
+    [ "getApuesta", "classdomain_1_1Apuesta.html#aa9aa7f1a5d45ecec091814d68d4ab5c8", null ],
+    [ "getBeneficios", "classdomain_1_1Apuesta.html#aa228aed3dfebe83dbf9a0f15b7d339de", null ],
+    [ "getCobrada", "classdomain_1_1Apuesta.html#ae1983ee715a32fd095df5d54ab8475f1", null ],
+    [ "getcodigoApuesta", "classdomain_1_1Apuesta.html#a5e818409c0f8e3b9d1c812b60294d967", null ],
+    [ "getDineroApostado", "classdomain_1_1Apuesta.html#a15f352d9fe3703d744745578a227ad27", null ],
+    [ "getUsusario", "classdomain_1_1Apuesta.html#a4ca4ca8fbb35d45d55152bf0aaa9ff0e", null ],
+    [ "setAcertada", "classdomain_1_1Apuesta.html#a7a57b0ad3b625f2a7228809f59c2fcfa", null ],
+    [ "setApuesta", "classdomain_1_1Apuesta.html#add05d4c5b0aef4171628c2eaec38fe93", null ],
+    [ "setBeneficios", "classdomain_1_1Apuesta.html#a98a5d5593ba08e9cdf74857c501bc1ef", null ],
+    [ "setCobrada", "classdomain_1_1Apuesta.html#ac083871d9b4afb8707553c422ef247f2", null ],
+    [ "setcodigoApuesta", "classdomain_1_1Apuesta.html#ac6f9b493d59c2f2f26d6d1374913a0f4", null ],
+    [ "setDineroApostado", "classdomain_1_1Apuesta.html#a9eb68253373b08cadd232dcc0d2959a2", null ],
+    [ "setUsuario", "classdomain_1_1Apuesta.html#a1efaf2e67d5395ed2ef056db4833e0da", null ],
+    [ "acertada", "classdomain_1_1Apuesta.html#a8adfa2717f26eeac6e6b9df3985f3a57", null ],
+    [ "apuesta", "classdomain_1_1Apuesta.html#a43e71ee854e8e8b1447a707fc749d34b", null ],
+    [ "beneficios", "classdomain_1_1Apuesta.html#acec50d5cb60237c9965be9f66d36e041", null ],
+    [ "cobrada", "classdomain_1_1Apuesta.html#a32769c4fa66a117a3728faf31056a7a9", null ],
+    [ "codigoApuesta", "classdomain_1_1Apuesta.html#afa9c90fb9ef5b0e4e674c14e8897f73c", null ],
+    [ "dineroApostado", "classdomain_1_1Apuesta.html#abad5a9f03d069677bfdcd8505fc9babb", null ],
+    [ "usuario", "classdomain_1_1Apuesta.html#a0d23f0bdf469bdfe1731964cf451feef", null ]
+];
