@@ -1,0 +1,51 @@
+Listado de rutas de carpetas para el volumen Windows
+El n£mero de serie del volumen es 342C-4B4E
+C:.
+|   Etiquetas.properties
+|   Etiquetas_en.properties
+|   Etiquetas_es.properties
+|   Etiquetas_eus.properties
+|   texto.txt
+|   
++---businessLogic
+|       BLFacade.java
+|       BLFacadeImplementation.java
+|       BusinessLogicServer.java
+|       BusinessLogicServerAWS.java
+|       
++---configuration
+|       ConfigXML.java
+|       
++---dataAccess
+|       DataAccess.java
+|       ObjectdbManagerServer.java
+|       ObjectdbManagerServerAWS.java
+|       
++---domain
+|       Apuesta.java
+|       Event.java
+|       IntegerAdapter.java
+|       Question.java
+|       Result.java
+|       User.java
+|       
++---exceptions
+|       EventFinished.java
+|       QuestionAlreadyExist.java
+|       
+\---gui
+        AdminMainPageGUI.java
+        ApplicationLauncher.java
+        ApuestaGUI.java
+        BalanceGUI.java
+        CreateEventGUI.java
+        CreateQuestionGUI.java
+        CreateUserGUI.java
+        FindQuestionsGUI.java
+        HistorialDeApuestasGUI2.java
+        MainGUI.java
+        MainGUI2.java
+        MeterResultadosGUI.java
+        MisApuestasGUI.java
+        UserMainPageGUI.java
+        
